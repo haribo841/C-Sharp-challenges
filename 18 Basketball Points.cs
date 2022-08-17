@@ -1,33 +1,27 @@
-//C# has a logical operator &&. The && operator takes two boolean values, and returns true if both values are true.
-//Consider a && b:
-//a is checked if it is true or false.
-//If a is false, false is returned.
-//b is checked if it is true or false.
-//If b is false, false is returned.
-//Otherwise, true is returned (as both a and b are therefore true ).
-//Rembember that the default value for bool is false. (eg. var c = new bool(); c is false.)
-//The && operator will only return true for true && true.
-//Make a function using the && operator.
-using NUnit.Framework;
-using System;
-
-[TestFixture]
+//You are counting points for a basketball game,
+//given the amount of 3-pointers scored and 2-pointers scored,
+//find the final points for the team and return that value
+//([2 -pointers scored, 3-pointers scored]).
 public class Tests
 {
-		[Test]
-		[TestCase(true, true, Result=true)]
-		[TestCase(true, false, Result=false)]
-		[TestCase(false, true, Result=false)]
-		[TestCase(false, false, Result=false)]
-    public static bool And(bool x, bool y) 
-    {
-				Console.WriteLine($"Input: {x}, {y}");
-        return Program.And(x, y);
-    }
-}
-public class Program
+  [Test]
+	[TestCase(1, 1, Result=5)]
+	[TestCase(1, 2, Result=8)]
+	[TestCase(2, 1, Result=7)]
+	[TestCase(2, 2, Result=10)]
+	[TestCase(69, 420, Result=1398)]
+
+	public static int Points(int twoPointers, int threePointers)
+	{
+		Console.WriteLine($"Input: {twoPointers} {threePointers}");
+		return Program.Points(twoPointers, threePointers);
+	}
+public class Program 
 {
-	public static bool And(bool x, bool y)=>x&&y;
-   // bool a;
-   //Console.Write( a = And(true,true));
+    public static int Points(int twoPointers, int threePointers) 
+    {
+		public static int Points(int twoPointers, int threePointers)=>twoPointers*2+threePointers*3;
+		//int a;
+        //Console.Write( a = Points(69,420));
+    }
 }
