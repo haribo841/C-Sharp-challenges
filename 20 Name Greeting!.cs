@@ -17,5 +17,5 @@ public class Tests
 }
 public class Program
 {
-		public static string HelloName(string name)=>"Hello "+a;
+		public static string HelloName(string name)=>"Hello "+a+"!";
 }
