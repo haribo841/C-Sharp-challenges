@@ -6,17 +6,19 @@ using NUnit.Framework;
 [TestFixture]
 public class Tests
 {
-  [Test]
-  [TestCase(2013, 12, 24, Result=true)]
-  [TestCase(2013, 0, 23 , Result=false)]
-  [TestCase(3000, 12, 24, Result=true)]
+    [Test]
+    [TestCase(2013, 12, 24, Result = true)]
+    [TestCase(2013, 0, 23, Result = false)]
+    [TestCase(3000, 12, 24, Result = true)]
     public static bool FixedTest(int year, int month, int day)
     {
-				Console.WriteLine($"Input: {year}, {month}, {day}");
+        Console.WriteLine($"Input: {year}, {month}, {day}");
         return Program.TimeForMilkAndCookies(year, month, day);
     }
 }
 public class Program
 {
-    public static bool TimeForMilkAndCookies(int year, int month, int day){}
+    public static bool TimeForMilkAndCookies(int year, int month, int day)
+    {
+    }
 }
