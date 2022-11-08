@@ -1,0 +1,27 @@
+//Create a function that takes a string (a random name).
+//If the last character of the name is an "n", return true, otherwise return false.
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+    [Test]
+    [TestCase("Aiden", Result=true)]
+    [TestCase("Roxy", Result=false)]
+  	[TestCase("Bert", Result=false)]
+		[TestCase("Dean", Result=true)]
+		[TestCase("Ian", Result=true)]
+		[TestCase("Brian", Result=true)]
+		[TestCase("Daniel", Result=false)]
+    public static bool FixedTest(string a)
+    {
+        return Program.isLastCharacterN(a);
+    }
+}
+public class Program 
+{
+	public static bool isLastCharacterN(string word) 
+	{
+		
+	}	
+}
