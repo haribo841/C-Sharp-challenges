@@ -1,0 +1,28 @@
+//Create a function that returns true if a string contains any spaces.
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+  [Test]
+  [TestCase("Foo", Result = false)]
+  [TestCase("Foo bar", Result = true)]
+  [TestCase("Foo ", Result = true)]
+	[TestCase(" Foo", Result = true)]
+  [TestCase(" ", Result = true)]
+  [TestCase("", Result = false)]
+	[TestCase(",./;'[]-=", Result = false)]
+    public static bool FixedTest(string str)
+    {
+			Console.WriteLine($"Input: {str}");
+      return Program.HasSpaces(str);
+    }
+}
+public class Program
+{
+	public static bool HasSpaces(string str)
+	{
+		
+	}
+}
