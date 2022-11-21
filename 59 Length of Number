@@ -1,0 +1,24 @@
+//Create a function that takes a number n and returns its length.
+using NUnit.Framework;
+using System;
+
+[TestFixture]
+public class Tests
+{
+	[Test]
+	[TestCase(12, Result=2)]
+	[TestCase(6000, Result=4)]
+	[TestCase(314, Result=3)]
+	public static int FixedTest(int n)
+	{
+		Console.WriteLine($"Input {n}");
+		return Program.Length(n);
+	}
+}
+public class Program
+{
+	public static int Length(int n)
+	{
+		
+	}
+}
