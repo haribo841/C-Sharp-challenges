@@ -1,0 +1,30 @@
+//Create a function that takes an array of numbers and returns the smallest number in the set.
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+  [Test]
+  [TestCase(new double[]{34, 15, 88, 2}, Result=2)]
+  [TestCase(new double[]{34, -345, -1, 100}, Result=-345)]
+  [TestCase(new double[]{-76, 1.345, 1, 0}, Result=-76)]
+  [TestCase(new double[]{0.4356, 0.8795, 0.5435, -0.9999}, Result=-0.9999)]
+  [TestCase(new double[]{7, 7, 7}, Result=7)]
+  [TestCase(new double[]{4, 6, 1, 3, 4, 5, 5, 1}, Result=1)]
+  [TestCase(new double[]{-4, -6, -8, -1}, Result=-8)]
+  [TestCase(new double[]{54, 76, 23, 54}, Result=23)]
+  [TestCase(new double[]{100}, Result=100)]
+  [TestCase(new double[]{0, 1, 2, 3, 4, 5}, Result=0)]
+  
+    public static double FixedTest(double[] arr)
+    {
+        return Program.FindSmallestNum(arr);
+    }
+}
+public class Program 
+{
+    public static double FindSmallestNum(double[] arr) 
+    {
+      
+    }
+}
