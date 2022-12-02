@@ -1,0 +1,26 @@
+//Create a function that takes a string and returns the concatenated first and last character.
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+    [Test]
+    [TestCase("forza", Result="fa")]
+    [TestCase("kali", Result="ki")]
+  	[TestCase("always", Result="as")]
+		[TestCase("love", Result="le")]
+		[TestCase("supernatural", Result="sl")]
+		[TestCase("edabit", Result="et")]
+	  public static string FixedTest(string a)
+    {
+        return Program.FirstLast(a);
+    }
+}
+public class Program
+{
+		public static string FirstLast(string str)
+		{
+			
+		}
+}
