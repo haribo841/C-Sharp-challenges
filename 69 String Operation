@@ -1,0 +1,27 @@
+//Create a function that takes two numbers and a mathematical operator and returns the result.
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+  [Test]
+	[TestCase(24, 100, "-", Result=-76)]
+	[TestCase(-20, -30, "+", Result=-50)]
+	[TestCase(38, 3, "*", Result=114)]
+	[TestCase(49, 5, "%", Result=4)]
+	[TestCase(1500, 5, "/", Result=300)]
+
+	public static int Calculate(int num1, int num2, string operation)
+	{
+		Console.WriteLine($"Input: {num1} {operation} {num2}");
+		return Program.Calculate(num1, num2, operation);
+	}
+}
+public class Program 
+{
+    public static int Calculate(int num1, int num2, string operation)
+    {
+			
+    }
+}
