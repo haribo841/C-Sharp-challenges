@@ -1,0 +1,40 @@
+//Create a function that takes a string and changes the word amazing to not amazing.
+//Return the string without any change if the word edabit is part of the string.
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests {
+    [Test]
+
+[TestCase("edabit is amazing.", Result="edabit is amazing.")]
+[TestCase("Mubashir is amazing.", Result="Mubashir is not amazing.")]
+[TestCase("Trump is amazing.", Result="Trump is not amazing.")]
+[TestCase("Infinity is amazing.", Result="Infinity is not amazing.")]
+[TestCase("Mubashir and edabit are amazing.", Result="Mubashir and edabit are amazing.")]
+[TestCase("Matt is amazing.", Result="Matt is not amazing.")]
+[TestCase("Helen is amazing.", Result="Helen is not amazing.")]
+[TestCase("Python and edabit are amazing.", Result="Python and edabit are amazing.")]
+[TestCase("C++ is amazing.", Result="C++ is not amazing.")]
+[TestCase("javascript is amazing.", Result="javascript is not amazing.")]
+[TestCase("java is amazing.", Result="java is not amazing.")]
+[TestCase("ruby is amazing.", Result="ruby is not amazing.")]
+[TestCase("SQL is amazing.", Result="SQL is not amazing.")]
+[TestCase("CSS is amazing.", Result="CSS is not amazing.")]
+[TestCase("Pakistan is amazing. edabit", Result="Pakistan is amazing. edabit")]
+[TestCase("You and edabit are amazing.", Result="You and edabit are amazing.")]
+[TestCase("Matt and edabit are amazing.", Result="Matt and edabit are amazing.")]
+[TestCase("Helen and edabit are amazing.", Result="Helen and edabit are amazing.")]
+[TestCase("Everyone is amazing.", Result="Everyone is not amazing.")]
+[TestCase("Swift and edabit are amazing.", Result="Swift and edabit are amazing.")]
+
+public static string FixedTest(string a) {
+		Console.WriteLine($"Input: {a}");
+        return Program.AmazingEdabit(a);
+    }
+}
+public class Program {
+	public static string AmazingEdabit(string str) {
+		
+	}
+}
