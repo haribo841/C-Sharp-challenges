@@ -1,0 +1,29 @@
+//Create a function that returns how many possible arrangements can come from a certain number of switches (on / off).
+//In other words, for a given number of switches, how many different patterns of on and off can we have?
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests {
+    [Test]
+		[TestCase(5, Result=32)]
+		[TestCase(4, Result=16)]
+		[TestCase(3, Result=8)]
+		[TestCase(2, Result=4)]
+		[TestCase(1, Result=2)]
+		[TestCase(6, Result=64)]
+		[TestCase(7, Result=128)]
+		[TestCase(8, Result=256)]
+		[TestCase(9, Result=512)]
+		[TestCase(10, Result=1024)]
+		[TestCase(25, Result=33554432)]
+    public static int FixedTest(int n) {
+				Console.WriteLine($"Input: {n}");
+        return Program.PosCom(n);
+    }
+}
+public class Program {
+	public static int PosCom(int n) {
+		
+	}
+}
