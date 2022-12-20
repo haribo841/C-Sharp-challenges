@@ -1,0 +1,36 @@
+//Create a function that takes a number as an argument.
+//Add up all the numbers from 1 to the number you passed to the function.
+//For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+  [Test]
+  [TestCase(4, Result=10)]
+  [TestCase(13, Result=91)]
+  [TestCase(600, Result=180300)]
+  [TestCase(392, Result=77028)]
+  [TestCase(53, Result=1431)]
+  [TestCase(897, Result=402753)]
+  [TestCase(23, Result=276)]
+  [TestCase(1000, Result=500500)]
+  [TestCase(738, Result=272691)]
+  [TestCase(100, Result=5050)]
+  [TestCase(925, Result=428275)]
+  [TestCase(1, Result=1)]
+  [TestCase(999, Result=499500)]
+  [TestCase(175, Result=15400)]
+  [TestCase(111, Result=6216)]
+    public static int FixedTest(int num)
+    {
+        return Program.AddUp(num);
+    }
+}
+public class Program 
+{
+    public static int AddUp(int num) 
+    {
+// n(n+1)/2 or n^2+n/2
+    }
+}
