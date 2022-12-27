@@ -1,0 +1,46 @@
+//Smash factor is a term in golf that relates to the amount of energy transferred from the club head to the golf ball.
+//The formula for calculating smash factor is ball speed divided by club speed.
+//Create a function that takes ball speed a and club speed b as arguments and returns the smash factor to the nearest hundredth.
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+    [Test]
+[TestCase(139.4, 93.8, Result = 1.49)]
+[TestCase(181.2, 124.5, Result = 1.46)]
+[TestCase(154.7, 104.3, Result = 1.48)]
+[TestCase(218.1, 278.3, Result = 0.78)]
+[TestCase(171.4, 171.6, Result = 1.0)]
+[TestCase(218.0, 162.2, Result = 1.34)]
+[TestCase(263.2, 272.7, Result = 0.97)]
+[TestCase(199.4, 166.0, Result = 1.2)]
+[TestCase(279.3, 103.9, Result = 2.69)]
+[TestCase(192.8, 162.6, Result = 1.19)]
+[TestCase(155.4, 272.2, Result = 0.57)]
+[TestCase(285.8, 232.5, Result = 1.23)]
+[TestCase(128.0, 136.1, Result = 0.94)]
+[TestCase(153.8, 129.7, Result = 1.19)]
+[TestCase(209.7, 164.3, Result = 1.28)]
+[TestCase(287.4, 193.6, Result = 1.48)]
+[TestCase(178.1, 202.2, Result = 0.88)]
+[TestCase(111.8, 101.5, Result = 1.1)]
+[TestCase(130.7, 284.2, Result = 0.46)]
+[TestCase(139.3, 148.0, Result = 0.94)]
+[TestCase(183.7, 198.0, Result = 0.93)]
+[TestCase(106.5, 250.2, Result = 0.43)]
+[TestCase(170.7, 274.8, Result = 0.62)]
+    public static double FixedTest(double a, double b)
+    {
+        return Program.SmashFactor(a, b);
+    }
+}
+using System;
+public class Program
+{
+	public static double SmashFactor(double a, double b)
+	{
+		
+	}
+}
