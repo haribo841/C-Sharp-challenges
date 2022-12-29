@@ -1,0 +1,27 @@
+//Create a method that returns the number of arguments it was called with.
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+    [Test]
+    [TestCase("tt", Result= 1, TestName = "Test 1")]
+    [TestCase("lama", "tiger", 6, Result= 3, TestName = "Test 2")]
+    [TestCase("love", Result = 1, TestName = "Test 3")]
+    [TestCase(1, 3, 3, Result= 3, TestName = "Test 4")]
+    [TestCase(new int[] {1}, 3, "ygg", Result= 3, TestName = "Test 5")]
+    public static int FixedTest(params object[] p)
+    {
+        Console.WriteLine($"Input: {p}");
+        
+        return Program.NumArgs(p);
+    }
+}
+public class Program
+{
+	public static int NumArgs(/*your code*/ p)
+	{
+		
+	}
+}
