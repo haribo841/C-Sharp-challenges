@@ -1,0 +1,25 @@
+//Create a function that can turn JPY (Japanese yen) to USD (American dollar).
+using System;
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+    [Test]
+    [TestCase(1, Result=0.01)]
+    [TestCase(500, Result=4.65)]
+  	[TestCase(649, Result= 6.04)]
+		[TestCase(1000, Result=9.3)]
+    public static double FixedTest(int a)
+    {
+        return Program.YenToUsd(a);
+    }
+}
+using System;
+public class Program
+{
+	public static double YenToUsd(int yen)
+	{
+		
+	}
+}
