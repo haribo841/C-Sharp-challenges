@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VeryEasy/Power.cs">
+    <Files>
+      <File FileName="edabit.sln" Line="1" Column="1" />
+      <File FileName="Tests/PowerTest.cs" Line="11" Column="1" />
+      <File FileName="VeryEasy/Power.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="edabit" expanded="True">
+            <Node name="Tests" expanded="True" />
+            <Node name="VeryEasy" expanded="True">
+              <Node name="Power.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="edabit" expanded="True">
+            <Node name="Tests" expanded="True">
+              <Node name="VeryEasy.Tests" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="Test2to0is1" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
