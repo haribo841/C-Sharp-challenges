@@ -3978,9 +3978,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rex/Documents/GitHub/edabit/Tests/Tests.csproj",
+      "projectUniqueName": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "/Users/rex/Documents/GitHub/edabit/Tests/Tests.csproj",
+      "projectPath": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
       "packagesPath": "/Users/rex/.nuget/packages/",
       "outputPath": "/Users/rex/Documents/GitHub/edabit/Tests/obj/",
       "projectStyle": "PackageReference",

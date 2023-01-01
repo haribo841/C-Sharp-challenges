@@ -1,19 +1,20 @@
-//Write a function that takes an integer minutes and converts it to seconds.
 using System;
 using NUnit.Framework;
-
-[TestFixture]
-public class Tests {
-	[Test]
-	[TestCase(6, Result=360)]
-	[TestCase(4, Result=240)]
-	[TestCase(8, Result=480)]
-	[TestCase(60, Result=3600)]
-	public static int FixedTest(int a) {
-		Console.WriteLine($"Input: {a}");
-		return Program.convert(a);
+namespace VeryEasy.Tests
+{
+	[TestFixture]
+	public class Tests2
+	{
+		[Test]
+		[TestCase(6, 360, TestName = "6 minutes should be converted to 360 seconds")]
+		[TestCase(4, 240, TestName = "4 minutes should be converted to 240 seconds")]
+		[TestCase(8, 480, TestName = "8 minutes should be converted to 480 seconds")]
+		[TestCase(60, 3600, TestName = "60 minutes should be converted to 3600 seconds")]
+		public void FixedTest(int a, int expectedResult)
+		{
+            int minutes = a;// Arrange
+            int result = Program2.convert(minutes);// Act
+            Assert.That(result, Is.EqualTo(expectedResult));// Assert
+        }
 	}
-}
-public class Program {
-	public static int convert(int minutes)=>minutes*60;
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryEasy", "VeryEasy\VeryEasy.csproj", "{A32CF301-33E3-47D3-900B-95E1CCC57095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryEasy.Tests", "Tests\VeryEasy.Tests.csproj", "{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

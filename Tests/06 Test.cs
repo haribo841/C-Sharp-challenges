@@ -1,23 +1,25 @@
-//Write a function that takes the base and height of a triangle and return its area.
 using System;
 using NUnit.Framework;
-
-[TestFixture]
-public class Tests
+namespace VeryEasy.Tests
 {
-	[Test]
-	[TestCase(3, 2, Result=3)]
-	[TestCase(5, 4, Result=10)]
-	[TestCase(10, 10, Result=50)]
-	[TestCase(0, 60, Result=0)]
-	[TestCase(12, 11, Result=66)]
-	public static int triArea(int b, int h)
+	[TestFixture]
+	public class Tests6
 	{
-		Console.WriteLine($"Input: {b}, {h}");
-		return Program.triArea(b, h);
+		[Test]
+		[TestCase(3, 2, 3, TestName = "base 3 with height 2 should give an area of 3")]
+		[TestCase(5, 4, 10, TestName = "base 5 with height 4 should give an area of 10")]
+		[TestCase(10, 10, 50, TestName = "base 10 with height 10 should give an area of 50")]
+		[TestCase(0, 60, 0, TestName = "base 0 with height 60 should give an area of 0")]
+		[TestCase(12, 11, 66, TestName = "base 12 with height 11 should give an area of 66")]
+		public void triArea(int b, int h, int expectedResult)
+		{
+			// Arrange
+            int triangleBase = b;
+            int triangleHeight = h;
+			// Act
+            int result = Program6.triArea(triangleBase, triangleHeight);
+			// Assert
+            Assert.That(result, Is.EqualTo(expectedResult));
+		}
 	}
-}
-public class Program
-{
-	public static int triArea(int b, int h)=>(b*h)/2;
 }

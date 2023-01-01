@@ -1,24 +1,22 @@
-/*There is a single operator in C#, capable of providing the remainder of a division operation.
-Two numbers are passed as parameters. The first parameter divided by the second parameter will
-have a remainder, possibly zero. Return that value.*/
 using NUnit.Framework;
 using System;
-
-[TestFixture]
-public class Tests
+namespace VeryEasy.Tests
 {
-		[Test]
-		[TestCase(7, 2, Result=1)]
-		[TestCase(3, 4, Result=3)]
-		[TestCase(-9, 45, Result=-9)]
-		[TestCase(5, 5, Result=0)]
-    public static int Remainder(int x, int y) 
+    [TestFixture]
+    public class Tests7
     {
-				Console.WriteLine($"Input: {x}, {y}");
-        return Program.Remainder(x, y);
+        [Test]
+        [TestCase(7, 2, 1, TestName = "7 divided by 2 should leave a remainder of 1")]
+        [TestCase(3, 4, 3, TestName = "3 divided by 4 should leave a remainder of 3")]
+        [TestCase(-9, 45, -9, TestName = "-9 divided by 45 should leave a remainder of -9")]
+        [TestCase(5, 5, 0, TestName = "5 divided by 5 should leave a remainder of 0")]
+        public void Remainder(int x, int y, int expectedResult)
+        {
+            // Arrange
+            int dividend = x;
+            int divider = y;
+            int result = Program7.Remainder(dividend, divider);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
-}
-public class Program 
-{
-    public static int Remainder(int x, int y)=>x%y;
 }

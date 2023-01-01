@@ -1,19 +1,11 @@
-using NUnit.Framework;
-
-[TestFixture]
-public class Tests
+using System;
+namespace VeryEasy
 {
-    [Test]
-    [TestCase(Result=true)]
-    public static bool FixedTest()
+    public class Program
     {
-        return Program.ReturnTrue();
-    }
-}
-public class Program 
-{
-    public static bool ReturnTrue() 
-    {
-      return true;
+        public static bool ReturnTrue()
+        {
+            return true;
+        }
     }
 }

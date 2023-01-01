@@ -1,25 +1,24 @@
-//Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
 using System;
 using NUnit.Framework;
-
-[TestFixture]
-public class Tests
+namespace VeryEasy.Tests
 {
-  [Test]
-  [TestCase(5, Result=false)]
-  [TestCase(0, Result=true)]
-  [TestCase(-5, Result=true)]
-  [TestCase(1, Result=false)]
-  [TestCase(2, Result=false)]
-  [TestCase(1000, Result=false)]
-  [TestCase(0.5, Result=false)]
-    public static bool FixedTest(double a)
+    [TestFixture]
+    public class Tests8
     {
-				Console.WriteLine($"Input: {a}");
-        return Program.LessThanOrEqualToZero(a);
+        [Test]
+        [TestCase(5, false, TestName = "5 is not eual or less than zero")]
+        [TestCase(0, true, TestName = "0 is eual or less than zero")]
+        [TestCase(-5, true, TestName = "-5 is eual or less than zero")]
+        [TestCase(1, false, TestName = "1 is not eual or less than zero")]
+        [TestCase(2, false, TestName = "2 is not eual or less than zero")]
+        [TestCase(1000, false, TestName = "1000 is not eual or less than zero")]
+        [TestCase(0.5, false, TestName = "0.5 is not eual or less than zero")]
+        public void FixedTest(double a, bool expectedResult)
+        {
+            // Arrange
+            double number = a;
+            bool result = Program8.LessThanOrEqualToZero(number);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
-}
-public class Program 
-{
-    public static bool LessThanOrEqualToZero(double a)=>a<=0?true:false;
 }

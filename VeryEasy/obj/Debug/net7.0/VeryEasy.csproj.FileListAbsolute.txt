@@ -1,11 +1,11 @@
+/Users/rex/Documents/GitHub/edabit/VeryEasy/bin/Debug/net7.0/VeryEasy.deps.json
+/Users/rex/Documents/GitHub/edabit/VeryEasy/bin/Debug/net7.0/VeryEasy.dll
+/Users/rex/Documents/GitHub/edabit/VeryEasy/bin/Debug/net7.0/VeryEasy.pdb
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.csproj.AssemblyReference.cache
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.GeneratedMSBuildEditorConfig.editorconfig
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.AssemblyInfoInputs.cache
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.AssemblyInfo.cs
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.csproj.CoreCompileInputs.cache
-/Users/rex/Documents/GitHub/edabit/VeryEasy/bin/Debug/net7.0/VeryEasy.deps.json
-/Users/rex/Documents/GitHub/edabit/VeryEasy/bin/Debug/net7.0/VeryEasy.dll
-/Users/rex/Documents/GitHub/edabit/VeryEasy/bin/Debug/net7.0/VeryEasy.pdb
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.dll
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/refint/VeryEasy.dll
 /Users/rex/Documents/GitHub/edabit/VeryEasy/obj/Debug/net7.0/VeryEasy.pdb

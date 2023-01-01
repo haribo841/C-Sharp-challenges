@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
+        "packagesPath": "/Users/rex/.nuget/packages/",
+        "outputPath": "/Users/rex/Documents/GitHub/edabit/Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj": {
+                "projectPath": "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj",
+        "projectName": "VeryEasy",
+        "projectPath": "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj",
+        "packagesPath": "/Users/rex/.nuget/packages/",
+        "outputPath": "/Users/rex/Documents/GitHub/edabit/VeryEasy/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

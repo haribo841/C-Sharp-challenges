@@ -1,24 +1,21 @@
-//Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 using System;
 using NUnit.Framework;
-
-[TestFixture]
-public class Tests
+namespace VeryEasy.Tests
 {
-  [Test]
-  [TestCase(2, Result=3)]
-  [TestCase(-9 , Result=-8)]
-  [TestCase(0, Result=1)]
-	[TestCase(100, Result=101)]
-	[TestCase(999, Result=1000)]
-	[TestCase(73, Result=74)]
-    public static int FixedTest(int num)
+    [TestFixture]
+    public class Tests3
     {
-				Console.WriteLine($"Input: {num}");
-        return Program.Addition(num);
+        [Test]
+        [TestCase(2, 3, TestName = "2 incremented by one should be 3")]
+        [TestCase(-9, -8, TestName = "-9 incremented by one should be -8")]
+        [TestCase(0, 1, TestName = "0 incremented by one should be 1")]
+        [TestCase(100, 101, TestName = "100 incremented by one should be 101")]
+        [TestCase(999, 1000, TestName = "999 incremented by one should be 1000")]
+        [TestCase(73, 74, TestName = "73 incremented by one should be 74")]
+        public void FixedTest(int num, int expectedResult)
+        {
+            int result = Program3.Addition(num);
+            Assert.That(result, Is.EqualTo(expectedResult));// Assert
+        }
     }
-}
-public class Program
-{
-    public static int Addition(int num)=>num+1;
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "olJfA4czoG0EW58Y4jeyv8Y9/iIE4WwePo2AmBW5ZwtNte3WEmdczb3a5FzMV71zZ3MP1AB/9Rrw6eeynDrwiw==",
+  "dgSpecHash": "gBXRl8AKeS/Kud8GMfRbWYYzVuRgKtEdi9rDVqUpt2QfIDrnoSFzzuq2Shlc7vt57c1i5J56VLk1BllFfXTMsQ==",
   "success": true,
-  "projectFilePath": "/Users/rex/Documents/GitHub/edabit/Tests/Tests.csproj",
+  "projectFilePath": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/rex/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/rex/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",

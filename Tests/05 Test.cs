@@ -1,20 +1,19 @@
 //Create a function that takes the age in years and returns the age in days.
 using System;
 using NUnit.Framework;
-
-[TestFixture]
-public class Tests {
-	[Test]
-	[TestCase(10, Result=3650)]
-	[TestCase(0, Result=0)]
-	[TestCase(73, Result=26645)]
-	public static int CalcAge(int age)
-	{
-		Console.WriteLine($"Input: {age}");
-		return Program.CalcAge(age);
-	}
-}
-public class Program 
+namespace VeryEasy.Tests
 {
-    public static int CalcAge(int age)=>age*365;
+	[TestFixture]
+	public class Tests5
+	{
+		[Test]
+		[TestCase(10, 3650, TestName = "10 years should be converted to 3650 days")]
+		[TestCase(0, 0, TestName = "0 years should be converted to 0 days")]
+		[TestCase(73, 26645, TestName = "73 years should be converted to 26645 days")]
+		public void CalcAge(int age, int expectedResult)
+		{
+            int result = Program5.CalcAge(age);
+            Assert.That(result, Is.EqualTo(expectedResult));// Assert
+        }
+	}
 }
