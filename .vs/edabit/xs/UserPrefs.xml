@@ -1,5 +1,18 @@
 ﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/09 Test.cs">
+    <Files>
+      <File FileName="Tests/PowerTest.cs" Line="5" Column="22" />
+      <File FileName="09 Less Than 100.cs" Line="2" Column="14" />
+      <File FileName="VeryEasy/08 Less than or Equal to Zero.cs" Line="1" Column="1" />
+      <File FileName="Tests/09 Less Than 100.cs" Line="12" Column="71" />
+      <File FileName="VeryEasy/07 Remainder from Two Numbers.cs" Line="4" Column="1" />
+      <File FileName="Tests/08 Test.cs" Line="20" Column="13" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -7,13 +20,10 @@
           <Node name="edabit" expanded="True">
             <Node name="VeryEasy" expanded="True" />
             <Node name="VeryEasy.Tests" expanded="True">
-              <Node name="08 Test.cs" selected="True" />
+              <Node name="09 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
@@ -24,9 +34,4 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

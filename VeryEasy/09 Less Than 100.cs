@@ -1,0 +1,6 @@
+//Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+using System;
+public class Program9
+{
+    public static bool lessThan100(int a, int b)=>a+b<100;
+}
