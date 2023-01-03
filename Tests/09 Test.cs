@@ -1,7 +1,5 @@
 using System;
 using NUnit.Framework;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
 namespace VeryEasy.Tests
 {
 	public class Tests9

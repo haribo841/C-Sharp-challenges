@@ -7,21 +7,23 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Tests/09 Test.cs">
     <Files>
       <File FileName="Tests/PowerTest.cs" Line="5" Column="22" />
-      <File FileName="09 Less Than 100.cs" Line="2" Column="14" />
-      <File FileName="VeryEasy/08 Less than or Equal to Zero.cs" Line="1" Column="1" />
-      <File FileName="Tests/09 Less Than 100.cs" Line="12" Column="71" />
-      <File FileName="VeryEasy/07 Remainder from Two Numbers.cs" Line="4" Column="1" />
+      <File FileName="VeryEasy/08 Less than or Equal to Zero.cs" />
+      <File FileName="VeryEasy/07 Remainder from Two Numbers.cs" />
       <File FileName="Tests/08 Test.cs" Line="20" Column="13" />
+      <File FileName="Tests/09 Test.cs" Line="2" Column="23" />
+      <File FileName="Tests/10 Test.cs" Line="18" Column="4" />
+      <File FileName="Tests/FibonacciTest.cs" Line="1" Column="1" />
+      <File FileName="VeryEasy/10 Are the Numbers Equal.cs" Line="6" Column="2" />
+      <File FileName="VeryEasy/09 Less Than 100.cs" Line="2" Column="1" />
+      <File FileName="Tests/07 Test.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
-          <Node name="edabit" expanded="True">
+          <Node name="edabit" expanded="True" selected="True">
             <Node name="VeryEasy" expanded="True" />
-            <Node name="VeryEasy.Tests" expanded="True">
-              <Node name="09 Test.cs" selected="True" />
-            </Node>
+            <Node name="VeryEasy.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
