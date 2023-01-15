@@ -1,18 +1,13 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/12 Test.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/13 Test.cs">
     <Files>
       <File FileName="Tests/PowerTest.cs" />
       <File FileName="VeryEasy/08 Less than or Equal to Zero.cs" />
       <File FileName="VeryEasy/07 Remainder from Two Numbers.cs" />
       <File FileName="Tests/08 Test.cs" />
       <File FileName="Tests/09 Test.cs" />
-      <File FileName="Tests/10 Test.cs" />
+      <File FileName="Tests/10 Test.cs" Line="9" Column="53" />
       <File FileName="Tests/FibonacciTest.cs" />
       <File FileName="VeryEasy/10 Are the Numbers Equal.cs" />
       <File FileName="VeryEasy/09 Less Than 100.cs" />
@@ -24,12 +19,14 @@
       <File FileName="VeryEasy/04 Power Calculator.cs" />
       <File FileName="VeryEasy/05 Age to Days.cs" />
       <File FileName="VeryEasy/06 Area of a Triangle.cs" />
-      <File FileName="VeryEasy/Fibonacci.cs" Line="1" Column="1" />
-      <File FileName="VeryEasy/11 Return Something to Me.cs" Line="1" Column="1" />
-      <File FileName="Tests/11 Test.cs" Line="11" Column="1" />
-      <File FileName="Tests/12 Test.cs" Line="17" Column="2" />
-      <File FileName="VeryEasy/12 Flip the Boolean.cs" Line="2" Column="14" />
-      <File FileName="Tests/00 Test.cs" Line="1" Column="1" />
+      <File FileName="VeryEasy/Fibonacci.cs" />
+      <File FileName="VeryEasy/11 Return Something to Me.cs" />
+      <File FileName="Tests/11 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/12 Test.cs" Line="1" Column="1" />
+      <File FileName="VeryEasy/12 Flip the Boolean.cs" Line="2" Column="1" />
+      <File FileName="Tests/00 Test.cs" />
+      <File FileName="VeryEasy/13 Hours into Seconds.cs" Line="5" Column="58" />
+      <File FileName="Tests/13 Hours into Seconds.cs" Line="11" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -38,7 +35,7 @@
           <Node name="edabit" expanded="True">
             <Node name="VeryEasy" expanded="True" />
             <Node name="VeryEasy.Tests" expanded="True">
-              <Node name="12 Test.cs" selected="True" />
+              <Node name="13 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -50,5 +47,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
