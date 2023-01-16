@@ -6,10 +6,10 @@ namespace VeryEasy.Tests
     public class Tests7
     {
         [Test]
-        [TestCase(7, 2, 1, TestName = "7 divided by 2 should leave a remainder of 1")]
-        [TestCase(3, 4, 3, TestName = "3 divided by 4 should leave a remainder of 3")]
-        [TestCase(-9, 45, -9, TestName = "-9 divided by 45 should leave a remainder of -9")]
-        [TestCase(5, 5, 0, TestName = "5 divided by 5 should leave a remainder of 0")]
+        [TestCase(7, 2, 1, TestName = "{0} divided by 2 should leave a remainder of {1}")]
+        [TestCase(3, 4, 3, TestName = "{0} divided by 2 should leave a remainder of {1}")]
+        [TestCase(-9, 45, -9, TestName = "{0} divided by 2 should leave a remainder of {1}")]
+        [TestCase(5, 5, 0, TestName = "{0} divided by 2 should leave a remainder of {1}")]
         public void Remainder(int x, int y, int expectedResult)
         {
             // Arrange
