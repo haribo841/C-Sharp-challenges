@@ -1,11 +1,17 @@
-﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/15 Test.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/16 Test.cs">
     <Files>
       <File FileName="Tests/14 Test.cs" Line="1" Column="1" />
       <File FileName="Tests/VeryEasy.Tests.csproj" />
       <File FileName="Tests/13 Test.cs" />
       <File FileName="Tests/00 Test.cs" />
-      <File FileName="Tests/01 Test.cs" Line="15" Column="61" />
+      <File FileName="Tests/01 Test.cs" />
       <File FileName="Tests/02 Test.cs" />
       <File FileName="Tests/03 Test.cs" />
       <File FileName="Tests/05 Test.cs" />
@@ -19,9 +25,12 @@
       <File FileName="Tests/FibonacciTest.cs" />
       <File FileName="Tests/PowerTest.cs" />
       <File FileName="Tests/Usings.cs" />
-      <File FileName="VeryEasy/14 Sum of Polygon Angles.cs" Line="2" Column="1" />
-      <File FileName="VeryEasy/15 Are the Numbers Equal.cs" Line="1" Column="60" />
-      <File FileName="Tests/15 Are the Numbers Equal.cs" Line="12" Column="55" />
+      <File FileName="VeryEasy/14 Sum of Polygon Angles.cs" />
+      <File FileName="VeryEasy/15 Are the Numbers Equal.cs" Line="2" Column="1" />
+      <File FileName="Tests/15 Test.cs" Line="13" Column="1" />
+      <File FileName="Tests/16 Basic Variable Assignment.cs" Line="19" Column="2" />
+      <File FileName="VeryEasy/16 Basic Variable Assignment.cs" Line="7" Column="12" />
+      <File FileName="VeryEasy/Fibonacci.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -37,7 +46,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="15 Test.cs" selected="True" />
+              <Node name="16 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -49,11 +58,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
