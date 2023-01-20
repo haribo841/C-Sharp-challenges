@@ -1,0 +1,28 @@
+//Create a function that counts the number of syllables a word has.
+//Each syllable is separated with a dash -.
+using NUnit.Framework;
+
+[TestFixture]
+public class Tests
+{
+  [Test]
+  [TestCase("buf-fet", Result = 2)]
+  [TestCase("beau-ti-ful", Result = 3)]
+  [TestCase("mon-u-men-tal", Result = 4)]
+	[TestCase("on-o-mat-o-poe-ia", Result = 6)]
+  [TestCase("o-ver-ly", Result = 3)]
+  [TestCase("pas-try", Result = 2)]
+	[TestCase("flu-id", Result = 2)]
+  [TestCase("syl-la-ble", Result = 3)]
+    public static int FixedTest(string word)
+    {
+        return Program.NumberSyllables(word);
+    }
+}
+public class Program
+{
+    public static int NumberSyllables(string word)
+    {
+			
+    }
+}
