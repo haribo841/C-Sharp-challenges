@@ -1,10 +1,11 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/18 Test.cs">
+    <Files>
+      <File FileName="Tests/18 Test.cs" Line="21" Column="2" />
+      <File FileName="Tests/17 Test.cs" Line="9" Column="77" />
+      <File FileName="VeryEasy/18 Basketball Points.cs" Line="8" Column="63" />
+      <File FileName="VeryEasy/17 Using the AND Operator.cs" Line="10" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -19,12 +20,23 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="18 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="edabit" expanded="True" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
