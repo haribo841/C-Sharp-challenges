@@ -1,10 +1,19 @@
-﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/18 Test.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/19 Test.cs">
     <Files>
-      <File FileName="Tests/18 Test.cs" Line="21" Column="2" />
-      <File FileName="Tests/17 Test.cs" Line="9" Column="77" />
-      <File FileName="VeryEasy/18 Basketball Points.cs" Line="8" Column="63" />
+      <File FileName="Tests/18 Test.cs" Line="13" Column="1" />
+      <File FileName="Tests/17 Test.cs" />
+      <File FileName="VeryEasy/18 Basketball Points.cs" />
       <File FileName="VeryEasy/17 Using the AND Operator.cs" Line="10" Column="1" />
+      <File FileName="Tests/FibonacciTest.cs" Line="1" Column="1" />
+      <File FileName="Tests/19 Test.cs" Line="13" Column="47" />
+      <File FileName="VeryEasy/19 Perimeter of a Rectangle.cs" Line="5" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,12 +24,12 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
+              <Node name="19 Perimeter of a Rectangle.cs" selected="True" />
             </Node>
             <Node name="VeryEasy.Tests" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="18 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -32,11 +41,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
