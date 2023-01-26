@@ -1,21 +1,34 @@
-﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="VeryEasy/20 Name Greeting!.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/21 Test.cs">
     <Files>
       <File FileName="Tests/18 Test.cs" />
-      <File FileName="Tests/17 Test.cs" />
+      <File FileName="Tests/17 Test.cs" Line="1" Column="1" />
       <File FileName="VeryEasy/18 Basketball Points.cs" />
       <File FileName="VeryEasy/17 Using the AND Operator.cs" />
-      <File FileName="Tests/FibonacciTest.cs" />
-      <File FileName="Tests/19 Test.cs" Line="19" Column="2" />
+      <File FileName="Tests/FibonacciTest.cs" Line="1" Column="1" />
+      <File FileName="Tests/19 Test.cs" Line="9" Column="90" />
       <File FileName="VeryEasy/19 Perimeter of a Rectangle.cs" Line="5" Column="76" />
-      <File FileName="Tests/20 Test.cs" Line="19" Column="2" />
+      <File FileName="Tests/20 Test.cs" Line="12" Column="1" />
       <File FileName="VeryEasy/20 Name Greeting!.cs" Line="5" Column="56" />
+      <File FileName="Tests/21 Test.cs" Line="23" Column="2" />
+      <File FileName="VeryEasy/21 The Farm Problem.cs" Line="11" Column="60" />
+      <File FileName="Tests/16 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/15 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/14 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/13 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/12 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/11 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/10 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/09 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/08 Test.cs" Line="18" Column="14" />
+      <File FileName="Tests/07 Test.cs" Line="17" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,7 +44,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="20 Test.cs" selected="True" />
+              <Node name="21 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -43,5 +56,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
