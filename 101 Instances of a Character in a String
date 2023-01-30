@@ -1,0 +1,28 @@
+//Create a function that takes a character and a string as arguments and returns the number of times the character is found in the string.
+sing NUnit.Framework;
+using System;
+
+[TestFixture]
+public class Tests
+{
+		[Test]
+		[TestCase('a', "edabit", Result=1)]
+		[TestCase('b', "big fat bubble", Result=4)]
+		[TestCase('c', "Chamber of secrets", Result=1)]
+		[TestCase('f', "frank and his friends have offered five foxes for sale", Result=7)]
+		[TestCase('x', "edabit", Result=0)]
+		[TestCase('a', "Adam and Eve bit the apple and found a snake", Result=6)]
+		[TestCase('s', "sssssssssssssssssssssssss", Result=25)]
+		[TestCase('7', "10795426697", Result=2)]
+    public static int CharCount(char myChar, string str) 
+    {
+				Console.WriteLine($"Input: {myChar}, {str}");
+        return Program.CharCount(myChar, str);
+    }
+}
+public class Program 
+{
+    public static int CharCount(char myChar, string str) 
+    {
+    }
+}
