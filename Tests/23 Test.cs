@@ -19,12 +19,3 @@ namespace VeryEasy.Tests
         }
     }
 }
-//[TestCase(0, 0, 15, 0, TestName = "{0} wins and {1} draws makes {3} points")]
-//ublic void FixedTest(int a, int b, int c, int expectedResult)
-
-    // Arrange
-    //int wins = a;
-    //int draws = b;
-    //int losses = c;
-  //  int result = Program22.FootballPoints(wins, draws, losses);
-//    Assert.That(result, Is.EqualTo(expectedResult));
