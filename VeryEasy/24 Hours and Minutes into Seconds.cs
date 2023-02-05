@@ -1,0 +1,6 @@
+//Write a function that takes two integers (hours, minutes), converts them to seconds, and adds them.
+using System;
+public class Program24
+{
+  public static int Convert(int hours, int minutes)=>hours*3600+minutes*60;
+}
