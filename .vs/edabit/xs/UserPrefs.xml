@@ -1,33 +1,12 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
+﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/22 Test.cs">
-    <Files>
-      <File FileName="Tests/18 Test.cs" />
-      <File FileName="Tests/17 Test.cs" />
-      <File FileName="VeryEasy/18 Basketball Points.cs" />
-      <File FileName="VeryEasy/17 Using the AND Operator.cs" />
-      <File FileName="Tests/FibonacciTest.cs" />
-      <File FileName="Tests/19 Test.cs" />
-      <File FileName="VeryEasy/19 Perimeter of a Rectangle.cs" />
-      <File FileName="Tests/20 Test.cs" />
-      <File FileName="VeryEasy/20 Name Greeting!.cs" />
-      <File FileName="Tests/21 Test.cs" />
-      <File FileName="VeryEasy/21 The Farm Problem.cs" />
-      <File FileName="Tests/16 Test.cs" />
-      <File FileName="Tests/15 Test.cs" />
-      <File FileName="Tests/14 Test.cs" />
-      <File FileName="Tests/13 Test.cs" />
-      <File FileName="Tests/12 Test.cs" />
-      <File FileName="Tests/11 Test.cs" />
-      <File FileName="Tests/10 Test.cs" />
-      <File FileName="Tests/09 Test.cs" />
-      <File FileName="Tests/08 Test.cs" />
-      <File FileName="Tests/07 Test.cs" />
-      <File FileName="Tests/22 Test.cs" Line="13" Column="84" />
-      <File FileName="VeryEasy/22 Football Points.cs" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -42,14 +21,16 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="obj" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="edabit" expanded="True" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

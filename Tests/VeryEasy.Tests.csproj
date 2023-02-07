@@ -28,4 +28,7 @@
   <ItemGroup>
     <None Include="VeryEasy.Tests.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
 </Project>
