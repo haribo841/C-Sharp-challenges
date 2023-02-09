@@ -1,8 +1,19 @@
-﻿<Properties StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default" GitUserInfo="UsingGIT">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/27 Test.cs">
+    <Files>
+      <File FileName="Tests/26 Test.cs" Line="16" Column="1" />
+      <File FileName="Tests/27 Test.cs" Line="8" Column="3" />
+      <File FileName="Tests/25 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/24 Test.cs" Line="10" Column="86" />
+      <File FileName="Tests/23 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/22 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/21 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/20 Test.cs" Line="1" Column="1" />
+      <File FileName="VeryEasy/27 Inches to Feet.cs" Line="3" Column="21" />
+      <File FileName="VeryEasy/26 Maximum Edge of a Triangle.cs" Line="2" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -17,7 +28,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="26 Test.cs" selected="True" />
+              <Node name="27 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,6 +40,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
