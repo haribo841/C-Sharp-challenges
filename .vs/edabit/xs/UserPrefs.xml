@@ -1,18 +1,27 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{58E90DCD-5A2F-40D6-8382-7C5E91AA77E8}|Default">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/27 Test.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VeryEasy/28 Integer is Divisible By Five.cs">
     <Files>
       <File FileName="Tests/26 Test.cs" Line="16" Column="1" />
-      <File FileName="Tests/27 Test.cs" Line="8" Column="3" />
-      <File FileName="Tests/25 Test.cs" Line="1" Column="1" />
-      <File FileName="Tests/24 Test.cs" Line="10" Column="86" />
-      <File FileName="Tests/23 Test.cs" Line="1" Column="1" />
-      <File FileName="Tests/22 Test.cs" Line="1" Column="1" />
-      <File FileName="Tests/21 Test.cs" Line="1" Column="1" />
-      <File FileName="Tests/20 Test.cs" Line="1" Column="1" />
-      <File FileName="VeryEasy/27 Inches to Feet.cs" Line="3" Column="21" />
+      <File FileName="Tests/27 Test.cs" Line="10" Column="56" />
+      <File FileName="Tests/25 Test.cs" />
+      <File FileName="Tests/24 Test.cs" />
+      <File FileName="Tests/23 Test.cs" />
+      <File FileName="Tests/22 Test.cs" />
+      <File FileName="Tests/21 Test.cs" />
+      <File FileName="Tests/20 Test.cs" />
+      <File FileName="VeryEasy/27 Inches to Feet.cs" Line="3" Column="1" />
       <File FileName="VeryEasy/26 Maximum Edge of a Triangle.cs" Line="2" Column="1" />
+      <File FileName="Tests/09 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/08 Test.cs" Line="1" Column="1" />
+      <File FileName="Tests/28 Test.cs" Line="22" Column="2" />
+      <File FileName="VeryEasy/28 Integer is Divisible By Five.cs" Line="6" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,12 +32,12 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
+              <Node name="28 Integer is Divisible By Five.cs" selected="True" />
             </Node>
             <Node name="VeryEasy.Tests" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="27 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -40,9 +49,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
