@@ -6,25 +6,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/29 Test.cs">
-    <Files>
-      <File FileName="Tests/26 Test.cs" />
-      <File FileName="Tests/27 Test.cs" />
-      <File FileName="Tests/25 Test.cs" />
-      <File FileName="Tests/24 Test.cs" />
-      <File FileName="Tests/23 Test.cs" />
-      <File FileName="Tests/22 Test.cs" />
-      <File FileName="Tests/21 Test.cs" />
-      <File FileName="Tests/20 Test.cs" />
-      <File FileName="VeryEasy/27 Inches to Feet.cs" />
-      <File FileName="VeryEasy/26 Maximum Edge of a Triangle.cs" />
-      <File FileName="Tests/09 Test.cs" />
-      <File FileName="Tests/08 Test.cs" />
-      <File FileName="Tests/28 Test.cs" Line="15" Column="1" />
-      <File FileName="VeryEasy/28 Integer is Divisible By Five.cs" Line="2" Column="1" />
-      <File FileName="Tests/29 Test.cs" Line="13" Column="28" />
-      <File FileName="VeryEasy/29 Correct the Mistakes.cs" Line="10" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -39,7 +21,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="29 Test.cs" selected="True" />
+              <Node name="30 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
