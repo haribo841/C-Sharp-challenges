@@ -3,8 +3,14 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/33 Test.cs">
+    <Files>
+      <File FileName="Tests/33 Test.cs" Line="22" Column="2" />
+      <File FileName="Tests/32 Test.cs" Line="16" Column="1" />
+      <File FileName="VeryEasy/33 Profitable Gamble.cs" Line="6" Column="2" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -19,7 +25,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="32 Test.cs" selected="True" />
+              <Node name="33 Test.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -31,6 +37,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.VeryEasy.Tests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
