@@ -385,6 +385,11 @@
       "VeryEasy/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": "17.5.0",
+          "NUnit": "3.13.3",
+          "NUnit3TestAdapter": "4.4.2"
+        },
         "compile": {
           "bin/placeholder/VeryEasy.dll": {}
         },
@@ -545,7 +550,6 @@
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
       ]
@@ -729,7 +733,6 @@
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -844,9 +847,7 @@
         "build/netstandard2.0/ref/System.dll",
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
-        "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -1000,32 +1001,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/rex/.nuget/packages/": {}
+    "C:\\Users\\Adam\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Tests\\VeryEasy.Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "/Users/rex/Documents/GitHub/edabit/Tests/VeryEasy.Tests.csproj",
-      "packagesPath": "/Users/rex/.nuget/packages/",
-      "outputPath": "/Users/rex/Documents/GitHub/edabit/Tests/obj/",
+      "projectPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Tests\\VeryEasy.Tests.csproj",
+      "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/rex/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj": {
-              "projectPath": "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj"
+            "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\VeryEasy.csproj": {
+              "projectPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\VeryEasy.csproj"
             }
           }
         }
@@ -1081,8 +1089,28 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.NET.Test.Sdk from 17.5.0 to 17.4.1. Reference the package directly from the project to select a different version. \r\n Tests -> VeryEasy -> Microsoft.NET.Test.Sdk (>= 17.5.0) \r\n Tests -> Microsoft.NET.Test.Sdk (>= 17.4.1)",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: NUnit3TestAdapter from 4.4.2 to 4.3.1. Reference the package directly from the project to select a different version. \r\n Tests -> VeryEasy -> NUnit3TestAdapter (>= 4.4.2) \r\n Tests -> NUnit3TestAdapter (>= 4.3.1)",
+      "libraryId": "NUnit3TestAdapter",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

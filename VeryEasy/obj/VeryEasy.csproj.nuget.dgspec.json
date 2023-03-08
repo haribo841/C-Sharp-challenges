@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj": {}
+    "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\VeryEasy.csproj": {}
   },
   "projects": {
-    "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj": {
+    "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\VeryEasy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj",
+        "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\VeryEasy.csproj",
         "projectName": "VeryEasy",
-        "projectPath": "/Users/rex/Documents/GitHub/edabit/VeryEasy/VeryEasy.csproj",
-        "packagesPath": "/Users/rex/.nuget/packages/",
-        "outputPath": "/Users/rex/Documents/GitHub/edabit/VeryEasy/obj/",
+        "projectPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\VeryEasy.csproj",
+        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\VeryEasy\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/rex/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +43,32 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.4.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

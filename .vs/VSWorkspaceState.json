@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Tests",
+    "\\VeryEasy"
   ],
-  "SelectedNode": "\\44 Drinks Allowed.cs",
+  "SelectedNode": "\\edabit.sln",
   "PreviewInSolutionExplorer": false
 }
