@@ -1,12 +1,13 @@
 using System;
 using NUnit.Framework;
-namespace VeryEasy.Tests
+
+namespace Tests
 {
     [TestFixture]
     public class Tests33
     {
         [Test]
-        [TestCase(0.2, 50, 9,  true)]
+        [TestCase(0.2, 50, 9, true)]
         [TestCase(0.9, 1, 2, false)]
         [TestCase(0.9, 3, 2, true)]
         [TestCase(0.33, 10, 3.30, true)]

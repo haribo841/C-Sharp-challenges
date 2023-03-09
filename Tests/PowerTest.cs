@@ -1,6 +1,8 @@
+using Challenges;
 using NUnit.Framework;
 using System;
-namespace VeryEasy.Tests
+
+namespace Tests
 {
     public class Test
     {

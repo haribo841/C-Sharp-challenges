@@ -2,7 +2,8 @@ using System;
 using System.Xml.Linq;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
-namespace VeryEasy.Tests
+
+namespace Tests
 {
     [TestFixture]
     public class Tests25

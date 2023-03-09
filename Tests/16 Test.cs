@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
-namespace VeryEasy.Tests
+
+namespace Tests
 {
     [TestFixture]
     public class Tests16
@@ -10,7 +11,8 @@ namespace VeryEasy.Tests
         [TestCase("Matt", "MattEdabit")]
         [TestCase("C#", "C#Edabit")]
         [TestCase("Airforce", "AirforceEdabit")]
-        public void FixedTest(string a, string expectedResult) {
+        public void FixedTest(string a, string expectedResult)
+        {
             Console.WriteLine($"Input: {a}");
             string result = Program16.nameString(a);
             Assert.That(result, Is.EqualTo(expectedResult));

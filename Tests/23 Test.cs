@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
-namespace VeryEasy.Tests
+
+namespace Tests
 {
     [TestFixture]
     public class Tests23

@@ -1,6 +1,8 @@
+using Challenges;
 using NUnit.Framework;
 using System;
-namespace VeryEasy.Tests
+
+namespace Tests
 {
     [TestFixture]
     public class Test0
@@ -9,7 +11,7 @@ namespace VeryEasy.Tests
         public void FixedTest()
         {
             bool result = Program.ReturnTrue();// Act
-            Assert.IsTrue(result);
+            Assert.That(result, Is.True);
         }
     }
 }
