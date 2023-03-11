@@ -27,7 +27,7 @@ namespace Tests
         {
             // Assert
             int sideLength = a;
-            int result = Program36.HowManyStickers(a);
+            int result = Program36.HowManyStickers(sideLength);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
