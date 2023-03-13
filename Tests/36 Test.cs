@@ -1,4 +1,3 @@
-//Given a Rubik's Cube with a side length of n, return the number of individual stickers that are needed to cover the whole cube.
 using System;
 using NUnit.Framework;
 

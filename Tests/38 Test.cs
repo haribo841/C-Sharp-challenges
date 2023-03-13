@@ -1,4 +1,3 @@
-//Look at the examples below to get an idea of what the function should do.
 using System;
 using NUnit.Framework;
 using System.Collections.Generic;
