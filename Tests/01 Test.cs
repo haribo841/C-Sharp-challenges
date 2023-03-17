@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using NUnit.Framework;
 
 namespace Tests

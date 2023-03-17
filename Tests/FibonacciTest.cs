@@ -18,23 +18,23 @@ namespace Tests
         [TestCase(19, 4181)]
         public void CalculateFibonacciNumberShouldReturnCorrectValue(int numberIndex, int expected)
         {
-            var actual = Fibonacci.CalculateFibonacciNumber(numberIndex);
+            int actual = Fibonacci.CalculateFibonacciNumber(numberIndex);
             Assert.That(actual, Is.EqualTo(expected));
         }
         [Test]
         public void CalculateFibonacciNumberShouldTrowArgumentExceptionForNegativeArgument()
         {
-            var numberIndex = -1;
-            TestDelegate actual = () => Fibonacci.CalculateFibonacciNumber(numberIndex);
+            int numberIndex = -1;
+            void actual() => Fibonacci.CalculateFibonacciNumber(numberIndex);
             Assert.That(actual, Throws.ArgumentException);
         }
         [TestCaseSource(nameof(_getFibonacciSequenceShouldReturnCorrectSequenceData))]
         public void GetFibonacciSequenceShouldReturnCorrectSequence(int indexNumber, List<int> expected)
         {
-            var actual = Fibonacci.GetFibonacciSequence(indexNumber);
+            List<int> actual = Fibonacci.GetFibonacciSequence(indexNumber);
             CollectionAssert.AreEqual(expected, actual);
         }
-        static object[] _getFibonacciSequenceShouldReturnCorrectSequenceData =
+        static readonly object[] _getFibonacciSequenceShouldReturnCorrectSequenceData =
         {
             new object[] { 0, new List<int> { 0 } },
             new object[] { 1, new List<int> { 0, 1 } },

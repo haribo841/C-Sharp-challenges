@@ -9,7 +9,7 @@ namespace Tests
         [Test]
         public static void FixedTest()
         {
-            List<int> myValues = new List<int>(new int[] { 1 });
+            List<int> myValues = new(new int[] { 1 });
             Assert.That(Loop.PrintArray(1), Is.EqualTo(myValues));
 
             myValues = new List<int>(new int[] { 1, 2 });

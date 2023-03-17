@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using NUnit.Framework;
 
 namespace Tests
@@ -29,7 +30,7 @@ namespace Tests
 
         public void FixedTest(int a, int b, bool expectedResult)
         {
-            bool result = Program9.lessThan100(a, b);
+            bool result = Program9.LessThan100(a, b);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

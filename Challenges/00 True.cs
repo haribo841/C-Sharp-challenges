@@ -1,5 +1,4 @@
 using System;
-
 namespace Challenges
 {
     public class Program

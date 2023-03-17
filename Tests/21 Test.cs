@@ -11,7 +11,7 @@ namespace Tests
         [TestCase(3, 4, 7, 50, TestName = "{0} chickens, {1} cows and {2} pigs have {3} legs together")]
         [TestCase(1, 2, 3, 22, TestName = "{0} chickens, {1} cows and {2} pigs have {3} legs together")]
         [TestCase(3, 5, 2, 34, TestName = "{0} chickens, {1} cows and {2} pigs have {3} legs together")]
-        public void animals(int a, int b, int c, int expectedResult)
+        public void Animals(int a, int b, int c, int expectedResult)
         {
             // Arrange
             int chickens = a;

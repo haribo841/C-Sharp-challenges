@@ -1,6 +1,10 @@
 //Write a function that takes an integer minutes and converts it to seconds.
 using System;
-public class Program2
+
+namespace Challenges
 {
-    public static int Convert(int minutes) => minutes * 60;
+    public class Program2
+    {
+        public static int Convert(int minutes) => minutes * 60;
+    }
 }

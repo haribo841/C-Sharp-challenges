@@ -2,7 +2,11 @@
 Two numbers are passed as parameters. The first parameter divided by the second parameter will
 have a remainder, possibly zero. Return that value.*/
 using System;
-public class Program7
+
+namespace Challenges
 {
-    public static int Remainder(int x, int y) => x % y;
+    public class Program7
+    {
+        public static int Remainder(int x, int y) => x % y;
+    }
 }
