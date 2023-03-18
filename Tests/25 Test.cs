@@ -1,5 +1,6 @@
 using System;
 using System.Xml.Linq;
+using Challenges;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 
@@ -17,7 +18,7 @@ namespace Tests
         {
             // Arrange
             string name = a;
-            string result = Program25.greeting(name);
+            string result = Program25.Greeting(name);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

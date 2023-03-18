@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using NUnit.Framework;
 
 namespace Tests
@@ -33,7 +34,7 @@ namespace Tests
             // Arrange
             int dividend = a;
             int divider = b;
-            bool result = Program31.dividesEvenly(dividend, divider);
+            bool result = Program31.DividesEvenly(dividend, divider);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

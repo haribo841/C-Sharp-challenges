@@ -1,7 +1,11 @@
 //An int boolean is the same as a normal boolean, just 1 = true and 0 = false.
 //Make a function that returns an int boolean opposite of an int boolean given (flip the int boolean).
 using System;
-public class Program30
+
+namespace Challenges
 {
-	public static int FlipIntBool(int ib) => ib == 1 ? 0 : 1;
+    public class Program30
+    {
+        public static int FlipIntBool(int ib) => ib == 1 ? 0 : 1;
+    }
 }

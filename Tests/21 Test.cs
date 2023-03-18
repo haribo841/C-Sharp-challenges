@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using NUnit.Framework;
 
 namespace Tests
@@ -17,7 +18,7 @@ namespace Tests
             int chickens = a;
             int cows = b;
             int pigs = c;
-            int result = Program21.animals(chickens, cows, pigs);
+            int result = Program21.Animals(chickens, cows, pigs);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

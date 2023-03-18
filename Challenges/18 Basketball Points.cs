@@ -3,7 +3,11 @@
 //find the final points for the team and return that value
 //([2 -pointers scored, 3-pointers scored]).
 using System;
-public class Program18
+
+namespace Challenges
 {
-		public static int Points(int twoPointers, int threePointers)=>twoPointers*2+threePointers*3;
+    public class Program18
+    {
+        public static int Points(int twoPointers, int threePointers) => twoPointers * 2 + threePointers * 3;
+    }
 }

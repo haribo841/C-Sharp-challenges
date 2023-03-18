@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using Challenges;
 using NUnit.Framework;
 
 namespace Tests
@@ -17,7 +18,7 @@ namespace Tests
 
         public void FixedTest(int inches, int expectedResult)
         {
-            int result = Program27.inchesToFeet(inches);
+            int result = Program27.InchesToFeet(inches);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

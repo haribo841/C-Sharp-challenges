@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using NUnit.Framework;
 
 namespace Tests
@@ -16,7 +17,7 @@ namespace Tests
         [TestCase(2, false, TestName = "{0} is not divisible by 5")]
         public void DivisibleByFive(int x, bool expectedResult)
         {
-            bool result = Program28.divisibleByFive(x);
+            bool result = Program28.DivisibleByFive(x);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

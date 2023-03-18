@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using NUnit.Framework;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Tests

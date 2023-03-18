@@ -1,6 +1,10 @@
 //Create a function that takes a name and returns a greeting in the form of a string.
 using System;
-public class Program20
+
+namespace Challenges
 {
-	public static string HelloName(string name) => "Hello "+name+"!";
+    public class Program20
+    {
+        public static string HelloName(string name) => "Hello " + name + "!";
+    }
 }

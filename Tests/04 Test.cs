@@ -1,4 +1,5 @@
 using System;
+using Challenges;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
 

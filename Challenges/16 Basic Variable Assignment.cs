@@ -2,12 +2,16 @@
 //His code should concatenate a passed string name with string "Edabit" and store it in a variable called result.
 //He needs your help to fix this code.
 using System;
-public class Program16
+
+namespace Challenges
 {
-    public static string nameString(string name)
+    public class Program16
     {
-        string b = "Edabit";
-        string result = name + b;
-        return result;
+        public static string NameString(string name)
+        {
+            string b = "Edabit";
+            string result = name + b;
+            return result;
+        }
     }
 }

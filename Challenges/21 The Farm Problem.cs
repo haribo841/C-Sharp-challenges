@@ -6,7 +6,11 @@
 //The farmer has counted his animals and he gives you a subtotal for each species.
 //You have to implement a function that returns the total number of legs of all the animals.
 using System;
-public class Program21
+
+namespace Challenges
 {
-	public static int animals(int chickens, int cows, int pigs)=>chickens*2+(cows+pigs)*4;
+    public class Program21
+    {
+        public static int Animals(int chickens, int cows, int pigs) => chickens * 2 + (cows + pigs) * 4;
+    }
 }

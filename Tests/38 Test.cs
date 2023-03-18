@@ -1,6 +1,8 @@
 using System;
 using NUnit.Framework;
 using System.Collections.Generic;
+using Challenges;
+
 namespace Tests
 {
     [TestFixture]

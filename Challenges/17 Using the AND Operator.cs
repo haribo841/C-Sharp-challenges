@@ -8,7 +8,11 @@
 //The && operator will only return true for true && true.
 //Make a function using the && operator.
 using System;
-public class Program17
+
+namespace Challenges
 {
-	public static bool And(bool x, bool y)=>x&&y;
+    public class Program17
+    {
+        public static bool And(bool x, bool y) => x && y;
+    }
 }

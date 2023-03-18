@@ -2,7 +2,11 @@
 //Unfortunately, the function does not return the correct result for all the inputs.
 //Help her fix the error.
 using System;
-public class Program39
+
+namespace Challenges
 {
-    public static bool IsOdd(int num) => Math.Abs(num % 2) == 1;
+    public class Program39
+    {
+        public static bool IsOdd(int num) => Math.Abs(num % 2) == 1;
+    }
 }

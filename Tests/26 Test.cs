@@ -1,5 +1,6 @@
 using System;
 using System.Xml.Linq;
+using Challenges;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;

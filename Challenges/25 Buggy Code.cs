@@ -3,17 +3,11 @@
 //She added a special case in her function, but she made a mistake.
 //Can you help her?
 using System;
-public class Program25
+
+namespace Challenges
 {
-    public static string greeting(string name)
+    public class Program25
     {
-        if (name == "Mubashir")
-        {
-            return "Hello, my Love!";
-        }
-        else
-        {
-            return "Hello, " + name + "!";
-        }
+        public static string Greeting(string name) => name == "Mubashir" ? "Hello, my Love!" : "Hello, " + name + "!";
     }
 }
