@@ -1,0 +1,24 @@
+//Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+using Challenges;
+using NUnit.Framework;
+using System;
+namespace Tests
+{
+    [TestFixture]
+    public class Tests45
+    {
+        [Test]
+        [TestCase("AB", "CD", true)]
+        [TestCase("ABC", "DE", false)]
+        [TestCase("hello", "edabit", false)]
+        [TestCase("meow", "woof", true)]
+        [TestCase("jrnvjrnnt", "cvjknfjvmfvnfjn", false)]
+        [TestCase("jkvnjrt", "krnf", false)]
+        [TestCase("Facebook", "Snapchat", true)]
+        public void Comp(string str1, string str2, bool expectedResult)
+        {
+            bool result = Program45.Comp(str1, str2);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
+    }
+}

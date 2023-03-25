@@ -13,9 +13,9 @@ namespace Tests
         [TestCase("38215", false)]
         [TestCase("afjabsdf", false)]
         [TestCase("!?@&", false)]
-        public void isEmpty(string s, bool expectedResult)
+        public void IsEmpty(string s, bool expectedResult)
         {
-            bool result = Program44.isEmpty(s);
+            bool result = Program44.IsEmpty(s);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
