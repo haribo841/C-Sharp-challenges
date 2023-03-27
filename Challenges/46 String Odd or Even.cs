@@ -5,5 +5,4 @@ namespace Challenges
     {
         public static bool OddOrEven(string word) => word.Length % 2 == 0;
     }
-
 }
