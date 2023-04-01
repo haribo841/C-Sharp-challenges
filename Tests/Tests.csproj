@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <Compile Remove="51 Test.cs" />
+    <Compile Remove="52 Test.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="51 Test.cs" />
+    <None Include="52 Test.cs" />
   </ItemGroup>
 
   <ItemGroup>

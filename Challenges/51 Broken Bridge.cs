@@ -4,6 +4,6 @@ namespace Challenges
 {
     public class Program51
     {
-        public static bool IsSafeBridge(string str) => true;
+        public static bool IsSafeBridge(string str) => !str.Contains(" ") ? true:false;
     }
 }
