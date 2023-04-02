@@ -5,5 +5,6 @@ namespace Challenges
 {
     public class Program52
     {
-        public static bool isLastCharacterN(string word) => word.;
+        public static bool IsLastCharacterN(string word) => word.EndsWith("n");
+    }
 }

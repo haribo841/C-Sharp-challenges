@@ -7,14 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="51 Broken Bridge.cs" />
-    <Compile Remove="52 Last Character.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="51 Broken Bridge.cs" />
-    <None Include="52 Last Character.cs" />
-  </ItemGroup>
-
 </Project>

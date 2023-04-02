@@ -1,4 +1,5 @@
-using Challenges;
+﻿using Challenges;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
 namespace Tests
 {
@@ -17,7 +18,7 @@ namespace Tests
         {
             // Arrange
             string word = a;
-            bool result = Program51.FixedTest(word);
+            bool result = Program52.IsLastCharacterN(word);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

@@ -1,4 +1,5 @@
-using Challenges;
+﻿using Challenges;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
 namespace Tests
 {
@@ -14,7 +15,7 @@ namespace Tests
         {
             // Arrange
             string bridge = a;
-            bool result = Program51.FixedTest(a);
+            bool result = Program51.IsSafeBridge(bridge);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

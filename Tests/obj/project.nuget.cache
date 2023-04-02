@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6LD4lQ2RvlanFcrY5jthdM1BZgPMEnL2uqonJQck3LD7kdl5XHP0FtNlV8lJwUQ5irNoSe7fdcg10Se9Xg9HtA==",
+  "dgSpecHash": "FzLkV5DDLrGxxxQA3M9os3l264hJzc6vhTYAVzF/5kRyfw2aWG/6r/tPTbKHO/HNGb1uttNyA8Z4bZaVJ+TlQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adam\\Source\\Repos\\haribo841\\edabit\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adam\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Adam\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
