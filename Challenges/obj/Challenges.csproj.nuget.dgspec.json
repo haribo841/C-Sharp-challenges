@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj": {}
+    "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj": {
+    "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj",
+        "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj",
         "projectName": "Challenges",
-        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\haribo841\\edabit\\Challenges\\obj\\",
+        "projectPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Challenges\\Challenges.csproj",
+        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\edabit\\Challenges\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
