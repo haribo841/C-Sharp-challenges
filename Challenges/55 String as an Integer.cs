@@ -4,6 +4,6 @@ namespace Challenges
 {
     public class Program55
     {
-        public static int StringInt(string txt) => Int32.Parse(txt);
+        public static int StringInt(string txt) => int.Parse(txt);
     }
 }
