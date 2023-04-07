@@ -8,6 +8,6 @@ namespace Challenges
 {
     public class Program57
     {
-        public static bool Both(int n1, int n2) => (n1 < 0) && (n2 < 0) || (n1 == 0) && (n2 == 0) || (n1 > 0) && (n2 > 0);
+        public static bool Both(int n1, int n2) => n1 < 0 && n2 < 0 || n1 == 0 && n2 == 0 || n1 > 0 && n2 > 0;
     }
 }
