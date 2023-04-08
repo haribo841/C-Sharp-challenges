@@ -6,6 +6,6 @@ namespace Challenges
 {
     public class Program58
     {
-        public static int CharToASCII(char ch) => (byte)ch;
+        public static int CharToASCII(char ch) => ch;
     }
 }
