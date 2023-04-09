@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Tests
 {
     [TestFixture]
-    public class Tests59
+    public class Tests60
     {
         [Test]
         [TestCase(12, 2)]
