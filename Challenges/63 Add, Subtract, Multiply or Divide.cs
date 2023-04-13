@@ -7,16 +7,13 @@ namespace Challenges
 {
     public class Program63
     {
-        public static string Operation(int num1, int num2)
+        public static string Operation(int num1, int num2) => (24) switch
         {
-            return (24) switch
-            {
-                int n when n == num1 + num2 => "added",
-                int n when n == num1 - num2 => "subtracted",
-                int n when n == num1 * num2 => "multiplied",
-                int n when n == num1 / num2 => "divided",
-                _ => "none"
-            };
-        }
+            int n when n == num1 + num2 => "added",
+            int n when n == num1 - num2 => "subtracted",
+            int n when n == num1 * num2 => "multiplied",
+            int n when n == num1 / num2 => "divided",
+            _ => "none"
+        };
     }
 }
