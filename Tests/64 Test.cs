@@ -13,7 +13,7 @@ namespace Tests
         [TestCase("5231", 5231)]
         public void FixedTest(string a, int expectedResult)
         {
-            int result = Program64.toInt(a);
+            int result = Program64.ToInt(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
         [Test]
@@ -23,7 +23,7 @@ namespace Tests
         [TestCase(5231, "5231")]
         public void FixedTest(int a, string expectedResult)
         {
-            string result = Program64.toStr(a);
+            string result = Program64.ToStr(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
