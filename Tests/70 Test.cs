@@ -4,17 +4,22 @@ using NUnit.Framework;
 namespace Tests
 {
     [TestFixture]
-    public class Tests69
+    public class Tests70
     {
         [Test]
-        [TestCase(24, 100, "-", -76)]
-        [TestCase(-20, -30, "+", -50)]
-        [TestCase(38, 3, "*", 114)]
-        [TestCase(49, 5, "%", 4)]
-        [TestCase(1500, 5, "/", 300)]
-        public void Calculate(int num1, int num2, string operation, int expectedResult)
+        [TestCase("hello", "hELLo", true)]
+        [TestCase("hey", "hey", true)]
+        [TestCase("venom", "VENOM", true)]
+        [TestCase("maGIciAN", "magician", true)]
+        [TestCase("stupIFy", "stupifY", true)]
+        [TestCase("bald", "blad", false)]
+        [TestCase("motive", "emotive", false)]
+        [TestCase("mask", "mAskinG", false)]
+        [TestCase("skim", "skimp", false)]
+        [TestCase("EXCEl", "exceLs", false)]
+        public void FixedTest(string s1, string s2, bool expectedResult)
         {
-            int result = Program69.Calculate(num1, num2, operation);
+            bool result = Program70.match(s1, s2);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
