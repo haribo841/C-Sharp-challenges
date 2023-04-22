@@ -6,7 +6,7 @@ namespace Challenges
 {
     public class Program22
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Usuñ nieu¿ywany parametr", Justification = "¯adne prze³adowanie metody „FootballPoints” nie pobiera nastêpuj¹cej liczby argumentów: 3")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Delete unused parameter", Justification = "No overload of the \"Football Points\" method takes the following number of arguments: 3")]
         public static int FootballPoints(int wins, int draws, int losses) => wins * 3 + draws;
     }
 }

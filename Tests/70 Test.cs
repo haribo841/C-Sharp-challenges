@@ -19,7 +19,7 @@ namespace Tests
         [TestCase("EXCEl", "exceLs", false)]
         public void FixedTest(string s1, string s2, bool expectedResult)
         {
-            bool result = Program70.match(s1, s2);
+            bool result = Program70.Match(s1, s2);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

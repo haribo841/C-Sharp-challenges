@@ -11,7 +11,7 @@ namespace Tests
         [TestCase(new int[] { -70, 43, 34, 54, 22 }, 124)]
         public void FixedTest(int[] arr, int expectedResult)
         {
-            int result = Program71.differenceMaxMin(arr);
+            int result = Program71.DifferenceMaxMin(arr);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

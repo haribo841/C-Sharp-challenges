@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program24
     {
-        public static int Convert(int hours, int minutes) => hours * 3600 + minutes * 60;
+        public static int Convert(int hours, int minutes) => (hours * 60 + minutes) * 60;
     }
 }

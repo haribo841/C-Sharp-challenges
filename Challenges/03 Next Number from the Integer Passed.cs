@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program3
     {
-        public static int Addition(int num) => num + 1;
+        public static int Addition(int num) => ++num;
     }
 }
