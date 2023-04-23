@@ -27,7 +27,6 @@ namespace Tests
         [TestCase("Helen and edabit are amazing.", "Helen and edabit are amazing.")]
         [TestCase("Everyone is amazing.", "Everyone is not amazing.")]
         [TestCase("Swift and edabit are amazing.", "Swift and edabit are amazing.")]
-
         public void FixedTest(string a, string expectedResult)
         {
             string result = Program74.AmazingEdabit(a);
