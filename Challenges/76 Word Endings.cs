@@ -4,7 +4,13 @@ namespace Challenges
 {
     public class Program76
     {
-        public static string[] AddEnding(string[] arr, string ending) => arr.ForEach(num => Console.WriteLine(num + "" + ending));
-        public static string AddEnding(string[] arr) => throw new NotImplementedException();
+        public static string[] AddEnding(string[] arr, string ending)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] += ending;
+            }
+            return arr;
+        }
     }
 }

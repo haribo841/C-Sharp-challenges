@@ -14,7 +14,7 @@ namespace Tests
         [TestCase(new string[] { "bend", "tooth", "mint" }, "ier", new string[] { "bendier", "toothier", "mintier" })]
         public void FixedTest(string[] arr, string ending, object expectedResult)
         {
-            string result = Program76.AddEnding(arr);
+            object result = Program76.AddEnding(arr, ending);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
