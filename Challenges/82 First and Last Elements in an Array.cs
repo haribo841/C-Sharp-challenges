@@ -9,7 +9,7 @@ namespace Challenges
         {
             object[] result = new object[2];
             result[0] = values[0];
-            result[1] = values[values.Length - 1];
+            result[1] = values[^1];
             return result;
         }
     }
