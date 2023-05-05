@@ -1,4 +1,3 @@
-//Create a function that takes in an array of numbers and returns the sum of its cubes.
 using Challenges;
 using NUnit.Framework;
 namespace Tests
