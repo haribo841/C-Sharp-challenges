@@ -1,22 +1,20 @@
-//Create a function which returns "upper" if all the letters in a word are uppercase, "lower" if lowercase and "mixed" for any mix of the two.
-using System;
 using Challenges;
 using NUnit.Framework;
-
-[TestFixture]
-public class Tests
+namespace Tests
 {
-    [Test]
-    [TestCase("whisper...", Result = "lower")]
-    [TestCase("SHOUT!", Result = "upper")]
-    [TestCase("Indoor Voice", Result = "mixed")]
-    [TestCase("324324Indoor66453546Voice434", Result = "mixed")]
-    [TestCase("!!!!SHOUT!!!!", Result = "upper")]
-    [TestCase("......313whisper2131232...", Result = "lower")]
-    public static string FixedTest(string n, double expectedResult)
+    [TestFixture]
+    public class Tests92
     {
-        double result = Program91.YenToUsd(a);
-        Assert.That(result, Is.EqualTo(expectedResult));
+        [TestCase("whisper...", "lower")]
+        [TestCase("SHOUT!", "upper")]
+        [TestCase("Indoor Voice", "mixed")]
+        [TestCase("324324Indoor66453546Voice434", "mixed")]
+        [TestCase("!!!!SHOUT!!!!", "upper")]
+        [TestCase("......313whisper2131232...", "lower")]
+        public void FixedTest(string n, string expectedResult)
+        {
+            string result = Program92.GetCase(n);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
     }
-}
 }
