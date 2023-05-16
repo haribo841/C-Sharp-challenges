@@ -1,17 +1,20 @@
 using Challenges;
 using NUnit.Framework;
-using System;
-
 namespace Tests
 {
     [TestFixture]
-    public class Test0
+    public class Tests95
     {
-        [Test]
-        public void FixedTest()
+        [TestCase("NNNN", false)]
+        [TestCase("NENESSWW", true)]
+        [TestCase("NEESSW", false)]
+        [TestCase("EEWE", false)]
+        [TestCase("NNSSEEEWWWEW", true)]
+
+        public void BackToHome(string direction, bool expectedResult)
         {
-            bool result = Program.ReturnTrue();// Act
-            Assert.That(result, Is.True);
+            bool result = Program92.GetCase(n);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }
