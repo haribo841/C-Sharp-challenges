@@ -9,7 +9,7 @@ namespace Challenges
     {
         public static bool BackToHome(string d)
         {
-            //todo
+            return true;
         }
     }
 }

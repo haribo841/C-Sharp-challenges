@@ -7,7 +7,7 @@ namespace Challenges
     {
         public static int FindIndex(string[] arr, string str)
         {
-            //todo
+            return 0;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Tests
         [TestCase(new string[] { "hi", "edabit.com", "testcase", "validstring" }, "edabit.com", 1)]
         public void FindIndex(string[] arr, string str, int expectedResult)
         {
-            int result = Program92.GetCase(n);
+            int result = Program94.FindIndex(arr, str);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

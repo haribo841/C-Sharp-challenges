@@ -13,7 +13,7 @@ namespace Tests
 
         public void BackToHome(string direction, bool expectedResult)
         {
-            bool result = Program92.GetCase(n);
+            bool result = Program95.BackToHome(direction);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

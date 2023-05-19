@@ -7,7 +7,7 @@ namespace Challenges
     {
         public static string Go(int num)
         {
-            //todo
+            return null;
         }
     }
 }
