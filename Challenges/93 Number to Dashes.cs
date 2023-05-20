@@ -7,7 +7,13 @@ namespace Challenges
     {
         public static string Go(int num)
         {
-            return null;
+            char[] chars = new char[num];
+            for (int i = 0; i < num; i++)
+            {
+                chars[i] = '-';
+            }
+            string b = chars;
+            return b;
         }
     }
 }
