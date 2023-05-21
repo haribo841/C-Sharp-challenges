@@ -16,7 +16,7 @@ namespace Challenges
             char[] charArray = str.ToCharArray();
             foreach (char c in charArray)
             {
-                if (c == ' ' || c == '.' || c == '!') continue;
+                if (c is ' ' or '.' or '!') continue;
                 else if (char.IsUpper(c))
                 {
                     u++;

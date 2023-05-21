@@ -12,7 +12,7 @@ namespace Challenges
             {
                 chars[i] = '-';
             }
-            string b = chars;
+            string b = new string(chars);
             return b;
         }
     }

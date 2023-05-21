@@ -1,4 +1,4 @@
-//Create a function that takes a number (from 1 - 60) and returns a corresponding string of hyphens.
+//Create a function that takes an array and a string as arguments and returns the index of the string.
 using System;
 using System.Text;
 namespace Challenges
@@ -7,7 +7,11 @@ namespace Challenges
     {
         public static int FindIndex(string[] arr, string str)
         {
-            return 0;
+            foreach (string s in arr)
+            {
+                if (s == str) return Array.IndexOf(arr, str);
+            }
+            return -1;
         }
     }
 }
