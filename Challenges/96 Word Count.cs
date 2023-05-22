@@ -8,7 +8,15 @@ namespace Challenges
     {
         public static int CountWords(string str)
         {
-            return 0;
+            int i = 0;
+            foreach (char c in str)
+            {
+                if (c == ' ')
+                {
+                    i++;
+                }
+            }
+            return ++i;
         }
     }
 }

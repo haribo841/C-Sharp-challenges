@@ -4,10 +4,11 @@
 //The ohm is the standard unit of electrical resistance in the International System of Units ( SI ).
 using System;
 using System.Text;
+using System.Linq;
 namespace Challenges
 {
     public class Program80
     {
-        public static string SeriesResistance(double[] arr) => arr.Sum()<= 1 ? arr.Sum().ToString() + " ohm": arr.Sum().ToString()+" ohms";
+        public static string SeriesResistance(double[] arr) => arr.Sum()<= 1 ? Math.Round(arr.Sum() , 1).ToString() + " ohm": Math.Round(arr.Sum(), 1).ToString()+" ohms";
     }
 }
