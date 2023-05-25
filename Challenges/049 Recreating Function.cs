@@ -7,6 +7,6 @@ namespace Challenges
 {
     public class Program49
     {
-        public static int Absolute(int num) => num < 0 ? num * -1 : num;
+        public static int Absolute(int num) => (num ^ (num >> 31)) - (num >> 31);
     }
 }

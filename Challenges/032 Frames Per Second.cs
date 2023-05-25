@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program32
     {
-        public static int Frames(int minutes, int fps) => minutes != 0 ? fps * minutes * 60 : 0;
+        public static int Frames(int minutes, int fps) => fps * minutes * 60;
     }
 }

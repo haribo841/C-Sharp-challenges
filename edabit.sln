@@ -9,9 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges", "Challenges\Ch
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3D369CC9-15C2-487E-AD69-1F9A42CD1DBB}"
 	ProjectSection(SolutionItems) = preProject
-		103 = 103
-		104 = 104
-		105 = 105
 		106 = 106
 		107 = 107
 		108 = 108

@@ -7,6 +7,6 @@ namespace Challenges
 {
     public class Program39
     {
-        public static bool IsOdd(int num) => Math.Abs(num % 2) == 1;
+        public static bool IsOdd(int num) => num % 2 != 0;
     }
 }

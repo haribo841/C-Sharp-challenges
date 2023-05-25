@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program44
     {
-        public static bool IsEmpty(string str) => str == "";
+        public static bool IsEmpty(string str) => string.IsNullOrEmpty(str);
     }
 }

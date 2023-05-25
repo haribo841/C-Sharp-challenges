@@ -6,6 +6,6 @@ namespace Challenges
 {
     public class Program48
     {
-            public static bool ShouldServeDrinks(int age, bool on_break) => on_break == false && age >= 18;
+            public static bool ShouldServeDrinks(int age, bool on_break) => !on_break && age >= 18;
     }
 }
