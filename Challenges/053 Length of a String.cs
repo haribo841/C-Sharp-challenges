@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program53
     {
-        public static int Length(string str) => str.Length;
+        public static int Length(string str) => string.IsNullOrEmpty(str) ? 0 : 1 + Length(str.Substring(1));
     }
 }
