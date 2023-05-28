@@ -4,12 +4,6 @@ namespace Challenges
 {
     public class Program59
     {
-        public static int Length(int n)
-        {
-            string a;
-            a=n.ToString();
-            n=a.Length;
-            return n;
-        }
+        public static int Length(int n) => n.ToString().Length;
     }
 }

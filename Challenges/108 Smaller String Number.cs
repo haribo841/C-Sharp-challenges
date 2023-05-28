@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program108
     {
-        public static string smallerNum(string n1, string n2) => int.Parse(n1) < int.Parse(n2) ? n1 : n2;
+        public static string SmallerNum(string n1, string n2) => int.Parse(n1) < int.Parse(n2) ? n1 : n2;
     }
 }

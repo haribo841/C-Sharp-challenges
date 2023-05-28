@@ -4,6 +4,6 @@ namespace Challenges
 {
     public class Program68
     {
-        public static string FirstLast(string str) => str.First() + "" + str.Last();
+        public static string FirstLast(string str) => str[0].ToString() + str[^1];
     }
 }

@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program62
     {
-        public static bool IsPlural(string word) => word.Substring(word.Length - 1, 1)[0] == 's';
+        public static bool IsPlural(string word) => word[word.Length - 1] == 's';
     }
 }
