@@ -5,6 +5,10 @@ namespace Challenges
 {
     public class Program81
     {
-        public static int[] Reverse(int[] arr) => Enumerable.Range(0, arr.Length).Select(index => arr[arr.Length - index-1]).ToArray();
+        public static int[] Reverse(int[] arr)
+        {
+            Array.Reverse(arr);
+            return arr;
+        }
     }
 }

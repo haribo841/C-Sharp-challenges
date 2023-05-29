@@ -6,17 +6,6 @@ namespace Challenges
 {
     public class Program89
     {
-        public static int CountTrue(bool[] arr)
-        {
-            int x = 0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == true)
-                {
-                    x++;
-                }
-            }
-            return x;
-        }
+        public static int CountTrue(bool[] arr)=>arr.Count(value => value);
     }
 }

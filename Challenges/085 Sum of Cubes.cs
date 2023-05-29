@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program85
     {
-        public static int CubesSum(int[] nums_arr) => Enumerable.Range(0, nums_arr.Length).Select(index => nums_arr[index]* nums_arr[index]* nums_arr[index]).ToArray().Sum();
+        public static int CubesSum(int[] nums_arr) => nums_arr.Sum(num => num * num * num);
     }
 }

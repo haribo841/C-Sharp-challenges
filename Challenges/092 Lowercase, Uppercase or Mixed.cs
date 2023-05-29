@@ -10,22 +10,14 @@ namespace Challenges
     {
         public static string GetCase(string str)
         {
-            int l = 0;
-            int u=0;
-            // Create an array of chars from string.
-            char[] charArray = str.ToCharArray();
-            foreach (char c in charArray)
-            {
-                if (c is ' ' or '.' or '!') continue;
-                else if (char.IsUpper(c))
-                {
-                    u++;
-                    continue;
-                }
-                l++;
-                continue;
-            }
-            return u > 0 ? (l > 0 ? "mixed" : "upper") : "lower"; ;
+            int uppercaseCount = str.Count(char.IsUpper);
+            int lowercaseCount = str.Count(char.IsLower);
+            if (uppercaseCount > 0 && lowercaseCount > 0)
+                return "mixed";
+            else if (uppercaseCount > 0)
+                return "upper";
+            else
+                return "lower";
         }
     }
 }

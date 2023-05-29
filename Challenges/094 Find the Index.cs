@@ -7,9 +7,10 @@ namespace Challenges
     {
         public static int FindIndex(string[] arr, string str)
         {
-            foreach (string s in arr)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (s == str) return Array.IndexOf(arr, str);
+                if (arr[i] == str)
+                    return i;
             }
             return -1;
         }
