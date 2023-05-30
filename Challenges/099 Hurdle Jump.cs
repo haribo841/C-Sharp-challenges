@@ -7,12 +7,11 @@ namespace Challenges
     {
         public static bool hurdleJump(int[] hurdles, int jumpHeight)
         {
-            bool j=true;
             foreach (int i in hurdles)
             {
-                if (i > jumpHeight) j=false;
+                if (i > jumpHeight) return false;
             }
-            return j;
+            return true;
         }
     }
 }

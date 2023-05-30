@@ -7,12 +7,6 @@ namespace Challenges
 {
     public class Program97
     {
-        public static int Days(int month, int year)
-        {
-            int i = year % 4 == 0 && year!=1800 && month == 2 ? 29 : 28;
-            if (month is 1 or 3 or 5 or 7 or 8 or 10 or 12) { i = 31; }
-            else if (month is 4 or 6 or 9 or 11) { i = 30; }
-            return i;
-        }
+        public static int Days(int month, int year) => DateTime.DaysInMonth(year, month);
     }
 }

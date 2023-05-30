@@ -8,15 +8,8 @@ namespace Challenges
     {
         public static int CountWords(string str)
         {
-            int i = 0;
-            foreach (char c in str)
-            {
-                if (c == ' ')
-                {
-                    i++;
-                }
-            }
-            return ++i;
+            string[] words = str.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            return words.Length;
         }
     }
 }

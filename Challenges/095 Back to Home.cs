@@ -12,7 +12,6 @@ namespace Challenges
         {
             int x = 0;
             int y = 0;
-
             foreach (char direction in d)
             {
                 (int dx, int dy) = direction switch
@@ -23,11 +22,9 @@ namespace Challenges
                     'W' => (-1, 0),
                     _ => (0, 0) // Handle invalid directions
                 };
-
                 x += dx;
                 y += dy;
             }
-
             return x == 0 && y == 0;
         }
     }

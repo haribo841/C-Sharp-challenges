@@ -6,12 +6,16 @@ namespace Challenges
     {
         public static long CalculateExponent(long number, long exponent)
         {
-            long j = number;
-            for (int i = 1; i < exponent; i++)
+            if (exponent < 0) throw new ArgumentException("Exponent must be non-negative.");
+            if (exponent == 0) return 1;
+            long result = 1;
+            while (exponent > 0)
             {
-                j *= number;
+                if ((exponent & 1) == 1) result *= number; //Check if exponent is odd
+                number *= number;
+                exponent >>= 1; // Divide exponent by 2
             }
-            return j;
+            return result;
         }
     }
 }
