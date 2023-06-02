@@ -3,8 +3,35 @@ using System;
 
 namespace Challenges
 {
-    public class Program3
+    public class Program113
     {
-        public static int Addition(int num) => ++num;
+        public static string HackerSpeak(string str)
+        {
+            char[] chars = str.ToCharArray();
+            for (int i = 0; i < chars.Length; i++)
+            {
+                switch (chars[i])
+                {
+                    case 'a':
+                        chars[i] = '4';
+                        break;
+                    case 'e':
+                        chars[i] = '3';
+                        break;
+                    case 'i':
+                        chars[i] = '1';
+                        break;
+                    case 'o':
+                        chars[i] = '0';
+                        break;
+                    case 's':
+                        chars[i] = '5';
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return new string(chars);
+        }
     }
 }

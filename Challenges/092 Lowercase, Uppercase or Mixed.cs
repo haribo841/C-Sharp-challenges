@@ -14,10 +14,7 @@ namespace Challenges
             int lowercaseCount = str.Count(char.IsLower);
             if (uppercaseCount > 0 && lowercaseCount > 0)
                 return "mixed";
-            else if (uppercaseCount > 0)
-                return "upper";
-            else
-                return "lower";
+            else return uppercaseCount > 0 ? "upper" : "lower";
         }
     }
 }

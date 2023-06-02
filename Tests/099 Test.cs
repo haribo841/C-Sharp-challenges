@@ -14,9 +14,9 @@ namespace Tests
         [TestCase(new int[] { 3, 3, 3 }, 4, true)]
         [TestCase(new int[] { 4, 4 }, 3, false)]
         [TestCase(new int[] { }, 4, true)]
-        public void hurdleJump(int[] x, int y, bool expectedResult)
+        public void HurdleJump(int[] x, int y, bool expectedResult)
         {
-            bool result = Program99.hurdleJump(x, y);
+            bool result = Program99.HurdleJump(x, y);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

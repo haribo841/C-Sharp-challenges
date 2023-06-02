@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program61
     {
-        public static object GetLastItem(object[] arr) => arr[arr.Length - 1];
+        public static object GetLastItem(object[] arr) => arr[^1];
     }
 }

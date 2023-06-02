@@ -5,18 +5,17 @@ using NUnit.Framework;
 namespace Tests
 {
     [TestFixture]
-    public class Tests3
+    public class Tests113
     {
         [Test]
-        [TestCase(2, 3, TestName = "{0} incremented by one should be {1}")]
-        [TestCase(-9, -8, TestName = "{0} incremented by one should be {1}")]
-        [TestCase(0, 1, TestName = "{0} incremented by one should be {1}")]
-        [TestCase(100, 101, TestName = "{0} incremented by one should be {1}")]
-        [TestCase(999, 1000, TestName = "{0} incremented by one should be {1}")]
-        [TestCase(73, 74, TestName = "{0} incremented by one should be {1}")]
-        public void FixedTest(int num, int expectedResult)
+        [TestCase("javascript is cool", "j4v45cr1pt 15 c00l")]
+        [TestCase("become a coder", "b3c0m3 4 c0d3r")]
+        [TestCase("hi there", "h1 th3r3")]
+        [TestCase("programming is fun", "pr0gr4mm1ng 15 fun")]
+        [TestCase("keep on practicing", "k33p 0n pr4ct1c1ng")]
+        public void FixedTest(string str, string expectedResult)
         {
-            int result = Program3.Addition(num);
+            string result = Program113.HackerSpeak(str);
             Assert.That(result, Is.EqualTo(expectedResult));// Assert
         }
     }
