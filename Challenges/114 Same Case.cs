@@ -5,6 +5,7 @@ namespace Challenges
 {
     public class Program114
     {
-        public static bool SameCase(string str) => str.Length == str.Count(char.IsUpper) || str.Length == str.Count(char.IsLower);
+        public static bool SameCase(string str) => str is string input && (input.Length == input.Count(char.IsUpper) || input.Length == input.Count(char.IsLower));
+
     }
 }
