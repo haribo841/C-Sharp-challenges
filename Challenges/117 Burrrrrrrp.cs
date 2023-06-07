@@ -6,7 +6,13 @@ namespace Challenges
     {
         public static string LongBurp(int b)
         {
-            return "";
+            char[] chars = new char[b];
+            for (int i = 0; i < chars.Length; i++)
+            {
+                chars[i] = 'r';
+            }
+            string s = new string(chars);
+            return "Bu" + s +"p";
         }
     }
 }
