@@ -1,5 +1,6 @@
 //Create a function that removes the first and last characters from a string.
 using System;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Challenges
 {
@@ -7,13 +8,13 @@ namespace Challenges
     {
         public static string RemoveFirstLast(string str)
         {
-            char[] chars = new char[str.Length];
-            for (int i = 1; i < chars.Length-1; i++)
+            if (str.Length > 2)
             {
-                chars[i] = str[i];
+                string modifiedText = str.Remove(0, 1);
+                string modifiedText2 = modifiedText.Remove(modifiedText.Length-1, 1);
+                return modifiedText2;
             }
-            string s = new string(chars);
-            return s;
+            return str;
         }
     }
 }
