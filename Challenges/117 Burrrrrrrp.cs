@@ -11,7 +11,7 @@ namespace Challenges
             {
                 chars[i] = 'r';
             }
-            string s = new string(chars);
+            string s = new(chars);
             return "Bu" + s +"p";
         }
     }

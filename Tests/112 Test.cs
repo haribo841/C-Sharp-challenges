@@ -17,7 +17,7 @@ namespace Tests
         [TestCase("bbbbbb", true)]
         public void FixedTest(string str, bool expectedResult)
         {
-            bool result = Program112.isIdentical(str);
+            bool result = Program112.IsIdentical(str);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

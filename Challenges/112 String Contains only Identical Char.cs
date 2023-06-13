@@ -5,7 +5,7 @@ namespace Challenges
 {
     public class Program112
     {
-        public static bool isIdentical(string str)
+        public static bool IsIdentical(string str)
         {
             char first = str[0];
             foreach (char c in str) { 

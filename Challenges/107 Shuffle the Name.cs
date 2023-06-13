@@ -13,7 +13,7 @@ namespace Challenges
                 found = str.IndexOf(" ");
             }
             string surname = str.Substring(++found);
-            string name = str.Substring(0,--found);
+            string name = str[..--found];
             return surname+" "+name;
         }
     }

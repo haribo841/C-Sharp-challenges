@@ -16,7 +16,6 @@ namespace Tests
         [TestCase(new double[] { 20, 5 }, 4)]
         [TestCase(new double[] { 500, 500, 500 }, 166.7)]
         [TestCase(new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 0.3)]
-
         public void ParallelResistance(double[] arr, double expectedResult)
         {
             double result = Program115.ParallelResistance(arr);
