@@ -9,7 +9,7 @@ namespace Challenges
         {
             string year = date.Substring(6);
             string day = date.Substring(3, 2);
-            string month = date.Substring(0, 2);
+            string month = date[..2];
             return year+day+month;
         }
     }

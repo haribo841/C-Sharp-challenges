@@ -11,7 +11,7 @@ namespace Challenges
             if (str.Length > 2)
             {
                 string modifiedText = str.Remove(0, 1);
-                string modifiedText2 = modifiedText.Remove(modifiedText.Length-1, 1);
+                string modifiedText2 = modifiedText.Remove(modifiedText.Length - 1, 1);
                 return modifiedText2;
             }
             return str;

@@ -9,8 +9,7 @@ namespace Challenges
         public static string FizzBuzz(int n)
         {
             if (n % 3 == 0 && n % 5 == 0) return "FizzBuzz";
-            else if (n % 5 == 0) return "Buzz";
-            else return n % 3 == 0 ? "Fizz" : n.ToString();
+            else return n % 5 == 0 ? "Buzz" : n % 3 == 0 ? "Fizz" : n.ToString();
         }
     }
 }

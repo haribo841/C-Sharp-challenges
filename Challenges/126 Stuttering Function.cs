@@ -10,7 +10,7 @@ namespace Challenges
     {
         public static string Stutter(string word)
         {
-            string a = word.Substring(0, 2);
+            string a = word[..2];
             string b = "... ";
             return a + b + a + b + word + "?";
         }
