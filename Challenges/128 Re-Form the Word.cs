@@ -1,10 +1,11 @@
-//Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+//A word has been split into a left part and a right part.
+//Re-form the word by adding both halves together, changing the first character to an uppercase letter.
 using System;
 
 namespace Challenges
 {
-    public class Program8
+    public class Program128
     {
-        public static bool LessThanOrEqualToZero(double a) => a <= 0;
+        public static string GetWord(string left, string right) => char.ToUpper(left[0]) + left.Substring(1) + right;
     }
 }

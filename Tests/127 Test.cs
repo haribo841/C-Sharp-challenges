@@ -14,9 +14,9 @@ namespace Tests
         [TestCase("Music/Drafts/unfinished2.midi", "unfinished2.midi")]
         [TestCase("C:/Users/chad/OneDrive/Desktop/Atom.lnk", "Atom.lnk")]
         [TestCase("senoron/OneDrive/Desktop/DDLC-1.1.1-pc/lib/windows-i686/DDLC.exe", "DDLC.exe")]
-        public void Remainder(string n, string expectedResult)
+        public void FixedTest(string n, string expectedResult)
         {
-            string result = Program127.Equals(n);
+            string result = Program127.GetFilename(n);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
