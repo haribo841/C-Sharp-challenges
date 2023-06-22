@@ -20,10 +20,10 @@ namespace Tests
             int[] o3 = { 7, 0, 21, 21, 49, 14, 7 };
             int[] o4 = { 0 };
 
-            Assert.AreEqual(o1, Program105.MultiplyByLength(i1));
-            Assert.AreEqual(o2, Program105.MultiplyByLength(i2));
-            Assert.AreEqual(o3, Program105.MultiplyByLength(i3));
-            Assert.AreEqual(o4, Program105.MultiplyByLength(i4));
+            Assert.That(Program105.MultiplyByLength(i1), Is.EqualTo(o1));
+            Assert.That(Program105.MultiplyByLength(i2), Is.EqualTo(o2));
+            Assert.That(Program105.MultiplyByLength(i3), Is.EqualTo(o3));
+            Assert.That(Program105.MultiplyByLength(i4), Is.EqualTo(o4));
         }
     }
 }

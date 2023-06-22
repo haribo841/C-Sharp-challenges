@@ -9,7 +9,7 @@ namespace Challenges
         {
             int lastSlash=path.LastIndexOf('/');
             if (lastSlash == -1) { return path; }
-            return path.Substring(++lastSlash);
+            return path[++lastSlash..];
         }
     }
 }
