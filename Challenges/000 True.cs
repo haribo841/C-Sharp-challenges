@@ -3,6 +3,9 @@ namespace Challenges
 {
     public class Program
     {
-        public static bool ReturnTrue() => true;
+        public static bool ReturnTrue()
+        {
+            //todo
+        }
     }
 }

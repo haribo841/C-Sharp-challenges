@@ -7,14 +7,7 @@ namespace Challenges
     {
         public static string NameShuffle(string str)
         {
-            int found = 0;            
-            foreach (char c in str)
-            {
-                found = str.IndexOf(" ");
-            }
-            string surname = str[++found..];
-            string name = str[..--found];
-            return surname+" "+name;
+            //todo
         }
     }
 }

@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program128
     {
-        public static string GetWord(string left, string right) => char.ToUpper(left[0]) + left[1..] + right;
+        public static string GetWord(string left, string right)
+        {
+            //todo
+        }
     }
 }

@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program33
     {
-        public static bool ProfitableGamble(double prob, int prize, double pay) => prob * prize > pay;
+        public static bool ProfitableGamble(double prob, int prize, double pay)
+        {
+            //todo
+        }
     }
 }

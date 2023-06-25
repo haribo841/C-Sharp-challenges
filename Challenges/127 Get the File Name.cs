@@ -7,9 +7,7 @@ namespace Challenges
     {
         public static string GetFilename(string path)
         {
-            int lastSlash=path.LastIndexOf('/');
-            if (lastSlash == -1) { return path; }
-            return path[++lastSlash..];
+            //todo
         }
     }
 }

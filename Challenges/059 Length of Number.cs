@@ -4,6 +4,9 @@ namespace Challenges
 {
     public class Program59
     {
-        public static int Length(int n) => n.ToString().Length;
+        public static int Length(int n)
+        {
+            //todo
+        }
     }
 }

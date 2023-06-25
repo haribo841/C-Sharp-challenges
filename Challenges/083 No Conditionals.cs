@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program83
     {
-        public static int Flip(int y) => 1 - y;
+        public static int Flip(int y)
+        {
+            //todo
+        }
     }
 }

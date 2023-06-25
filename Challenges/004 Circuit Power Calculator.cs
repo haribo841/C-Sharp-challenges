@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program4
     {
-        public static int CircuitPower(int voltage, int current) => voltage * current;
+        public static int CircuitPower(int voltage, int current)
+        {
+            //todo
+        }
     }
 }

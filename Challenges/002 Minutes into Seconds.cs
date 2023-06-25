@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program2
     {
-        public static int Convert(int minutes) => minutes * 60;
+        public static int Convert(int minutes)
+        {
+            //todo
+        }
     }
 }

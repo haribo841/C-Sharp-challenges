@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program43
     {
-        public static int Area(int h, int w) => h <= 0 || w <= 0 ? -1 : h * w;
+        public static int Area(int h, int w)
+        {
+            //todo
+        }
     }
 }

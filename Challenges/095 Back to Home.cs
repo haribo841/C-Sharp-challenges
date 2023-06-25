@@ -10,22 +10,7 @@ namespace Challenges
     {
         public static bool BackToHome(string d)
         {
-            int x = 0;
-            int y = 0;
-            foreach (char direction in d)
-            {
-                (int dx, int dy) = direction switch
-                {
-                    'N' => (0, 1),
-                    'S' => (0, -1),
-                    'E' => (1, 0),
-                    'W' => (-1, 0),
-                    _ => (0, 0) // Handle invalid directions
-                };
-                x += dx;
-                y += dy;
-            }
-            return x == 0 && y == 0;
+            //todo
         }
     }
 }

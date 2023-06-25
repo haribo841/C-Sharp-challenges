@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program74
     {
-        public static string AmazingEdabit(string str) => str.Contains("edabit") ? str : str.Replace("amazing", "not amazing");
+        public static string AmazingEdabit(string str)
+        {
+            //todo
+        }
     }
 }

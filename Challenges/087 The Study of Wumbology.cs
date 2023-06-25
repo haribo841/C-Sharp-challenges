@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program87
     {
-        public static string Wumbo(string words) => words.Replace('M', 'W');
+        public static string Wumbo(string words)
+        {
+            //todo
+        }
     }
 }

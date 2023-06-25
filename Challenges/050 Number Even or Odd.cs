@@ -4,6 +4,9 @@ namespace Challenges
 {
     public class Program50
     {
-        public static string IsEvenOrOdd(int num) => num % 2 == 0 ? "even" : "odd";
+        public static string IsEvenOrOdd(int num)
+        {
+            //todo
+        }
     }
 }

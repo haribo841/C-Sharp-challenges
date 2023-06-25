@@ -6,8 +6,7 @@ namespace Challenges
     {
         public static int NumberSyllables(string word)
         {
-            string[] syllables = word.Split('-');
-            return syllables.Length;
+            //todo
         }
     }
 }

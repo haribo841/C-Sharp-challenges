@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program23
     {
-        public static object GetFirstValue(object[] arr) => arr[0];
+        public static object GetFirstValue(object[] arr)
+        {
+            //todo
+        }
     }
 }

@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program45
     {
-        public static bool Comp(string str1, string str2) => str1.Length == str2.Length;
+        public static bool Comp(string str1, string str2)
+        {
+            //todo
+        }
     }
 }

@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program60
     {
-        public static bool EqualSlices(int total, int people, int each) => total >= people * each;
+        public static bool EqualSlices(int total, int people, int each)
+        {
+            //todo
+        }
     }
 }

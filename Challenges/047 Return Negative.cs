@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program47
     {
-        public static int ReturnNegative(int n) => n < 0 ? n : -n;
+        public static int ReturnNegative(int n)
+        {
+            //todo
+        }
     }
 }

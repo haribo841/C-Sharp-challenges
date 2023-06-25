@@ -7,8 +7,7 @@ namespace Challenges
     {
         public static int[] Reverse(int[] arr)
         {
-            Array.Reverse(arr);
-            return arr;
+            //todo
         }
     }
 }

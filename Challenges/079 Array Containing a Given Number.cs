@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program79
     {
-        public static bool Check(int[] arr, int el) => arr.Contains(el);
+        public static bool Check(int[] arr, int el)
+        {
+            //todo
+        }
     }
 }

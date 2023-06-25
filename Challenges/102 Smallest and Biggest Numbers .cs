@@ -7,9 +7,7 @@ namespace Challenges
     {
         public static double[] FindMinMax(double[] values)
         {
-            double minValue = values.Min();
-            double maxValue = values.Max();
-            return new double[] { minValue, maxValue };
+            //todo
         }
     }
 }

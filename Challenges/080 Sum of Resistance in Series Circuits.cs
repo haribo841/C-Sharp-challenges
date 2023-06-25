@@ -11,6 +11,9 @@ namespace Challenges
 {
     public class Program80
     {
-        public static string SeriesResistance(double[] arr) => arr.Sum()<= 1 ? Math.Round(arr.Sum() , 1).ToString(CultureInfo.InvariantCulture) + " ohm": Math.Round(arr.Sum(), 1).ToString(CultureInfo.InvariantCulture).Replace(',', '.') + " ohms";
+        public static string SeriesResistance(double[] arr)
+        {
+            //todo
+        }
     }
 }

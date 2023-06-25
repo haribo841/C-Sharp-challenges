@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program75
     {
-        public static int PosCom(int n) => 1 << n;
+        public static int PosCom(int n)
+        {
+            //todo
+        }
     }
 }

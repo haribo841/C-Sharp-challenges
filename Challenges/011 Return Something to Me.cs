@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program11
     {
-        public static string GiveMeSomething(string a) => "something " + a;
+        public static string GiveMeSomething(string a)
+        {
+            //todo
+        }
     }
 }

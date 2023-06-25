@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program31
     {
-        public static bool DividesEvenly(int a, int b) => a % b == 0;
+        public static bool DividesEvenly(int a, int b)
+        {
+            //todo
+        }
     }
 }

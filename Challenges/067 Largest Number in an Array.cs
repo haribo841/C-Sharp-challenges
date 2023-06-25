@@ -4,6 +4,9 @@ namespace Challenges
 {
     public class Program67
     {
-        public static int FindLargestNum(int[] arr) => arr.Max();
+        public static int FindLargestNum(int[] arr)
+        {
+            //todo
+        }
     }
 }

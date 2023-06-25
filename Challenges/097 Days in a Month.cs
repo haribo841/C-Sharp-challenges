@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program97
     {
-        public static int Days(int month, int year) => DateTime.DaysInMonth(year, month);
+        public static int Days(int month, int year)
+        {
+            //todo
+        }
     }
 }

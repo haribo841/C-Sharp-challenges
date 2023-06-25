@@ -10,9 +10,7 @@ namespace Challenges
     {
         public static string GetCase(string str)
         {
-            int uppercaseCount = str.Count(char.IsUpper);
-            int lowercaseCount = str.Count(char.IsLower);
-            return uppercaseCount > 0 && lowercaseCount > 0 ? "mixed" : uppercaseCount > 0 ? "upper" : "lower";
+            //todo
         }
     }
 }

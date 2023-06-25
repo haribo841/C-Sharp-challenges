@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program36
     {
-        public static int HowManyStickers(int n) => 6 * n * n;
+        public static int HowManyStickers(int n)
+        {
+            //todo
+        }
     }
 }

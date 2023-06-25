@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program84
     {
-        public static int AddUp(int num) => num * (num + 1) / 2;
+        public static int AddUp(int num)
+        {
+            //todo
+        }
     }
 }

@@ -3,6 +3,9 @@ namespace Challenges
 {
     public class Program46
     {
-        public static bool OddOrEven(string word) => word.Length % 2 == 0;
+        public static bool OddOrEven(string word)
+        {
+            //todo
+        }
     }
 }

@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program8
     {
-        public static bool LessThanOrEqualToZero(double a) => a <= 0;
+        public static bool LessThanOrEqualToZero(double a)
+        {
+            //todo
+        }
     }
 }

@@ -7,9 +7,7 @@ namespace Challenges
 	{
         public static int Diff(int[] arr)
         {
-            int max = arr.Max();
-            int min = arr.Min();
-            return max - min;
+            //todo
         }
     }
 }

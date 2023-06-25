@@ -7,14 +7,7 @@ namespace Challenges
     {
         public static string DoubleChar(string str)
         {
-            char[] chars = new char[str.Length * 2];
-            char[] chars2 = str.ToCharArray();
-            for (int i = 0; i < chars2.Length; i++)
-            {
-                chars[i * 2] = chars2[i];
-                chars[i * 2 + 1] = chars2[i];
-            }
-                return new string(chars);
+            //todo
         }
     }
 }

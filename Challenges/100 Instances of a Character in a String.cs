@@ -6,15 +6,7 @@ namespace Challenges
     {
         public static int CharCount(char myChar, string str)
         {
-            int count = 0;
-            foreach (char c in str)
-            {
-                if (c == myChar)
-                {
-                    count++;
-                }
-            }
-            return count;
+            //todo
         }
     }
 }

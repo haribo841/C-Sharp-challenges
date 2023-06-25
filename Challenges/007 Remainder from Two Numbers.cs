@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program7
     {
-        public static int Remainder(int x, int y) => x % y;
+        public static int Remainder(int x, int y)
+        {
+            //todo
+        }
     }
 }

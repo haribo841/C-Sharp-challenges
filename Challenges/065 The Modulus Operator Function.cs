@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program65
     {
-        public static int Mod(int a, int b) => a - b * (a / b);
+        public static int Mod(int a, int b)
+        {
+            //todo
+        }
     }
 }

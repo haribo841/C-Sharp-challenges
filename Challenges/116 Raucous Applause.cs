@@ -9,9 +9,7 @@ namespace Challenges
     {
         public static int CountClaps(string txt)
         {
-            int count = 0;
-            foreach (char c in txt) { if (c == 'C') count++; }
-            return count;
+            //todo
         }
     }
 }

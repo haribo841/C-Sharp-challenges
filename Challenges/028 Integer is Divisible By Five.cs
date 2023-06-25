@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program28
     {
-        public static bool DivisibleByFive(int n) => n % 5 == 0;
+        public static bool DivisibleByFive(int n)
+        {
+            //todo
+        }
     }
 }

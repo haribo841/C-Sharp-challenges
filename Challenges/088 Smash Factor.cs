@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program88
     {
-        public static double SmashFactor(double a, double b) => Math.Round(a / b, 2);
+        public static double SmashFactor(double a, double b)
+        {
+            //todo
+        }
     }
 }

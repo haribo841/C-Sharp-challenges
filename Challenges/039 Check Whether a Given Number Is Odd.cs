@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program39
     {
-        public static bool IsOdd(int num) => num % 2 != 0;
+        public static bool IsOdd(int num)
+        {
+            //todo
+        }
     }
 }

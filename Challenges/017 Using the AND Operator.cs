@@ -13,6 +13,9 @@ namespace Challenges
 {
     public class Program17
     {
-        public static bool And(bool x, bool y) => x && y;
+        public static bool And(bool x, bool y)
+        {
+            //todo
+        }
     }
 }

@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program76
     {
-        public static string[] AddEnding(string[] arr, string ending) => Enumerable.Range(0, arr.Length).Select(index => arr[index] + ending).ToArray();
+        public static string[] AddEnding(string[] arr, string ending)
+        {
+            //todo
+        }
     }
 }

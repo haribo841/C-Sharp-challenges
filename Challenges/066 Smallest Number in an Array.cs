@@ -4,6 +4,9 @@ namespace Challenges
 {
     public class Program66
     {
-        public static double FindSmallestNum(double[] arr) => arr.Min();
+        public static double FindSmallestNum(double[] arr)
+        {
+            //todo
+        }
     }
 }

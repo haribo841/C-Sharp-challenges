@@ -9,6 +9,9 @@ namespace Challenges
 {
     public class Program78
     {
-        public static string MissingAngle(int angle1, int angle2) => 180 - (angle1 + angle2) < 90 ? "acute" : 180 - (angle1 + angle2) > 90 ? "obtuse" : "right";
+        public static string MissingAngle(int angle1, int angle2)
+        {
+            //todo
+        }
     }
 }

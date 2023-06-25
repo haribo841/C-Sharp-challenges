@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program30
     {
-        public static int FlipIntBool(int ib) => ib == 1 ? 0 : 1;
+        public static int FlipIntBool(int ib)
+        {
+            //todo
+        }
     }
 }

@@ -10,10 +10,7 @@ namespace Challenges
     {
         public static int[] SortNumsAscending(int[] arr)
         {
-            int[] a = new int[arr.Length];
-            a = arr.OrderByDescending(x => x).ToArray();
-            Array.Reverse(a);
-            return a;
+            //todo
         }
     }
 }

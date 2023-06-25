@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program90
     {
-        public static int NumArgs(params object[] p) => p.Length;
+        public static int NumArgs(params object[] p)
+        {
+            //todo
+        }
     }
 }

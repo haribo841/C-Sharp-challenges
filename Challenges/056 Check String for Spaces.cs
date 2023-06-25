@@ -4,6 +4,9 @@ namespace Challenges
 {
     public class Program56
     {
-        public static bool HasSpaces(string str) => str.Contains(' ');
+        public static bool HasSpaces(string str)
+        {
+            //todo
+        }
     }
 }

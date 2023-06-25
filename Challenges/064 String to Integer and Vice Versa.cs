@@ -6,7 +6,13 @@ namespace Challenges
 {
     public class Program64
     {
-        public static int ToInt(string str) => int.Parse(str);
-        public static string ToStr(int num) => num.ToString();
+        public static int ToInt(string str)
+        {
+            //todo
+        }
+        public static string ToStr(int num)
+        {
+            //todo
+        }
     }
 }

@@ -8,12 +8,7 @@ namespace Challenges
     {
         public static int DivisibleByB(int a, int b)
         {
-            int c = b;
-            while (c <= a || c % b != 0)
-            {
-                c += b;
-            }
-            return c;
+            //todo
         }
     }
 }

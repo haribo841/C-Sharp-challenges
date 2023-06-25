@@ -4,6 +4,9 @@ namespace Challenges
 {
     public class Program51
     {
-        public static bool IsSafeBridge(string str) => !str.Contains(' ');
+        public static bool IsSafeBridge(string str)
+        {
+            //todo
+        }
     }
 }

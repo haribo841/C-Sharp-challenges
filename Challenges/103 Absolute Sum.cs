@@ -6,12 +6,7 @@ namespace Challenges
     {
         public static int GetAbsSum(int[] arr)
         {
-            int y = 0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                y += Program49.Absolute(arr[i]);
-            }
-            return y;
+            //todo
         }
     }
 }

@@ -7,10 +7,7 @@ namespace Challenges
     {
         public static object[] FirstLast(object[] values)
         {
-            object[] result = new object[2];
-            result[0] = values[0];
-            result[1] = values[^1];
-            return result;
+            //todo
         }
     }
 }

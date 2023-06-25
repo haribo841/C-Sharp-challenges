@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program12
     {
-        public static bool Reverse(bool boolean) => !boolean;
+        public static bool Reverse(bool boolean)
+        {
+            //todo
+        }
     }
 }

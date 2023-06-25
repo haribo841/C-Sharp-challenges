@@ -11,6 +11,9 @@ namespace Challenges
 {
     public class Program21
     {
-        public static int Animals(int chickens, int cows, int pigs) => chickens * 2 + (cows + pigs) * 4;
+        public static int Animals(int chickens, int cows, int pigs)
+        {
+            //todo
+        }
     }
 }

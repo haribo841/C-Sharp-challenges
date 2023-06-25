@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program27
     {
-        public static int InchesToFeet(int inches) => inches < 12 ? 0 : inches / 12;
+        public static int InchesToFeet(int inches)
+        {
+            //todo
+        }
     }
 }

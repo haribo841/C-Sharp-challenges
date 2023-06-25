@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program109
     {
-        public static int Factorial(int num) => num == 0 ? 1 : num * Factorial(--num);
+        public static int Factorial(int num)
+        {
+            //todo
+        }
     }
 }

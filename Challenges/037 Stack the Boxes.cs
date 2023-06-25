@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program37
     {
-        public static int StackBoxes(int n) => n * n;
+        public static int StackBoxes(int n)
+        {
+            //todo
+        }
     }
 }

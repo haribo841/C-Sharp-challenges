@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program34
     {
-        public static bool Divisible(int number) => number % 100 == 0;
+        public static bool Divisible(int number)
+        {
+            //todo
+        }
     }
 }

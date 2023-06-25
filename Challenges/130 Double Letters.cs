@@ -7,13 +7,7 @@ namespace Challenges
     {
         public static bool DoubleLetters(string word)
         {
-            bool result = false;
-            char[] chars = word.ToCharArray();
-            for (int i = 0; i < chars.Length - 1; i++)
-            {
-                if (chars[i] == chars[i+1]) { result = true; break; }
-            }
-            return result;
+            //todo
         }
     }
 }

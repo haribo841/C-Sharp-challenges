@@ -6,6 +6,9 @@ namespace Challenges
 {
     public class Program41
     {
-        public static int TotalCups(int n) => n / 6 + n;
+        public static int TotalCups(int n)
+        {
+            //todo
+        }
     }
 }

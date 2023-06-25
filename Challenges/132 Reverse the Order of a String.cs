@@ -7,13 +7,7 @@ namespace Challenges
     {
         public static string Reverse(string str)
         {
-            char[] chars = str.ToCharArray();
-            char[] result = new char[str.Length];
-            for (int i = 0; i < chars.Length; i++)
-            {
-                result[i] = chars[chars.Length-i-1];
-            }
-            return new string(result);
+            //todo
         }
     }
 }

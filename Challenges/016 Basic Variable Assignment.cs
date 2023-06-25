@@ -7,6 +7,9 @@ namespace Challenges
 {
     public class Program16
     {
-        public static string NameString(string name) => name + "Edabit";
+        public static string NameString(string name)
+        {
+            //todo
+        }
     }
 }

@@ -8,9 +8,7 @@ namespace Challenges
     {
         public static int CountDs(string str)
         {
-            int count = 0;
-            foreach (char c in str) { if (c is 'D' or 'd') count++; }
-            return count;
+            //todo
         }
     }
 }

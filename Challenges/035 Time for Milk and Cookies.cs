@@ -7,6 +7,9 @@ namespace Challenges
     public class Program35
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Usuñ nieu¿ywany parametr", Justification = "¯adne prze³adowanie metody „TimeForMilkAndCookies” nie pobiera nastêpuj¹cej liczby argumentów: 3")]
-        public static bool TimeForMilkAndCookies(int year, int month, int day) => month == 12 && day == 24;
+        public static bool TimeForMilkAndCookies(int year, int month, int day)
+        {
+            //todo
+        }
     }
 }
