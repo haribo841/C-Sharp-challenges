@@ -7,13 +7,12 @@ namespace Challenges
     {
         public static int[] NoOdds(int[] arr)
         {
-            int[] result = new int[arr.Length];
+            List<int> result = new List<int>();
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i]%2 == 0) result[i] = arr[i];
-                continue;
+                if (arr[i]%2 == 0) result.Add(arr[i]); // adding elements using add() method
             }
-            return result;
+            return result.ToArray();
         }
     }
 }
