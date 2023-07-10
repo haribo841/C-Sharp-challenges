@@ -7,7 +7,7 @@ namespace Challenges
     {
         public static string FormatDate(string date)
         {
-            string year = date.Substring(6);
+            string year = date[6..];
             string day = date.Substring(3, 2);
             string month = date[..2];
             return year+day+month;

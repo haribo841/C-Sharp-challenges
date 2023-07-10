@@ -21,16 +21,16 @@ namespace Tests
             int[] haystack_9 = new int[] { 53, 65, 52, 62, 59 };
             int[] haystack_10 = new int[] { 393, 156, 14, 166, 129, 246 };
 
-            Assert.AreEqual(new int[] { 2, 4, 6, 8 }, Program133.NoOdds(haystack_1));
-            Assert.AreEqual(new int[] { 6 }, Program133.NoOdds(haystack_2));
-            Assert.AreEqual(new int[] { 718, 644, 380, 440 }, Program133.NoOdds(haystack_3));
-            Assert.AreEqual(new int[] { 148, 6, 16 }, Program133.NoOdds(haystack_4));
-            Assert.AreEqual(new int[] { }, Program133.NoOdds(haystack_5));
-            Assert.AreEqual(new int[] { 34, 32, 40 }, Program133.NoOdds(haystack_6));
-            Assert.AreEqual(new int[] { 1232, 1990, 1284, 1958 }, Program133.NoOdds(haystack_7));
-            Assert.AreEqual(new int[] { 2766, 2916 }, Program133.NoOdds(haystack_8));
-            Assert.AreEqual(new int[] { 52, 62 }, Program133.NoOdds(haystack_9));
-            Assert.AreEqual(new int[] { 156, 14, 166, 246 }, Program133.NoOdds(haystack_10));
+            Assert.That(Program133.NoOdds(haystack_1), Is.EqualTo(new int[] { 2, 4, 6, 8 }));
+            Assert.That(Program133.NoOdds(haystack_2), Is.EqualTo(new int[] { 6 }));
+            Assert.That(Program133.NoOdds(haystack_3), Is.EqualTo(new int[] { 718, 644, 380, 440 }));
+            Assert.That(Program133.NoOdds(haystack_4), Is.EqualTo(new int[] { 148, 6, 16 }));
+            Assert.That(Program133.NoOdds(haystack_5), Is.EqualTo(new int[] { }));
+            Assert.That(Program133.NoOdds(haystack_6), Is.EqualTo(new int[] { 34, 32, 40 }));
+            Assert.That(Program133.NoOdds(haystack_7), Is.EqualTo(new int[] { 1232, 1990, 1284, 1958 }));
+            Assert.That(Program133.NoOdds(haystack_8), Is.EqualTo(new int[] { 2766, 2916 }));
+            Assert.That(Program133.NoOdds(haystack_9), Is.EqualTo(new int[] { 52, 62 }));
+            Assert.That(Program133.NoOdds(haystack_10), Is.EqualTo(new int[] { 156, 14, 166, 246 }));
         }
     }
 }

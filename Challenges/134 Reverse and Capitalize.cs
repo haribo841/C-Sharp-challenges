@@ -1,10 +1,13 @@
-//Create a function that takes voltage and current and returns the calculated power.
+//Create a function that takes a string of lowercase characters and returns that string reversed and in upper case.
 using System;
 
 namespace Challenges
 {
-    public class Program4
+    public class Program134
     {
-        public static int CircuitPower(int voltage, int current) => voltage * current;
+        public static string ReverseCapitalize(string str)
+        {
+            return "";
+        }
     }
 }
