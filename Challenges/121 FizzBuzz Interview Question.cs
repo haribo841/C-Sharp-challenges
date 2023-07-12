@@ -6,9 +6,6 @@ namespace Challenges
 {
     public class Program121
     {
-        public static string FizzBuzz(int n)
-        {
-            return n % 3 == 0 && n % 5 == 0 ? "FizzBuzz" : n % 5 == 0 ? "Buzz" : n % 3 == 0 ? "Fizz" : n.ToString();
-        }
+        public static string FizzBuzz(int n) => n % 3 == 0 && n % 5 == 0 ? "FizzBuzz" : n % 5 == 0 ? "Buzz" : n % 3 == 0 ? "Fizz" : n.ToString();
     }
 }

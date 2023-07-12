@@ -20,17 +20,19 @@ namespace Tests
             int[] haystack_8 = new int[] { 2766, 2651, 2373, 2916, 2397, 2539 };
             int[] haystack_9 = new int[] { 53, 65, 52, 62, 59 };
             int[] haystack_10 = new int[] { 393, 156, 14, 166, 129, 246 };
-
-            Assert.That(Program133.NoOdds(haystack_1), Is.EqualTo(new int[] { 2, 4, 6, 8 }));
-            Assert.That(Program133.NoOdds(haystack_2), Is.EqualTo(new int[] { 6 }));
-            Assert.That(Program133.NoOdds(haystack_3), Is.EqualTo(new int[] { 718, 644, 380, 440 }));
-            Assert.That(Program133.NoOdds(haystack_4), Is.EqualTo(new int[] { 148, 6, 16 }));
-            Assert.That(Program133.NoOdds(haystack_5), Is.EqualTo(new int[] { }));
-            Assert.That(Program133.NoOdds(haystack_6), Is.EqualTo(new int[] { 34, 32, 40 }));
-            Assert.That(Program133.NoOdds(haystack_7), Is.EqualTo(new int[] { 1232, 1990, 1284, 1958 }));
-            Assert.That(Program133.NoOdds(haystack_8), Is.EqualTo(new int[] { 2766, 2916 }));
-            Assert.That(Program133.NoOdds(haystack_9), Is.EqualTo(new int[] { 52, 62 }));
-            Assert.That(Program133.NoOdds(haystack_10), Is.EqualTo(new int[] { 156, 14, 166, 246 }));
+            Assert.Multiple(() =>
+            {
+                Assert.That(Program133.NoOdds(haystack_1), Is.EqualTo(new int[] { 2, 4, 6, 8 }));
+                Assert.That(Program133.NoOdds(haystack_2), Is.EqualTo(new int[] { 6 }));
+                Assert.That(Program133.NoOdds(haystack_3), Is.EqualTo(new int[] { 718, 644, 380, 440 }));
+                Assert.That(Program133.NoOdds(haystack_4), Is.EqualTo(new int[] { 148, 6, 16 }));
+                Assert.That(Program133.NoOdds(haystack_5), Is.EqualTo(new int[] { }));
+                Assert.That(Program133.NoOdds(haystack_6), Is.EqualTo(new int[] { 34, 32, 40 }));
+                Assert.That(Program133.NoOdds(haystack_7), Is.EqualTo(new int[] { 1232, 1990, 1284, 1958 }));
+                Assert.That(Program133.NoOdds(haystack_8), Is.EqualTo(new int[] { 2766, 2916 }));
+                Assert.That(Program133.NoOdds(haystack_9), Is.EqualTo(new int[] { 52, 62 }));
+                Assert.That(Program133.NoOdds(haystack_10), Is.EqualTo(new int[] { 156, 14, 166, 246 }));
+            });
         }
     }
 }
