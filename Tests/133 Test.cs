@@ -26,7 +26,7 @@ namespace Tests
                 Assert.That(Program133.NoOdds(haystack_2), Is.EqualTo(new int[] { 6 }));
                 Assert.That(Program133.NoOdds(haystack_3), Is.EqualTo(new int[] { 718, 644, 380, 440 }));
                 Assert.That(Program133.NoOdds(haystack_4), Is.EqualTo(new int[] { 148, 6, 16 }));
-                Assert.That(Program133.NoOdds(haystack_5), Is.EqualTo(new int[] { }));
+                Assert.That(Program133.NoOdds(haystack_5), Is.EqualTo(Array.Empty<int>()));
                 Assert.That(Program133.NoOdds(haystack_6), Is.EqualTo(new int[] { 34, 32, 40 }));
                 Assert.That(Program133.NoOdds(haystack_7), Is.EqualTo(new int[] { 1232, 1990, 1284, 1958 }));
                 Assert.That(Program133.NoOdds(haystack_8), Is.EqualTo(new int[] { 2766, 2916 }));
