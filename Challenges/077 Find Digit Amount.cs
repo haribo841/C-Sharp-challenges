@@ -4,6 +4,6 @@ namespace Challenges
 {
     public class Program77
     {
-        public static int FindDigitAmount(int num) => num.ToString().Length;
+        public static int FindDigitAmount(int num) => num == 0 ? 1 : (int)Math.Floor(Math.Log10(Math.Abs(num)) + 1);
     }
 }
