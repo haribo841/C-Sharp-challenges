@@ -7,14 +7,14 @@ namespace Challenges
     {
         public static string NameShuffle(string str)
         {
-            int found = 0;            
-            foreach (char c in str)
+            int spaceIndex = str.IndexOf(' ');
+            if (spaceIndex != -1)
             {
-                found = str.IndexOf(" ");
+                string firstName = str.Substring(0, spaceIndex);
+                string lastName = str.Substring(spaceIndex + 1);
+                return lastName + " " + firstName;
             }
-            string surname = str[++found..];
-            string name = str[..--found];
-            return surname+" "+name;
+            return str; // If there's no space, return the original string
         }
     }
 }

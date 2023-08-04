@@ -7,9 +7,8 @@ namespace Challenges
     {
         public static int CountVowels(string str)
         {
-            int count = 0;
-            foreach (char c in str) { if (c is 'a' or 'e' or 'i' or 'o' or 'u' or 'y' ) count++; }
-            return count;
+            string vowels = "aeiou";
+            return str.Count(c => vowels.Contains(c));
         }
     }
 }
