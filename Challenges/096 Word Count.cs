@@ -6,10 +6,6 @@ namespace Challenges
 {
     public class Program96
     {
-        public static int CountWords(string str)
-        {
-            string[] words = str.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-            return words.Length;
-        }
+        public static int CountWords(string str) => str.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Length;
     }
 }

@@ -5,13 +5,6 @@ namespace Challenges
 {
     public class Program99
     {
-        public static bool HurdleJump(int[] hurdles, int jumpHeight)
-        {
-            foreach (int i in hurdles)
-            {
-                if (i > jumpHeight) return false;
-            }
-            return true;
-        }
+        public static bool HurdleJump(int[] hurdles, int jumpHeight) => hurdles.All(hurdle => hurdle <= jumpHeight);
     }
 }

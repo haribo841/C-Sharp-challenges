@@ -3,12 +3,30 @@ using System;
 using System.Linq;
 namespace Challenges
 {
-	public class Program54
-	{
+    public class Program54
+    {
         public static int Diff(int[] arr)
         {
-            int max = arr.Max();
-            int min = arr.Min();
+            if (arr == null || arr.Length == 0)
+            {
+                throw new ArgumentException("Input array is empty or null.");
+            }
+
+            int min = arr[0];
+            int max = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < min)
+                {
+                    min = arr[i];
+                }
+                else if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
+            }
+
             return max - min;
         }
     }

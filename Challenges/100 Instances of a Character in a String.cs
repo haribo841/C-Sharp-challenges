@@ -4,17 +4,6 @@ namespace Challenges
 {
     public class Program100
     {
-        public static int CharCount(char myChar, string str)
-        {
-            int count = 0;
-            foreach (char c in str)
-            {
-                if (c == myChar)
-                {
-                    count++;
-                }
-            }
-            return count;
-        }
+        public static int CharCount(char myChar, string str) => str.Count(c => c == myChar);
     }
 }

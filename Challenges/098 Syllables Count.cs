@@ -6,8 +6,15 @@ namespace Challenges
     {
         public static int NumberSyllables(string word)
         {
-            string[] syllables = word.Split('-');
-            return syllables.Length;
+            int syllableCount = 1; // Initialize to 1 because a single-word input has at least 1 syllable
+            foreach (char c in word)
+            {
+                if (c == '-')
+                {
+                    syllableCount++;
+                }
+            }
+            return syllableCount;
         }
     }
 }

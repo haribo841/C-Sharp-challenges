@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program20
     {
-        public static string HelloName(string name) => "Hello " + name + "!";
+        public static string HelloName(string name) => $"Hello {name}!";
     }
 }
