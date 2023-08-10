@@ -30,7 +30,7 @@ namespace Challenges
             while (index < txt.Length)
             {
                 char currentChar = txt[index];
-                if (currentChar >= '0' && currentChar <= '9')
+                if (currentChar is >= '0' and <= '9')
                 {
                     result = result * 10 + (currentChar - '0');
                     index++;

@@ -8,10 +8,7 @@ namespace Challenges
         {
             for (int i = 0; i < str.Length; i++)
             {
-                if (str[i] == ' ')
-                {
-                    return false;
-                }
+                if (str[i] == ' ') return false;
             }
             return true;
         }
