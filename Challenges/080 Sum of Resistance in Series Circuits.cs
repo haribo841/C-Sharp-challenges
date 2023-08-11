@@ -11,6 +11,30 @@ namespace Challenges
 {
     public class Program80
     {
-        public static string SeriesResistance(double[] arr) => arr.Sum()<= 1 ? Math.Round(arr.Sum() , 1).ToString(CultureInfo.InvariantCulture) + " ohm": Math.Round(arr.Sum(), 1).ToString(CultureInfo.InvariantCulture).Replace(',', '.') + " ohms";
+        public static string SeriesResistance(double[] arr)
+        {
+            double totalResistance = 0;
+            foreach (double resistance in arr)
+            {
+                totalResistance += resistance;
+            }
+
+            if (Math.Abs(totalResistance - 1.0) < 1e-9)
+            {
+                return "1 ohm";
+            }
+            else if (totalResistance < 1.0)
+            {
+                return totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohm";
+            }
+            else if (totalResistance == Math.Floor(totalResistance))
+            {
+                return totalResistance.ToString("F0", CultureInfo.InvariantCulture) + " ohms";
+            }
+            else
+            {
+                return totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohms";
+            }
+        }
     }
 }

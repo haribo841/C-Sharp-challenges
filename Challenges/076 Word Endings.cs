@@ -9,13 +9,27 @@ namespace Challenges
         public static string[] AddEnding(string[] arr, string ending)
         {
             string[] result = new string[arr.Length];
-            Parallel.ForEach(Partitioner.Create(0, arr.Length), range =>
+            int maxLength = 0;
+
+            // Find the maximum length of strings in the input array
+            foreach (string str in arr)
             {
-                for (int i = range.Item1; i < range.Item2; i++)
-                {
-                    result[i] = arr[i] + ending;
-                }
-            });
+                if (str.Length > maxLength)
+                    maxLength = str.Length;
+            }
+
+            // Pre-allocate memory for the result strings
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result[i] = new string(' ', arr[i].Length + ending.Length);
+            }
+
+            // Append the ending to each string
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result[i] = arr[i] + ending;
+            }
+
             return result;
         }
     }

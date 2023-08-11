@@ -6,7 +6,7 @@ namespace Challenges
     {
         public static int Search(int[] arr, int item)
         {
-            Dictionary<int, int> indexDict = new Dictionary<int, int>();
+            Dictionary<int, int> indexDict = new();
 
             for (int i = 0; i < arr.Length; i++)
             {

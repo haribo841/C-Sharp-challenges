@@ -6,14 +6,18 @@ namespace Challenges
     {
         public static int Length(int n)
         {
-            if (n == 0) return 1;
+            if (n == 0)
+                return 1;
+
             int length = 0;
-            while (n != 0)
+
+            while (n >= 10)
             {
                 n /= 10;
                 length++;
             }
-            return length;
+
+            return length + 1;
         }
     }
 }

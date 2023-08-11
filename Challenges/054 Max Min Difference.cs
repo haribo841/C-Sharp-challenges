@@ -7,21 +7,12 @@ namespace Challenges
     {
         public static int Diff(int[] arr)
         {
-            if (arr == null || arr.Length == 0)
-            {
-                throw new ArgumentException("Input array is empty or null.");
-            }
-
+            if (arr == null || arr.Length == 0) throw new ArgumentException("Input array is empty or null.");
             int min = arr[0];
-
             for (int i = 1; i < arr.Length; i++)
             {
-                if (arr[i] < min)
-                {
-                    min = arr[i];
-                }
+                if (arr[i] < min) min = arr[i];
             }
-
             return Program67.FindLargestNum(arr) - min;
         }
     }
