@@ -9,15 +9,13 @@ namespace Challenges
             if (n == 0)
                 return 1;
 
-            int length = 0;
+            // Calculate the number of digits using logarithms
+            int numDigits = (int)Math.Floor(Math.Log10(n)) + 1;
 
-            while (n >= 10)
-            {
-                n /= 10;
-                length++;
-            }
-
-            return length + 1;
+            return numDigits;
         }
     }
 }
+// =>(n == 0)?1:(int)Math.Floor(Math.Log10(n)) + 1;
+// => num == 0 ? 1 : (int)Math.Floor(Math.Log10(Math.Abs(num)) + 1);
+// => (n == 0) ? 1 : (int)Math.Floor(Math.Log10(Math.Abs(n)) + 1);

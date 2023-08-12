@@ -1,19 +1,19 @@
 //Given an array of integers, return the difference between the largest and smallest integers in the array.
 using System;
+using System.Collections;
 using System.Linq;
 namespace Challenges
 {
     public class Program54
     {
-        public static int Diff(int[] arr)
+        public static int Diff(int[] arr)//=>arr.Max()-arr.Min();
         {
-            if (arr == null || arr.Length == 0) throw new ArgumentException("Input array is empty or null.");
-            int min = arr[0];
-            for (int i = 1; i < arr.Length; i++)
+            double[] doubleArray = new double[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] < min) min = arr[i];
-            }
-            return Program67.FindLargestNum(arr) - min;
+                doubleArray[i] = (double)arr[i]; }
+
+            return Program67.FindLargestNum(arr) - (int)Program66.FindSmallestNum(doubleArray);
         }
     }
 }

@@ -8,8 +8,7 @@ namespace Challenges
     {
         public static bool Check(int[] arr, int el)
         {
-            HashSet<int> hashSet = new HashSet<int>(arr);
-
+            HashSet<int> hashSet = new(arr);
             return hashSet.Contains(el);
         }
     }

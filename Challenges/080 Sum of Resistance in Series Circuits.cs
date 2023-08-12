@@ -27,13 +27,11 @@ namespace Challenges
             {
                 return totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohm";
             }
-            else if (totalResistance == Math.Floor(totalResistance))
-            {
-                return totalResistance.ToString("F0", CultureInfo.InvariantCulture) + " ohms";
-            }
             else
             {
-                return totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohms";
+                return totalResistance == Math.Floor(totalResistance)
+                    ? totalResistance.ToString("F0", CultureInfo.InvariantCulture) + " ohms"
+                    : totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohms";
             }
         }
     }
