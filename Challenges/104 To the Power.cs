@@ -23,3 +23,21 @@ namespace Challenges
         }
     }
 }
+/*
+{
+    if (exponent < 0)
+        throw new ArgumentException("Exponent must be non-negative.");
+    if (exponent == 0)
+        return 1;
+    if (exponent == 1)
+        return number;
+
+    long halfPower = CalculateExponent(number, exponent / 2);
+    long result = halfPower * halfPower;
+
+    if (exponent % 2 == 1)
+        result *= number;
+
+    return result;
+}
+*/

@@ -5,7 +5,7 @@ namespace Challenges
 {
     public class Program91
     {
-        public static double YenToUsd(int yen) => (double)((int)((yen / 107.5) * 100 + 0.5)) / 100;
+        public static double YenToUsd(int yen) => (double)((int)(yen / 107.5 * 100 + 0.5)) / 100;
     }
 }
 // => Math.Round(yen * 0.00930232558, 2);

@@ -32,13 +32,9 @@ namespace Challenges
             {
                 return "mixed";
             }
-            else if (hasUppercase)
-            {
-                return "upper";
-            }
             else
             {
-                return "lower";
+                return hasUppercase ? "upper" : "lower";
             }
         }
     }

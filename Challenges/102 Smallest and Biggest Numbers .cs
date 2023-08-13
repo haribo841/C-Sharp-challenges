@@ -7,8 +7,27 @@ namespace Challenges
     {
         public static double[] FindMinMax(double[] values)
         {
-            double minValue = values.Min();
-            double maxValue = values.Max();
+            if (values.Length == 0)
+            {
+                // Handle the case of an empty array
+                return new double[] { double.NaN, double.NaN };
+            }
+
+            double minValue = values[0];
+            double maxValue = values[0];
+
+            for (int i = 1; i < values.Length; i++)
+            {
+                if (values[i] < minValue)
+                {
+                    minValue = values[i];
+                }
+                else if (values[i] > maxValue)
+                {
+                    maxValue = values[i];
+                }
+            }
+
             return new double[] { minValue, maxValue };
         }
     }

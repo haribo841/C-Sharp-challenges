@@ -29,3 +29,32 @@ namespace Challenges
         }
     }
 }
+/*
+{
+    int x = 0;
+    int y = 0;
+    
+    foreach (char direction in d)
+    {
+        switch (direction)
+        {
+            case 'N':
+                y += 1;
+                break;
+            case 'S':
+                y -= 1;
+                break;
+            case 'E':
+                x += 1;
+                break;
+            case 'W':
+                x -= 1;
+                break;
+            default:
+                return false; // Invalid direction
+        }
+    }
+    
+    return x == 0 && y == 0;
+}
+*/
