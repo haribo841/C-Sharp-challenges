@@ -27,15 +27,7 @@ namespace Challenges
                     }
                 }
             }
-
-            if (hasUppercase && hasLowercase)
-            {
-                return "mixed";
-            }
-            else
-            {
-                return hasUppercase ? "upper" : "lower";
-            }
+            return hasUppercase && hasLowercase ? "mixed" : hasUppercase ? "upper" : "lower";
         }
     }
 }

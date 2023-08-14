@@ -18,19 +18,13 @@ namespace Challenges
             {
                 totalResistance += resistance;
             }
-
-            if (Math.Abs(totalResistance - 1.0) < 1e-9)
-            {
-                return "1 ohm";
-            }
-            else
-            {
-                return totalResistance < 1.0
+            return Math.Abs(totalResistance - 1.0) < 1e-9
+                ? "1 ohm"
+                : totalResistance < 1.0
                     ? totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohm"
                     : totalResistance == Math.Floor(totalResistance)
                                     ? totalResistance.ToString("F0", CultureInfo.InvariantCulture) + " ohms"
                                     : totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohms";
-            }
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Challenges
             int spaceIndex = str.IndexOf(' ');
             if (spaceIndex != -1)
             {
-                string firstName = str.Substring(0, spaceIndex);
+                string firstName = str[..spaceIndex];
                 string lastName = str.Substring(spaceIndex + 1);
                 return lastName + " " + firstName;
             }
