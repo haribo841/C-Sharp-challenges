@@ -15,7 +15,6 @@ namespace Challenges
             {
                 if ((exponent & 1) == 1) // Check if exponent is odd
                     result *= number;
-
                 number *= number;
                 exponent >>= 1; // Divide exponent by 2
             }

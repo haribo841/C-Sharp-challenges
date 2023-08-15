@@ -9,10 +9,7 @@ namespace Challenges
             int syllableCount = 1; // Initialize to 1 because a single-word input has at least 1 syllable
             foreach (char c in word)
             {
-                if (c == '-')
-                {
-                    syllableCount++;
-                }
+                if (c == '-') syllableCount++;
             }
             return syllableCount;
         }

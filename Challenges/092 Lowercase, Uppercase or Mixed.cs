@@ -12,19 +12,12 @@ namespace Challenges
         {
             bool hasUppercase = false;
             bool hasLowercase = false;
-
             foreach (char c in str)
             {
                 if (char.IsLetter(c))
                 {
-                    if (char.IsUpper(c))
-                    {
-                        hasUppercase = true;
-                    }
-                    else
-                    {
-                        hasLowercase = true;
-                    }
+                    if (char.IsUpper(c)) hasUppercase = true;
+                    else hasLowercase = true;
                 }
             }
             return hasUppercase && hasLowercase ? "mixed" : hasUppercase ? "upper" : "lower";

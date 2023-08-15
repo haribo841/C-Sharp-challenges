@@ -11,7 +11,7 @@ namespace Challenges
             if (spaceIndex != -1)
             {
                 string firstName = str[..spaceIndex];
-                string lastName = str.Substring(spaceIndex + 1);
+                string lastName = str[(spaceIndex + 1)..];
                 return lastName + " " + firstName;
             }
             return str; // If there's no space, return the original string

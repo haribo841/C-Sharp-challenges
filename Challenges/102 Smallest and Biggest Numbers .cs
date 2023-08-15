@@ -12,20 +12,12 @@ namespace Challenges
                 // Handle the case of an empty array
                 return new double[] { double.NaN, double.NaN };
             }
-
             double minValue = values[0];
             double maxValue = values[0];
-
             for (int i = 1; i < values.Length; i++)
             {
-                if (values[i] < minValue)
-                {
-                    minValue = values[i];
-                }
-                else if (values[i] > maxValue)
-                {
-                    maxValue = values[i];
-                }
+                if (values[i] < minValue) minValue = values[i];
+                else if (values[i] > maxValue) maxValue = values[i];
             }
 
             return new double[] { minValue, maxValue };
