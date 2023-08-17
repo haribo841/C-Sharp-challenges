@@ -7,7 +7,7 @@ namespace Challenges
     {
         public static int[] NoOdds(int[] arr)
         {
-            List<int> result = new List<int>();
+            List<int> result = new();
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i]%2 == 0) result.Add(arr[i]); // adding elements using add() method
