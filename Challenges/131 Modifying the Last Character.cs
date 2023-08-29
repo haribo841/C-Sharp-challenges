@@ -1,5 +1,6 @@
 //Create a function which makes the last character of a string repeat n number of times.
 using System;
+using System.Text;
 
 namespace Challenges
 {
@@ -7,17 +8,24 @@ namespace Challenges
     {
         public static string ModifyLast(string str, int n)
         {
-            char[] chars = str.ToCharArray();
-            char[] chars2 = new char[str.Length + n-1];
-            for (int i = 0; i < str.Length; i++)
+            if (str.Length == 0 || n <= 0)
             {
-                chars2[i] = chars[i];
+                return str; // No modification needed
             }
-            for (int i = str.Length; i < chars2.Length; i++)
+
+            char lastChar = str[str.Length - 1];
+            StringBuilder modified = new StringBuilder(str.Length + n - 1);
+
+            // Append the initial characters
+            modified.Append(str);
+
+            // Append the repeated last character
+            for (int i = 1; i < n; i++)
             {
-                chars2[i] = chars[str.Length - 1];
+                modified.Append(lastChar);
             }
-            return new string(chars2);
+
+            return modified.ToString();
         }
     }
 }

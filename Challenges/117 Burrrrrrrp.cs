@@ -4,15 +4,6 @@ namespace Challenges
 {
     public class Program117
     {
-        public static string LongBurp(int b)
-        {
-            char[] chars = new char[b];
-            for (int i = 0; i < chars.Length; i++)
-            {
-                chars[i] = 'r';
-            }
-            string s = new(chars);
-            return "Bu" + s +"p";
-        }
+        public static string LongBurp(int b) => "Bu" + new string('r', b) + "p";
     }
 }
