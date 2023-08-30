@@ -9,7 +9,7 @@ namespace Challenges
     {
         public static string GetWord(string left, string right)
         {
-            StringBuilder result = new StringBuilder(left.Length + right.Length + 1);
+            StringBuilder result = new(left.Length + right.Length + 1);
             result.Append(char.ToUpper(left[0]));
             result.Append(left.Substring(1));
             result.Append(right);

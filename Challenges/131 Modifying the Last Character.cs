@@ -14,7 +14,7 @@ namespace Challenges
             }
 
             char lastChar = str[str.Length - 1];
-            StringBuilder modified = new StringBuilder(str.Length + n - 1);
+            StringBuilder modified = new(str.Length + n - 1);
 
             // Append the initial characters
             modified.Append(str);

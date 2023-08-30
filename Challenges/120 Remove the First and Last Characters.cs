@@ -8,11 +8,7 @@ namespace Challenges
     {
         public static string RemoveFirstLast(string str)
         {
-            if (str.Length > 2)
-            {
-                return str.Substring(1, str.Length - 2);
-            }
-            return str;
+            return str.Length > 2 ? str.Substring(1, str.Length - 2) : str;
         }
     }
 }

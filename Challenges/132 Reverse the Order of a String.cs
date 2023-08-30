@@ -1,5 +1,6 @@
 //Create a function that takes a string as its argument and returns the string in reversed order.
 using System;
+using System.Text;
 
 namespace Challenges
 {
@@ -7,13 +8,12 @@ namespace Challenges
     {
         public static string Reverse(string str)
         {
-            char[] chars = str.ToCharArray();
-            char[] result = new char[str.Length];
-            for (int i = 0; i < chars.Length; i++)
+            StringBuilder reversed = new StringBuilder(str.Length);
+            for (int i = str.Length - 1; i >= 0; i--)
             {
-                result[i] = chars[chars.Length-i-1];
+                reversed.Append(str[i]);
             }
-            return new string(result);
+            return reversed.ToString();
         }
     }
 }

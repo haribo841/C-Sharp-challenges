@@ -7,7 +7,7 @@ namespace Challenges
     {
         public static string ReverseCapitalize(string str)
         {
-            return "";
+            return Program132.Reverse(str);
         }
     }
 }
