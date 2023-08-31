@@ -11,7 +11,7 @@ namespace Challenges
         {
             StringBuilder result = new(left.Length + right.Length + 1);
             result.Append(char.ToUpper(left[0]));
-            result.Append(left.Substring(1));
+            result.Append(left.AsSpan(1));//result.Append(left[1..]);
             result.Append(right);
             return result.ToString();
         }

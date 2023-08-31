@@ -8,17 +8,13 @@ namespace Tests
     [TestFixture]
     public class Tests38
     {
-        [Test]
-        public static void FixedTest()
+        [TestCase(1, new int[] { 1 })]
+        [TestCase(2, new int[] { 1, 2 })]
+        [TestCase(6, new int[] { 1, 2, 3, 4, 5, 6 })]
+        public static void TestPrintArray(int n, int[] expectedValues)
         {
-            List<int> myValues = new(new int[] { 1 });
-            Assert.That(Loop.PrintArray(1), Is.EqualTo(myValues));
-
-            myValues = new List<int>(new int[] { 1, 2 });
-            Assert.That(Loop.PrintArray(2), Is.EqualTo(myValues));
-
-            myValues = new List<int>(new int[] { 1, 2, 3, 4, 5, 6 });
-            Assert.That(Loop.PrintArray(6), Is.EqualTo(myValues));
+            List<int> myValues = new List<int>(expectedValues);
+            Assert.That(Loop.PrintArray(n), Is.EqualTo(myValues));
         }
     }
 }

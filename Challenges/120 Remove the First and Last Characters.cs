@@ -6,9 +6,6 @@ namespace Challenges
 {
     public class Program120
     {
-        public static string RemoveFirstLast(string str)
-        {
-            return str.Length > 2 ? str.Substring(1, str.Length - 2) : str;
-        }
+        public static string RemoveFirstLast(string str) => str.Length > 2 ? str.Substring(1, str.Length - 2) : str;
     }
 }

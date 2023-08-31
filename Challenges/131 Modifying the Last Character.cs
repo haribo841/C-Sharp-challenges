@@ -13,7 +13,7 @@ namespace Challenges
                 return str; // No modification needed
             }
 
-            char lastChar = str[str.Length - 1];
+            char lastChar = str[^1];
             StringBuilder modified = new(str.Length + n - 1);
 
             // Append the initial characters

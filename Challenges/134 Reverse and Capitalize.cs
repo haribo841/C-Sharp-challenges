@@ -5,9 +5,6 @@ namespace Challenges
 {
     public class Program134
     {
-        public static string ReverseCapitalize(string str)
-        {
-            return Program132.Reverse(str);
-        }
+        public static string ReverseCapitalize(string str) => Program132.Reverse(str.ToUpper());//Invariant());
     }
 }
