@@ -8,23 +8,16 @@ namespace Challenges
     {
         public static string ModifyLast(string str, int n)
         {
-            if (str.Length == 0 || n <= 0)
-            {
-                return str; // No modification needed
-            }
-
+            if (str.Length == 0 || n <= 0) return str; // No modification needed
             char lastChar = str[^1];
             StringBuilder modified = new(str.Length + n - 1);
-
             // Append the initial characters
             modified.Append(str);
-
             // Append the repeated last character
             for (int i = 1; i < n; i++)
             {
                 modified.Append(lastChar);
             }
-
             return modified.ToString();
         }
     }

@@ -11,7 +11,7 @@ namespace Challenges
             // Count the number of even values
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] % 2 == 0) evenCount++;
+                if ((arr[i] & 1) == 0) evenCount++;
             }
             // Create a new array for even values
             int[] evenValues = new int[evenCount];
@@ -19,7 +19,7 @@ namespace Challenges
             // Populate the new array with even values
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] % 2 == 0)
+                if ((arr[i] & 1) == 0)
                 {
                     evenValues[index] = arr[i];
                     index++;

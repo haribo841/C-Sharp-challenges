@@ -13,7 +13,7 @@ namespace Tests
         [TestCase(6, new int[] { 1, 2, 3, 4, 5, 6 })]
         public static void TestPrintArray(int n, int[] expectedValues)
         {
-            List<int> myValues = new List<int>(expectedValues);
+            List<int> myValues = new(expectedValues);
             Assert.That(Loop.PrintArray(n), Is.EqualTo(myValues));
         }
     }

@@ -8,7 +8,7 @@ namespace Challenges
     {
         public static string Reverse(string str)
         {
-            StringBuilder reversed = new StringBuilder(str.Length);
+            StringBuilder reversed = new(str.Length);
             for (int i = str.Length - 1; i >= 0; i--)
             {
                 reversed.Append(str[i]);
