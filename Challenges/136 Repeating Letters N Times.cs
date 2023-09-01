@@ -8,16 +8,17 @@ namespace Challenges
     {
         public static string Repeat(string str, int num)
         {
-            char[] chars = new char[str.Length * num];
-            char[] chars2 = str.ToCharArray();
-            for (int i = 0; i < chars2.Length; i++)
+            StringBuilder result = new StringBuilder();
+
+            foreach (char c in str)
             {
-                for (int j = 0; j < num; j++)
+                for (int i = 0; i < num; i++)
                 {
-                    chars[i * num + j] = chars2[i];
+                    result.Append(c);
                 }
             }
-            return new string(chars);
+
+            return result.ToString();
         }
     }
 }

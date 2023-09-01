@@ -11,7 +11,7 @@ namespace Challenges
         {
             StringBuilder sb = new StringBuilder(13);
 
-            sb.Append("(");
+            sb.Append('(');
             sb.Append(numbers[0]);
             sb.Append(numbers[1]);
             sb.Append(numbers[2]);
