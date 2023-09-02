@@ -18,7 +18,7 @@ namespace Tests
         public static void TestMean(int[] arr, double expectedResult)
         {
             double result = Program138.Mean(arr);
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Tests
             string[] haystack_6 = new string[] { "jazz", "quiz", "jump" };
             string[] haystack_7 = new string[] { "" };
             string[] haystack_8 = new string[] { "Broccoli", "Carrot", "Spinach" };
-            string[] haystack_9 = new string[] { };
+            string[] haystack_9 = Array.Empty<string>();
 
             Assert.AreEqual(new string[] { "Ryan", "Matt" }, Program139.IsFourLetters(haystack_1));
             Assert.AreEqual(new string[] { "Pair" }, Program139.IsFourLetters(haystack_2));

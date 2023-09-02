@@ -7,25 +7,10 @@ namespace Challenges
 {
     public class Program135
     {
-        public static string FormatPhoneNumber(int[] numbers)
-        {
-            StringBuilder sb = new StringBuilder(13);
-
-            sb.Append('(');
-            sb.Append(numbers[0]);
-            sb.Append(numbers[1]);
-            sb.Append(numbers[2]);
-            sb.Append(") ");
-            sb.Append(numbers[3]);
-            sb.Append(numbers[4]);
-            sb.Append(numbers[5]);
-            sb.Append("-");
-            sb.Append(numbers[6]);
-            sb.Append(numbers[7]);
-            sb.Append(numbers[8]);
-            sb.Append(numbers[9]);
-
-            return sb.ToString();
-        }
+        public static string FormatPhoneNumber(int[] numbers) =>
+            string.Format("({0}{1}{2}) {3}{4}{5}-{6}{7}{8}{9}",
+            numbers[0], numbers[1], numbers[2],
+            numbers[3], numbers[4], numbers[5],
+            numbers[6], numbers[7], numbers[8], numbers[9]);
     }
 }

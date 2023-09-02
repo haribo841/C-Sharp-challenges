@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program138
     {
-        public static double Mean(int[] arr) => Math.Round(((double)arr.Sum() / arr.Length), 2);
+        public static double Mean(int[] arr) => Math.Round((double)arr.Sum() / arr.Length, 2);
     }
 }

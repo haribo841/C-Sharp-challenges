@@ -21,7 +21,7 @@ namespace Tests
         public static void TestFormatPhoneNumber(int[] numbers, string expectedResult)
         {
             string result = Program135.FormatPhoneNumber(numbers);
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }

@@ -11,10 +11,7 @@ namespace Challenges
             int counter2 = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i].Length == 4)
-                {
-                    counter++;
-                }
+                if (arr[i].Length == 4) counter++;
             }
             string[] result = new string[counter];
             for (int i = 0; i < arr.Length; i++)

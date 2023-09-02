@@ -17,7 +17,7 @@ namespace Tests
         public static void TestIsAvgWhole(int[] arr, bool expectedResult)
         {
             bool result = Program137.IsAvgWhole(arr);
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }

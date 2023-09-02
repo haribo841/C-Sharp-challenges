@@ -8,13 +8,13 @@ namespace Tests
     public class Tests8
     {
         [Test]
-        [TestCase(5, false, TestName = "{0} is not eual or less than zero")]
-        [TestCase(0, true, TestName = "{0} is eual or less than zero")]
-        [TestCase(-5, true, TestName = "{0} is eual or less than zero")]
-        [TestCase(1, false, TestName = "{0} is not eual or less than zero")]
-        [TestCase(2, false, TestName = "{0} is not eual or less than zero")]
-        [TestCase(1000, false, TestName = "{0} not is eual or less than zero")]
-        [TestCase(0.5, false, TestName = "{0} not is eual or less than zero")]
+        [TestCase(5, false)]
+        [TestCase(0, true)]
+        [TestCase(-5, true)]
+        [TestCase(1, false)]
+        [TestCase(2, false)]
+        [TestCase(1000, false)]
+        [TestCase(0.5, false)]
         public void FixedTest(double a, bool expectedResult)
         {
             // Arrange

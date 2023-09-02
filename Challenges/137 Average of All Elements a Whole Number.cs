@@ -7,15 +7,6 @@ namespace Challenges
 {
     public class Program137
     {
-        public static bool IsAvgWhole(int[] arr)
-        {
-                int totalSum = 0;
-                foreach (int num in arr)
-                {
-                    totalSum += num;
-                }
-                double average = (double)totalSum / arr.Length;
-                return average == (int)average;
-        }
+        public static bool IsAvgWhole(int[] arr) => (arr.Sum() % arr.Length) == 0;
     }
 }
