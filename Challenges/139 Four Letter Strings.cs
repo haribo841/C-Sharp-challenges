@@ -7,21 +7,17 @@ namespace Challenges
     {
         public static string[] IsFourLetters(string[] arr)
         {
-            int counter = 0;
-            int counter2 = 0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i].Length == 4) counter++;
-            }
-            string[] result = new string[counter];
+            string[] result = new string[0]; // Initialize an empty array to store results
+
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i].Length == 4)
                 {
-                    result[counter2] = arr[i];
-                    counter2++;
+                    Array.Resize(ref result, result.Length + 1); // Resize the result array
+                    result[result.Length - 1] = arr[i]; // Add the four-letter word to the result array
                 }
             }
+
             return result;
         }
     }

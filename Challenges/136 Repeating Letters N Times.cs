@@ -8,7 +8,7 @@ namespace Challenges
     {
         public static string Repeat(string str, int num)
         {
-            StringBuilder result = new StringBuilder();
+            StringBuilder result = new();
             foreach (char c in str)
             {
                 for (int i = 0; i < num; i++)

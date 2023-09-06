@@ -8,21 +8,20 @@ namespace Tests
     public class Tests141
     {
         [Test]
-        [TestCase("hello", ExpectedResult = "ehllo")]
-        [TestCase("edabit", ExpectedResult = "abdeit")]
-        [TestCase("hacker", ExpectedResult = "acehkr")]
-        [TestCase("geek", ExpectedResult = "eegk")]
-        [TestCase("javascript", ExpectedResult = "aacijprstv")]
-        [TestCase("credibility", ExpectedResult = "bcdeiiilrty")]
-        [TestCase("apostrophe", ExpectedResult = "aehoopprst")]
-        [TestCase("determination", ExpectedResult = "adeeiimnnortt")]
-        [TestCase("win", ExpectedResult = "inw")]
-        [TestCase("synthesis", ExpectedResult = "ehinsssty")]
-        public static string TestAlphabetSoup(string str)
+        [TestCase("hello", "ehllo")]
+        [TestCase("edabit", "abdeit")]
+        [TestCase("hacker", "acehkr")]
+        [TestCase("geek", "eegk")]
+        [TestCase("javascript", "aacijprstv")]
+        [TestCase("credibility", "bcdeiiilrty")]
+        [TestCase("apostrophe", "aehoopprst")]
+        [TestCase("determination", "adeeiimnnortt")]
+        [TestCase("win", "inw")]
+        [TestCase("synthesis", "ehinsssty")]
+        public static void TestAlphabetSoup(string str, string expectedResult)
         {
             string result = Program141.AlphabetSoup(str);
-            //Assert.That(result, Is.EqualTo(TestContext.CurrentContext.Result));
-            return result;
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }
