@@ -1,4 +1,6 @@
-//Create a function that takes two integers and checks if they are equal.
+//Your task is to create a Circle constructor that creates a circle with a radius provided by an argument.
+//The circles constructed must have two getters GetArea() (PI*r^2) and GetPerimeter() (2*PI*r)
+//which give both respective areas and perimeter (circumference).
 using System;
 
 namespace Challenges
@@ -27,7 +29,25 @@ namespace Challenges
 
         public class Circle
         {
-            //put code here
+            public double Radius;
+
+            // Constructor to initialize the radius
+            public Circle(double radius)
+            {
+                Radius = radius;
+            }
+
+            // Getter for calculating the area of the circle (PI * r^2)
+            public double GetArea()
+            {
+                return Math.PI * Math.Pow(Radius, 2);
+            }
+
+            // Getter for calculating the perimeter (circumference) of the circle (2 * PI * r)
+            public double GetPerimeter()
+            {
+                return 2 * Math.PI * Radius;
+            }
         }
 
         //unquote and use run to test these cases

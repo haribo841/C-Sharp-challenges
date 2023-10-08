@@ -1,10 +1,13 @@
-//Create a function that takes two integers and checks if they are equal.
+//Create a function that takes a string and returns a string with spaces in between all of the characters.
 using System;
 
 namespace Challenges
 {
-    public class Program10
+    public class Program143
     {
-        public static bool IsEqual(int num1, int num2) => num1 == num2;
+        public static string SpaceMeOut(string str)
+        {
+            return "todo";
+        }
     }
 }

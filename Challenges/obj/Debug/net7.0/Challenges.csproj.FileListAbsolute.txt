@@ -3,7 +3,6 @@ C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\bin\Debug\net7.0\Challenges.d
 C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\bin\Debug\net7.0\Challenges.runtimeconfig.json
 C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\bin\Debug\net7.0\Challenges.dll
 C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\bin\Debug\net7.0\Challenges.pdb
-C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\obj\Debug\net7.0\Challenges.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\obj\Debug\net7.0\Challenges.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\obj\Debug\net7.0\Challenges.AssemblyInfoInputs.cache
 C:\Users\Lenovo\Documents\GitHub\edabit\Challenges\obj\Debug\net7.0\Challenges.AssemblyInfo.cs
