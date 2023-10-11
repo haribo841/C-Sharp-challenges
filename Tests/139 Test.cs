@@ -26,7 +26,7 @@ namespace Tests
                 Assert.That(Program139.IsFourLetters(haystack_4), Is.EqualTo(new string[] { "Blue", "Pink" }));
                 Assert.That(Program139.IsFourLetters(haystack_5), Is.EqualTo(Array.Empty<string>()));
                 Assert.That(Program139.IsFourLetters(haystack_6), Is.EqualTo(new string[] { "jazz", "quiz", "jump" }));
-                Assert.That(Program139.IsFourLetters(haystack_7), Is.EqualTo(new string[] { }));
+                Assert.That(Program139.IsFourLetters(haystack_7), Is.EqualTo(Array.Empty<string>()));
                 Assert.That(Program139.IsFourLetters(haystack_8), Is.EqualTo(new string[] { }));
                 Assert.That(Program139.IsFourLetters(haystack_9), Is.EqualTo(new string[] { }));
             });

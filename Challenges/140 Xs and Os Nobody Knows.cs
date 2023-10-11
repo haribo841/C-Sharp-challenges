@@ -17,7 +17,7 @@ namespace Challenges
             foreach (char c in str)
             {
                 if (c is 'x' or 'X') xCounter++;
-                if (c ==  'o' || c == 'O') oCounter++;
+                if (c is 'o' or 'O') oCounter++;
             }
             return xCounter == oCounter || xCounter == 0 && oCounter == 0;
         }

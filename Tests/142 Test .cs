@@ -19,7 +19,7 @@ namespace Tests
             var circo = new Circle(20);
             var circo1 = new Circle(2);
             var circo2 = new Circle(4.4);
-            Random rand = new Random();
+            Random rand = new();
             int randomInt = (int)Round(rand.Next(200));
             var circo3 = new Circle(randomInt);
             Assert.Multiple(() =>
