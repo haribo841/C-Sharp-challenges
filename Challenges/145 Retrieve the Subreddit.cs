@@ -12,7 +12,7 @@ namespace Challenges
             {
                 if (chars[i] == 'r' && chars[i + 1] == '/')
                 {
-                    return link.Substring(i + 2).TrimEnd('/');
+                    return link[(i + 2)..].TrimEnd('/');
                 }
             }
             return "";

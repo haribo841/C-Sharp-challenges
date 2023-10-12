@@ -14,7 +14,7 @@ namespace Challenges
                     result.Append(c);
                     result.Append(' ');
             }
-            result.Remove(str.Length*2-1, 1);
+            result.Length--;//TrimEnd()
             return result.ToString();
         }
     }

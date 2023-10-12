@@ -19,7 +19,7 @@ namespace Challenges
                 if (c is 'x' or 'X') xCounter++;
                 if (c is 'o' or 'O') oCounter++;
             }
-            return xCounter == oCounter || xCounter == 0 && oCounter == 0;
+            return xCounter == oCounter;
         }
     }
 }

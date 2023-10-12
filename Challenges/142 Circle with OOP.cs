@@ -29,24 +29,21 @@ namespace Challenges
 
         public class Circle
         {
-            public double Radius;
+            private double radius;
 
-            // Constructor to initialize the radius
             public Circle(double radius)
             {
-                Radius = radius;
+                this.radius = radius;
             }
 
-            // Getter for calculating the area of the circle (PI * r^2)
             public double GetArea()
             {
-                return Math.PI * Math.Pow(Radius, 2);
+                return Math.PI * Math.Pow(radius, 2);
             }
 
-            // Getter for calculating the perimeter (circumference) of the circle (2 * PI * r)
             public double GetPerimeter()
             {
-                return 2 * Math.PI * Radius;
+                return 2 * Math.PI * radius;
             }
         }
 
