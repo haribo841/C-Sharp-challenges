@@ -8,15 +8,33 @@ namespace Tests
     [TestFixture]
     public class Test142
     {
+        Random rand = new();
+
         static double Round(double number)
         {
             double factor = Math.Pow(10, 5);
             return Math.Round(number * factor) / factor;
         }
         [Test]
+        [TestCase(20, 1256.63706, 125.66371)]
+        [TestCase(2, 12.56637, 12.56637)]
+        [TestCase(4.4, 60.82123, 27.64602)]
+        [TestCase((int)Round(rand.Next(200)), 60.82123, 27.64602)]
+        public static void TestIsFourLetters(double radius, double expectedArea, double expectedPerimeter)
+        {
+            // Arrange
+            Circle circo = new Circle(radius);
+            Random rand = new();
+            int randomInt = (int)Round(rand.Next(200));
+            // Act
+            double resultArea = circo.GetArea(); // Use the GetArea method of the Circle class
+            double resultPerimeter = circo.GetPerimeter(); // Use the GetArea method of the Circle class
+            Assert.That(Round(resultArea), Is.EqualTo(expectedArea));
+            Assert.That(Round(resultPerimeter), Is.EqualTo(expectedPerimeter));
+        }
         public void TestCircle()
         {
-            var circo = new Circle(20);
+            Circle circo = new Circle(20);
             var circo1 = new Circle(2);
             var circo2 = new Circle(4.4);
             Random rand = new();

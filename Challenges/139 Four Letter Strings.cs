@@ -14,7 +14,7 @@ namespace Challenges
                 if (arr[i].Length == 4)
                 {
                     Array.Resize(ref result, result.Length + 1); // Resize the result array
-                    result[result.Length - 1] = arr[i]; // Add the four-letter word to the result array
+                    result[^1] = arr[i]; // Add the four-letter word to the result array
                 }
             }
 

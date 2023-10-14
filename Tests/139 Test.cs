@@ -7,29 +7,18 @@ namespace Tests
     public class Test139
     {
         [Test]
-        public void GenericTests()
+        [TestCase(new string[] { "Ryan", "Kieran", "Jason", "Matt" }, new string[] { "Ryan", "Matt" })]
+        [TestCase(new string[] { "Tomato", "Potato", "Pair" }, new string[] { "Pair" })]
+        [TestCase(new string[] { "Kangaroo", "Bear", "Fox" }, new string[] { "Bear" })]
+        [TestCase(new string[] { "Red", "Blue", "Green", "Pink" }, new string[] { "Blue", "Pink" })]
+        [TestCase(new string[] { "is", "up", "two", "elephant" }, new string[] { })]
+        [TestCase(new string[] { "jazz", "quiz", "jump" }, new string[] { "jazz", "quiz", "jump" })]
+        [TestCase(new string[] { "" }, new string[] { })]
+        [TestCase(new string[] { "Broccoli", "Carrot", "Spinach" }, new string[] { })]
+        public static void TestIsFourLetters(string[] arr, string[] expectedResult)
         {
-            string[] haystack_1 = new string[] { "Ryan", "Kieran", "Jason", "Matt" };
-            string[] haystack_2 = new string[] { "Tomato", "Potato", "Pair" };
-            string[] haystack_3 = new string[] { "Kangaroo", "Bear", "Fox" };
-            string[] haystack_4 = new string[] { "Red", "Blue", "Green", "Pink" };
-            string[] haystack_5 = new string[] { "is", "up", "two", "elephant" };
-            string[] haystack_6 = new string[] { "jazz", "quiz", "jump" };
-            string[] haystack_7 = new string[] { "" };
-            string[] haystack_8 = new string[] { "Broccoli", "Carrot", "Spinach" };
-            string[] haystack_9 = Array.Empty<string>();
-            Assert.Multiple(() =>
-            {
-                Assert.That(Program139.IsFourLetters(haystack_1), Is.EqualTo(new string[] { "Ryan", "Matt" }));
-                Assert.That(Program139.IsFourLetters(haystack_2), Is.EqualTo(new string[] { "Pair" }));
-                Assert.That(Program139.IsFourLetters(haystack_3), Is.EqualTo(new string[] { "Bear" }));
-                Assert.That(Program139.IsFourLetters(haystack_4), Is.EqualTo(new string[] { "Blue", "Pink" }));
-                Assert.That(Program139.IsFourLetters(haystack_5), Is.EqualTo(Array.Empty<string>()));
-                Assert.That(Program139.IsFourLetters(haystack_6), Is.EqualTo(new string[] { "jazz", "quiz", "jump" }));
-                Assert.That(Program139.IsFourLetters(haystack_7), Is.EqualTo(Array.Empty<string>()));
-                Assert.That(Program139.IsFourLetters(haystack_8), Is.EqualTo(Array.Empty<string>()));
-                Assert.That(Program139.IsFourLetters(haystack_9), Is.EqualTo(Array.Empty<string>()));
-            });
+            string[] result = Program139.IsFourLetters(arr);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }

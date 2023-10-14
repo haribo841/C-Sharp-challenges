@@ -29,7 +29,7 @@ namespace Challenges
 
         public class Circle
         {
-            private double radius;
+            private readonly double radius;
 
             public Circle(double radius)
             {
