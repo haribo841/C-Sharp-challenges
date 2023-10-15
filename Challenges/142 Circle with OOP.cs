@@ -40,7 +40,6 @@ namespace Challenges
             {
                 return Math.PI * Math.Pow(radius, 2);
             }
-
             public double GetPerimeter()
             {
                 return 2 * Math.PI * radius;

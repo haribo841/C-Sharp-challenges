@@ -17,7 +17,6 @@ namespace Challenges
                     result[^1] = arr[i]; // Add the four-letter word to the result array
                 }
             }
-
             return result;
         }
     }
