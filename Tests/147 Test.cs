@@ -17,7 +17,7 @@ namespace Tests
         [TestCase(10000, 400, 4, 1)]
         public void FixedTest(int a, int b, int c, int expectedResult)
         {
-            int result = Program147.solutions(a, b, c);
+            int result = Program147.Solutions(a, b, c);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

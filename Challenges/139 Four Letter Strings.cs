@@ -8,7 +8,6 @@ namespace Challenges
         public static string[] IsFourLetters(string[] arr)
         {
             string[] result = Array.Empty<string>(); // Initialize an empty array to store results
-
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i].Length == 4)

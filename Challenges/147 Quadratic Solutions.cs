@@ -6,7 +6,7 @@ namespace Challenges
 {
     public class Program147
     {
-        public static int solutions(int a, int b, int c)
+        public static int Solutions(int a, int b, int c)
         {
             double delta = b * b - 4 * a * c;
             double x1 = -b + Math.Sqrt(delta) / 2 * a;

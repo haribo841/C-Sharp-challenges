@@ -26,7 +26,6 @@ namespace Challenges
             }
         }
 
-
         public class Circle
         {
             private readonly double radius;

@@ -21,7 +21,7 @@ namespace Tests
         public static void TestCircle(double radius, double expectedArea, double expectedPerimeter)
         {
             // Arrange
-            Circle circo = new Circle(radius);
+            Circle circo = new(radius);
             // Act
             double resultArea = circo.GetArea();
             double resultPerimeter = circo.GetPerimeter();
