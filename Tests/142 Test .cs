@@ -25,9 +25,12 @@ namespace Tests
             // Act
             double resultArea = circo.GetArea();
             double resultPerimeter = circo.GetPerimeter();
-            // Assert
-            Assert.That(Round(resultArea), Is.EqualTo(expectedArea));
-            Assert.That(Round(resultPerimeter), Is.EqualTo(expectedPerimeter));
+            Assert.Multiple(() =>
+            {
+                // Assert
+                Assert.That(Round(resultArea), Is.EqualTo(expectedArea));
+                Assert.That(Round(resultPerimeter), Is.EqualTo(expectedPerimeter));
+            });
         }
         // Define a method to provide the random test case
         private static IEnumerable<TestCaseData> RandomTestCasesSource()

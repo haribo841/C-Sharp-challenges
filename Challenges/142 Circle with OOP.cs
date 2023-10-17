@@ -25,7 +25,6 @@ namespace Challenges
                 return (SideA + SideB) * 2;
             }
         }
-
         public class Circle
         {
             private readonly double radius;

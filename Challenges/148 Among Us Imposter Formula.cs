@@ -8,9 +8,27 @@ namespace Challenges
 {
     public class Program148
     {
-        public static string ImposterFormula(int i, int p)
+        public static string ImposterFormula(int i, int p) => $"{Math.Round(100 * ((double)i / p))}%";
+    }
+}
+/*
+        public string A(int i, int p) => Math.Round(100 * ((double)i / p)).ToString() + "%";
+
+        {
+            return Math.Round(100 * ((double)i / p)).ToString() + "%";
+        }
+
+        public string Interp(int i, int p) => $"{Math.Round(100 * ((double)i / p)).ToString()}%";
+
+        public string InterpBody(int i, int p)
+        {
+            return $"{Math.Round(100 * ((double)i / p)).ToString()}%";
+        }
+
+        public string InterpFix(int i, int p) => $"{Math.Round(100 * ((double)i / p))}%";
+
+        public string FixBody(int i, int p)
         {
             return $"{Math.Round(100 * ((double)i / p))}%";
         }
-    }
-}
+ */

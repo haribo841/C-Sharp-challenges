@@ -12,8 +12,10 @@ namespace Challenges
             double x1 = -b + Math.Sqrt(delta) / 2 * a;
             double x2 = -b - Math.Sqrt(delta) / 2 * a;
             if (delta < 0) { return 0; }
-            else if (delta == 0 || x1 == x2) { return 1; }
-            else { return 2; }
+            else
+            {
+                return delta == 0 || x1 == x2 ? 1 : 2;
+            }
         }
     }
 }
