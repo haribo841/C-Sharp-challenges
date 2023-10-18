@@ -6,6 +6,7 @@ Microsoft.NET.Test.Sdk 17.5.0 by: Microsoft
 NUnit 3.13.3 by: Charlie Poole, Rob Prouse
 NUnit.Analyzers 3.6.1 by: NUnit
 NUnit3TestAdapter 4.4.2 by: Charlie Poole, Terje Sandstorm
+BenchmarkDotNet 0.13.9 by: .NET Foundation and contributors
 
 Intermediate packages:
 Microsoft.CodeCoverage 17.5.0 by: Microsoft
@@ -16,10 +17,6 @@ NETStandard.Library 2.0.0 by: Microsoft
 Newtonsoft.Json 13.0.1 by: James Newton-King
 NuGet.Frameworks 5.11.0 by: Microsoft
 System.Reflection.Metadata 1.6.0 by: Microsoft
-
-Benchmarking done using BenchmarkDotNet 0.13.9 by: .NET Foundation and contributors
-NuGet package contains:
-BenchmarkDotNet.0.13.9
 BenchmarkDotNet.Annotations.0.13.9
 CommandLineParser.2.9.1
 Gee.External.Capstone.2.3.0
@@ -53,4 +50,3 @@ System.Security.AccessControl.5.0.0
 System.Security.Principal.Windows.5.0.0
 System.Text.Encoding.CodePages.4.5.1
 System.Threading.Tasks.Extensions.4.5.4
-
