@@ -7,6 +7,8 @@ using System.Linq;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Jobs;
 using System.Text.Json.Serialization;
+using Microsoft.CodeAnalysis;
+using Microsoft.Diagnostics.Runtime.Utilities;
 
 namespace Benchmark
 {
@@ -17,240 +19,28 @@ namespace Benchmark
     public class Method
     {
         [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int factorial(int num) => num > 1 ? num * factorial(--num) : +1;
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int Body(int num)
+        [ArgumentsSource(nameof(GetData))]
+        public bool CheckPalindrome(string str)
         {
-            return num > 1 ? num * factorial(--num) : +1;
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int factorialN(int num) => num > 1 ? num * factorial(num-1) : +1;
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyN(int num)
-        {
-            return num > 1 ? num * factorial(num-1) : +1;
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyT(int num)
-        {
-            if (num > 1)
+            char[] arr1 = str.ToCharArray();
+            char[] arr2 = arr1.Reverse().ToArray();
+            for (int i = 0; i < str.Length; i++)
             {
-                return num * factorial(--num);
+                if (arr1[i] != arr2[i]) return false;
             }
-            else
-            {
-                return +1;
-            }
+            return true;
         }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyNT(int num)
+        public IEnumerable<string> GetData()
         {
-            if (num > 1)
-            {
-                return num * factorial(num - 1);
-            }
-            else
-            {
-                return +1;
-            }
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchInst(int num)
-        {
-            switch (num)
-            {
-                case > 1:
-                    return num * factorial(--num);
-                default:
-                    return +1;
-            }
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchInstT(int num)
-        {
-            switch (num)
-            {
-                case > 1:
-                    return num * factorial(num - 1);
-                default:
-                    return +1;
-            }
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchExpr(int num)
-        {
-            return num switch
-            {
-                > 1 => num * factorial(--num),
-                _ => +1,
-            };
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchExprT(int num)
-        {
-            return num switch
-            {
-                > 1 => num * factorial(num - 1),
-                _ => +1,
-            };
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int factorialG(int num) => num <= 1 ? +1 : num * factorial(--num);
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyG(int num)
-        {
-            return num <= 1 ? +1 : num * factorial(--num);
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int factorialNG(int num) => num <= 1 ? +1 : num * factorial(num - 1);
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyNG(int num)
-        {
-            return num <= 1 ? +1 : num * factorial(num - 1);
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyTG(int num)
-        {
-            if (num <= 1)
-            {
-                return +1;
-            }
-            else
-            {
-                return num * factorial(--num);
-            }
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchInstG(int num)
-        {
-            switch (num)
-            {
-                case <= 1:
-                    return +1;
-                default:
-                    return num * factorial(--num);
-            }
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchExprGT(int num)
-        {
-            return num switch
-            {
-                <= 1 => +1,
-                _ => num * factorial(--num),
-            };
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchInstNTG(int num)
-        {
-            switch (num)
-            {
-                case <= 1:
-                    return +1;
-                default:
-                    return num * factorial(num - 1);
-            }
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int SwitchExprNTG(int num)
-        {
-            return num switch
-            {
-                <= 1 => +1,
-                _ => num * factorial(num - 1)
-            };
-        }
-        [Benchmark]
-        [Arguments(7, 5040)]
-        [Arguments(1, 1)]
-        [Arguments(9, 362880)]
-        [Arguments(2, 2)]
-        public int BodyNTG(int num)
-        {
-            if (num <= 1)
-            {
-                return +1;
-            }
-            else
-            {
-                return num * factorial(num - 1);
-            }
+            yield return "mom";
+            yield return "scary";
+            yield return "reviver";
+            yield return "stressed";
+            yield return "good";
+            yield return "refer";
+            yield return "something";
+            yield return "redder";
+            yield return "civic";
         }
         internal class Program
         {
