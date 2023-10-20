@@ -20,27 +20,38 @@ namespace Benchmark
     {
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public bool CheckPalindrome(string str)
+        public int F((int side1, int side2) parameters) => parameters.side1 + parameters.side2 - 1;
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public int Body((int side1, int side2) parameters)
         {
-            char[] arr1 = str.ToCharArray();
-            char[] arr2 = arr1.Reverse().ToArray();
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (arr1[i] != arr2[i]) return false;
-            }
-            return true;
+            return parameters.side1 + parameters.side2 -1;
         }
-        public IEnumerable<string> GetData()
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public int OneDec((int side1, int side2) parameters) => --parameters.side1 + parameters.side2;
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public int ODBody((int side1, int side2) parameters)
         {
-            yield return "mom";
-            yield return "scary";
-            yield return "reviver";
-            yield return "stressed";
-            yield return "good";
-            yield return "refer";
-            yield return "something";
-            yield return "redder";
-            yield return "civic";
+            return --parameters.side1 + parameters.side2;
+        }
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public int TwoDec((int side1, int side2) parameters) => parameters.side1 + --parameters.side2;
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public int TDBody((int side1, int side2) parameters)
+        {
+            return parameters.side1 + --parameters.side2;
+        }
+        public IEnumerable<(int side1, int side2)> GetData()
+        {
+            yield return (5, 4);
+            yield return (8, 3);
+            yield return (7, 9);
+            yield return (10, 4);
+            yield return (7, 2);
         }
         internal class Program
         {
