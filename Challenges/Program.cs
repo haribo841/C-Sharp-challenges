@@ -20,38 +20,52 @@ namespace Benchmark
     {
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int F((int side1, int side2) parameters) => parameters.side1 + parameters.side2 - 1;
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public int Body((int side1, int side2) parameters)
+        public string F((string str, string ch) parameters)
         {
-            return parameters.side1 + parameters.side2 -1;
+            foreach (char item in parameters.str)
+            {
+                if (item is 'a' or 'e' or 'i' or 'o' or 'u' or 'y') parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+            }
+            return parameters.str;//new string(str);
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int OneDec((int side1, int side2) parameters) => --parameters.side1 + parameters.side2;
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public int ODBody((int side1, int side2) parameters)
+        public string C((string str, string ch) parameters)
         {
-            return --parameters.side1 + parameters.side2;
+            string vowels = "aeiouy";
+            foreach (char item in parameters.str)
+            {
+                if (parameters.str.Contains(vowels)) parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+            }
+            return parameters.str;//new string(str);
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int TwoDec((int side1, int side2) parameters) => parameters.side1 + --parameters.side2;
+        public string Fnew((string str, string ch) parameters)
+        {
+            foreach (char item in parameters.str)
+            {
+                if (item is 'a' or 'e' or 'i' or 'o' or 'u' or 'y') parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+            }
+            return new string(parameters.str);
+        }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int TDBody((int side1, int side2) parameters)
+        public string Cnew((string str, string ch) parameters)
         {
-            return parameters.side1 + --parameters.side2;
+            string vowels = "aeiouy";
+            foreach (char item in parameters.str)
+            {
+                if (parameters.str.Contains(vowels)) parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+            }
+            return new string(parameters.str);
         }
-        public IEnumerable<(int side1, int side2)> GetData()
+        public IEnumerable<(string str, string ch)> GetData()
         {
-            yield return (5, 4);
-            yield return (8, 3);
-            yield return (7, 9);
-            yield return (10, 4);
-            yield return (7, 2);
+            yield return ("the aardvark", "#");
+            yield return ("minnie mouse", "?");
+            yield return ("shakespeare", "*");
+            yield return ("all is fair in love and war", "<");
         }
         internal class Program
         {

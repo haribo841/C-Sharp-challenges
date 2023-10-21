@@ -17,3 +17,4 @@ namespace Challenges
         }
     }
 }//check first n last character, go to middle, dont create 2nd arr
+//120
