@@ -8,7 +8,7 @@ namespace Challenges
         public static object[] RemoveDups(object[] str)
         {
             // Create a new dictionary of strings, with string keys.
-            Dictionary< object, int> openWith =new Dictionary< object, int>();
+            Dictionary< object, int> openWith =new();
 
             // Add some elements to the dictionary. There are no
             // duplicate keys, but some of the values are duplicates.

@@ -1,14 +1,17 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Order;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Toolchains.InProcess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Jobs;
+
 using System.Text.Json.Serialization;
 using Microsoft.CodeAnalysis;
 using Microsoft.Diagnostics.Runtime.Utilities;
+using System.Text;
 
 namespace Benchmark
 {
@@ -20,52 +23,78 @@ namespace Benchmark
     {
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string F((string str, string ch) parameters)
+        public string F(string str)
         {
-            foreach (char item in parameters.str)
+            StringBuilder result = new();
+            foreach (char c in str)
             {
-                if (item is 'a' or 'e' or 'i' or 'o' or 'u' or 'y') parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+                result.Append(c);
+                result.Append(' ');
             }
-            return parameters.str;//new string(str);
+            result.Length--;//TrimEnd()
+            return result.ToString();
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string C((string str, string ch) parameters)
+        public string Dec(string str)
         {
-            string vowels = "aeiouy";
-            foreach (char item in parameters.str)
+            StringBuilder result = new();
+            foreach (char c in str)
             {
-                if (parameters.str.Contains(vowels)) parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+                result.Append(c);
+                result.Append(' ');
             }
-            return parameters.str;//new string(str);
+            result.Length--;//TrimEnd()
+            return result.ToString();
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string Fnew((string str, string ch) parameters)
+        public string FSafe(string str)
         {
-            foreach (char item in parameters.str)
+            if (string.IsNullOrEmpty(str)) return str;
+            StringBuilder result = new();
+            foreach (char c in str)
             {
-                if (item is 'a' or 'e' or 'i' or 'o' or 'u' or 'y') parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+                result.Append(c);
+                result.Append(' ');
             }
-            return new string(parameters.str);
+            result.Length--;//TrimEnd()
+            return result.ToString();
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string Cnew((string str, string ch) parameters)
+        public string DecS(string str)
         {
-            string vowels = "aeiouy";
-            foreach (char item in parameters.str)
+            if (string.IsNullOrEmpty(str)) return str;
+            StringBuilder result = new();
+            foreach (char c in str)
             {
-                if (parameters.str.Contains(vowels)) parameters.str = parameters.str.Replace(item, parameters.ch[0]);
+                result.Append(c);
+                result.Append(' ');
             }
-            return new string(parameters.str);
+            result.Length--;//TrimEnd()
+            return result.ToString();
         }
-        public IEnumerable<(string str, string ch)> GetData()
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public string Trim(string str)
         {
-            yield return ("the aardvark", "#");
-            yield return ("minnie mouse", "?");
-            yield return ("shakespeare", "*");
-            yield return ("all is fair in love and war", "<");
+            StringBuilder result = new();
+            foreach (char c in str)
+            {
+                result.Append(c);
+                result.Append(' ');
+            }
+            return result.ToString().TrimEnd();
+        }
+        public IEnumerable<string> GetData()
+        {
+            yield return ("space");
+            yield return ("far out");
+            yield return ("elongated musk");
+            yield return ("long");
+            yield return ("123");
+            yield return ("a1b2c3");
         }
         internal class Program
         {

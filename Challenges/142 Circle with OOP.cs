@@ -28,7 +28,6 @@ namespace Challenges
         public class Circle
         {
             private readonly double radius;
-
             public Circle(double radius)
             {
                 this.radius = radius;
