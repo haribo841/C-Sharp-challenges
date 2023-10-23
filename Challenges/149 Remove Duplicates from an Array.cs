@@ -9,7 +9,6 @@ namespace Challenges
         {
             // Create a new dictionary of strings, with string keys.
             Dictionary< object, int> openWith =new();
-
             // Add some elements to the dictionary. There are no
             // duplicate keys, but some of the values are duplicates.
             for (int i = 0; i < str.Length; i++) 

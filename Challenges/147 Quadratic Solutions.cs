@@ -8,10 +8,10 @@ namespace Challenges
     {
         public static int Solutions(int a, int b, int c)
         {
-            double delta = b * b - 4 * a * c;
-            double x1 = -b + Math.Sqrt(delta) / 2 * a;
-            double x2 = -b - Math.Sqrt(delta) / 2 * a;
-            return delta < 0 ? 0 : delta == 0 || x1 == x2 ? 1 : 2;
+            int delta = b * b - 4 * a * c;
+            //double x1 = -b + Math.Sqrt(delta) / 2 * a;
+            //double x2 = -b - Math.Sqrt(delta) / 2 * a;
+            return delta < 0 ? 0 : delta == 0 ? 1 : 2;//|| x1 == x2 ? 1 : 2;
         }
     }
 }
