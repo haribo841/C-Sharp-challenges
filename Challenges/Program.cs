@@ -21,42 +21,29 @@ namespace Benchmark
     {
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int F1((int a, int b, int c) parameters)
+        public int Search((int[] arr, int item) parameters)
         {
-            if (parameters.a == parameters.b && parameters.b == parameters.c) return 3;
-            if (parameters.a == parameters.b || parameters.b == parameters.c || parameters.a == parameters.c) return 2;
-            return 0;
+            if (parameters.arr[parameters.arr.Length - 1] == parameters.item) return parameters.arr.Length - 1;
+            if (parameters.arr.Length == 0) return -1;
+            int[] arr2 = parameters.arr.SkipLast(1).ToArray();
+            if (arr2.Length <= 0) return -1;
+            return Search((arr2, parameters.item));
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int F2((int a, int b, int c) parameters)
+        public int Search2((int[] arr, int item) parameters)
         {
-            if (parameters.a == parameters.b && parameters.b == parameters.c) return 3;
-            return parameters.a == parameters.b || parameters.b == parameters.c || parameters.a == parameters.c ? 2 : 0;
+            if (parameters.arr[parameters.arr.Length - 1] == parameters.item) return parameters.arr.Length - 1;
+            if (parameters.arr.Length == 0) return -1;
+            int[] arr2 = parameters.arr.SkipLast(1).ToArray();
+            return arr2.Length <= 0 ? -1 : Search2((arr2, parameters.item));
         }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public int F3((int a, int b, int c) parameters)
+        public IEnumerable<(int[] a, int b)> GetData()
         {
-            return parameters.a == parameters.b && parameters.b == parameters.c
-                ? 3
-                : parameters.a == parameters.b || parameters.b == parameters.c || parameters.a == parameters.c ? 2 : 0;
-        }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public int F4((int a, int b, int c) parameters) => parameters.a == parameters.b && parameters.b == parameters.c
-                ? 3
-                : parameters.a == parameters.b || parameters.b == parameters.c || parameters.a == parameters.c ? 2 : 0;
-        public IEnumerable<(int a, int b, int c)> GetData()
-        {
-            yield return (2, 3, 4);
-            yield return (7, 3, 7);
-            yield return (4, 4, 4);
-            yield return (7, 3, 4);
-            yield return (3, 3, 6);
-            yield return (1, 1, 1);
-            yield return (1, 7, 6);
-            yield return (7, 7, 7);
+            yield return (new int[] { 1, 2, 3, 4 }, 3);
+            yield return (new int[] { 2, 4, 6, 8, 10 }, 8);
+            yield return (new int[] { 1, 3, 5, 7, 9 }, 11);
+            yield return (new int[] { 1, 5, 7, 11, 25, 100, 200, 350 }, 5);
         }
         internal class Program
         {
