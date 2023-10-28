@@ -11,8 +11,7 @@ namespace Challenges
             if (arr[arr.Length - 1] == item) return arr.Length - 1;
             if(arr.Length == 0 ) return -1;
             int[] arr2 = arr.SkipLast(1).ToArray();
-            if (arr2.Length <= 0) return -1;
-            return Search( arr2, item);
+            return arr2.Length <= 0 ? -1 : Search(arr2, item);
         }
     }
 }
