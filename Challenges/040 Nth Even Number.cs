@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program40
     {
-        public static int NthEven(int n) => 2 * n - 2;
+        public static int NthEven(int n) => (n<<1) - 2;
     }
 }

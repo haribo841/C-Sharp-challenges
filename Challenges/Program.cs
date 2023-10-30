@@ -12,6 +12,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.Diagnostics.Runtime.Utilities;
 using System.Text;
 using System.Reflection.Metadata;
+using System.Security.Cryptography;
 
 namespace Benchmark
 {
@@ -21,22 +22,40 @@ namespace Benchmark
     {
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public int MissingNum(int[] arr)
+        public bool F((int age, bool on_break)parameters) => !parameters.on_break && parameters.age >= 18;
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public bool Body((int age, bool on_break) parameters)
         {
-            for (int i = 1; i < arr.Length; i++)
-            {
-                if (arr.Contains(i)) continue;
-                return i;
-            }
-            return 10;
+            return !parameters.on_break && parameters.age >= 18;
         }
-        public IEnumerable<int[]> GetData()
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public bool F2((int age, bool on_break) parameters) => !(parameters.on_break || parameters.age < 18);
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public bool Body2((int age, bool on_break) parameters)
         {
-            yield return (new int[] { 1, 2, 3, 4, 6, 7, 8, 9, 10 });
-            yield return (new int[] { 7, 2, 3, 6, 5, 9, 1, 4, 8 });
-            yield return (new int[] { 7, 2, 3, 9, 4, 5, 6, 8, 10 });
-            yield return (new int[] { 10, 5, 1, 2, 4, 6, 8, 3, 9 });
-            yield return (new int[] { 1, 7, 2, 4, 8, 10, 5, 6, 9 });
+            return !(parameters.on_break || parameters.age < 18);
+        }
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public bool F3((int age, bool on_break) parameters) => parameters is { on_break: false, age: >= 18 };
+        [Benchmark]
+        [ArgumentsSource(nameof(GetData))]
+        public bool Body3((int age, bool on_break) parameters)
+        {
+            return parameters is { on_break: false, age: >= 18 };
+        }
+        public IEnumerable<(int a, bool b)> GetData()
+        {
+            yield return (17, true);
+            yield return (30, true);
+            yield return (24, false);
+            yield return (18, false);
+            yield return (16, false);
+            yield return (18, true);
+            yield return (17, false);
         }
         internal class Program
         {
