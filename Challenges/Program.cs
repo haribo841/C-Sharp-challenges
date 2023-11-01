@@ -22,40 +22,20 @@ namespace Benchmark
     {
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public bool F((int age, bool on_break)parameters) => !parameters.on_break && parameters.age >= 18;
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public bool Body((int age, bool on_break) parameters)
+        public bool LargestSwap(int num)
         {
-            return !parameters.on_break && parameters.age >= 18;
+            string a = num.ToString();
+            if (a[0] == a[1]) return true;
+            else if (a[0] < a[1]) return false;
+            return true;
         }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public bool F2((int age, bool on_break) parameters) => !(parameters.on_break || parameters.age < 18);
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public bool Body2((int age, bool on_break) parameters)
+        public IEnumerable<int> GetData()
         {
-            return !(parameters.on_break || parameters.age < 18);
-        }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public bool F3((int age, bool on_break) parameters) => parameters is { on_break: false, age: >= 18 };
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public bool Body3((int age, bool on_break) parameters)
-        {
-            return parameters is { on_break: false, age: >= 18 };
-        }
-        public IEnumerable<(int a, bool b)> GetData()
-        {
-            yield return (17, true);
-            yield return (30, true);
-            yield return (24, false);
-            yield return (18, false);
-            yield return (16, false);
-            yield return (18, true);
-            yield return (17, false);
+            yield return (27);
+            yield return (43);
+            yield return (14);
+            yield return (53);
+            yield return (99);
         }
         internal class Program
         {

@@ -2693,11 +2693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\edabit\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\haribo841\\C-Sharp-challenges\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\edabit\\Tests\\Tests.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\haribo841\\C-Sharp-challenges\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\edabit\\Tests\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\haribo841\\C-Sharp-challenges\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2714,8 +2714,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Documents\\GitHub\\edabit\\Challenges\\Challenges.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\edabit\\Challenges\\Challenges.csproj"
+            "C:\\Users\\Lenovo\\Source\\Repos\\haribo841\\C-Sharp-challenges\\Challenges\\Challenges.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\haribo841\\C-Sharp-challenges\\Challenges\\Challenges.csproj"
             }
           }
         }
@@ -2771,7 +2771,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

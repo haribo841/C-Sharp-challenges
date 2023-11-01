@@ -5,6 +5,12 @@ namespace Challenges
 {
     public class Program157
     {
-        public static bool IsEqual(int num1, int num2) => num1 == num2;
+        public static bool LargestSwap(int num)
+        {
+            string a= num.ToString();
+            if (a[0] == a[1]) return true;
+            else if (a[0] < a[1]) return false;
+            return true;
+        }
     }
 }
