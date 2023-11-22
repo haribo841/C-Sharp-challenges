@@ -21,7 +21,7 @@ namespace Tests
         [TestCase("body", "lung", "ace", false)]
         public void FixedTest(string first, string last, string word, bool expectedResult)
         {
-            bool result = Program153.isBetween(first, last, word);
+            bool result = Program153.IsBetween(first, last, word);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

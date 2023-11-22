@@ -14,7 +14,7 @@ namespace Tests
         [TestCase(2, 2)]
         public void FixedTest(int a, int expectedResult)
         {
-            int result = Program150.factorial(a);
+            int result = Program150.Factorial(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

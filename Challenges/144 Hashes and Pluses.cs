@@ -17,3 +17,13 @@ namespace Challenges
         }
     }
 }
+/*
+ * int a=0;
+   int b=0;
+            foreach (char c in s)
+            {
+                if (c == '#') a++;
+                else if (c == '+') b++;
+            }
+            return new int [] {a,b};
+*/

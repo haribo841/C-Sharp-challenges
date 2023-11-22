@@ -31,4 +31,14 @@ namespace Challenges
         {
             return $"{Math.Round(100 * ((double)i / p))}%";
         }
+*
+*    {
+        if (i < 0 || i > 3 || p < 1 || p > 10)
+        {
+            throw new ArgumentException("Invalid imposter count or player count.");
+        }
+
+        double chance = Math.Round(100.0 * i / p);
+        return $"{chance}%";
+    }
  */
