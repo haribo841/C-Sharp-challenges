@@ -25,149 +25,55 @@ namespace Benchmark
     {
         [Benchmark(Baseline = true)]
         [ArgumentsSource(nameof(GetData))]
-        string F(string str)
+        public int[] F(int num, int length)
         {
-            StringBuilder result = new StringBuilder();
-            foreach (char c in str)
+            List<int> list = new List<int>(length);
+            for (int i = 1; i <= length; i++)
             {
-                if (char.IsLetter(c) && c == char.ToLower(c)) result.Append(char.ToUpper(c));
-                else if (char.IsLetter(c) && c == char.ToUpper(c)) result.Append(char.ToLower(c));
-                else result.Append(c);
+                list.Add(num * i);
             }
-            return result.ToString();
+            return list.ToArray();
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string F2(string str)
+        public int[] F2(int num, int length)
         {
-            StringBuilder reversed = new StringBuilder(str.Length);
-
-            foreach (char c in str)
+            int[] result = new int[length];
+            for (int i = 0; i < length; i++)
             {
-                if (char.IsLetter(c))
-                {
-                    if (char.IsUpper(c))
-                    {
-                        reversed.Append(char.ToLower(c));
-                    }
-                    else
-                    {
-                        reversed.Append(char.ToUpper(c));
-                    }
-                }
-                else
-                {
-                    reversed.Append(c);
-                }
-            }
-
-            return reversed.ToString();
-        }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public string F3(string str)
-        {
-            string result = string.Empty;
-            char[] inputArray = str.ToCharArray();
-
-            foreach (char c in inputArray)
-            {
-                if (char.IsLower(c))
-                    result += c.ToString().ToUpper();
-                else if (char.IsUpper(c))
-                    result += c.ToString().ToLower();
-                else
-                    result += c.ToString();
-            }
-
-            return result;
-        }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public string F4(string str)
-        {
-            string result = string.Empty;
-            char[] inputArray = str.ToCharArray();
-            foreach (char c in inputArray)
-            {
-                if (char.IsLower(c))
-                    result += Char.ToUpper(c);
-                else
-                    result += Char.ToLower(c);
+                result[i] = num * (i + 1);
             }
             return result;
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string F5(string str)
+        public int[] F3(int num, int length)
         {
-            char[] charArray = str.ToCharArray();// new char[str.Length];
-
-            for (int i = 0; i < charArray.Length; i++)//str.Length
-            {
-                if (char.IsLetter(charArray[i]))
-                {
-                    if (char.IsLower(charArray[i]))
-                        charArray[i] = char.ToUpper(charArray[i]);
-                    else
-                        charArray[i] = char.ToLower(charArray[i]);
-                }
-            }
-
-            return new string(charArray);
+            return Enumerable.Range(1, length).Select(x => x * num).ToArray();
         }
         [Benchmark]
         [ArgumentsSource(nameof(GetData))]
-        public string F6(string str)
+        public int[] F4(int num, int length)
         {
-            string[] reversedCharacters = new string[str.Length];
-
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (Char.IsUpper(str[i]))
-                {
-                    reversedCharacters[i] = Char.ToLower(str[i]).ToString();
-                }
-                else if (Char.IsLower(str[i]))
-                {
-                    reversedCharacters[i] = Char.ToUpper(str[i]).ToString();
-                }
-                else
-                {
-                    reversedCharacters[i] = str[i].ToString(); // Keep non-letter characters as they are
-                }
-            }
-
-            return string.Concat(reversedCharacters);
+            return Enumerable.Repeat(num, length).Select((x, index) => x * (index + 1)).ToArray();
         }
-        [Benchmark]
-        [ArgumentsSource(nameof(GetData))]
-        public string F7(string str)
+
+        public IEnumerable<object[]> GetData()
         {
-            char[] charArray = str.ToCharArray();
-            char[] newCharArray = new char[charArray.Length];
-
-            for (int i = 0; i < charArray.Length; i++)
-            {
-                if (char.IsUpper(charArray[i]))
-                    newCharArray[i] = Char.ToLower(charArray[i]);
-
-                else if (char.IsLower(charArray[i]))
-                    newCharArray[i] = Char.ToUpper(charArray[i]);
-
-                else
-                    newCharArray[i] = charArray[i];
-            }
-
-            string s = new string(newCharArray);
-            return s;
-        }
-        public IEnumerable<string> GetData()
-        {
-            yield return ("Happy Birthday");
-            yield return ("MANY THANKS");
-            yield return ("sPoNtAnEoUs");
-            yield return ("eXCELLENT, yOuR mAJESTY");
+            yield return new object[] {7, 5};
+            yield return new object[] { 12, 10};
+            yield return new object[] { 17, 7};
+            yield return new object[] { 630, 14};
+            yield return new object[] { 140, 3};
+            yield return new object[] { 7, 8};
+            yield return new object[] { 11, 21};
+            yield return new object[] { 7, 5};
+            yield return new object[] { 12, 10};
+            yield return new object[] { 17, 7};
+            yield return new object[] { 630, 14};
+            yield return new object[] { 140, 3};
+            yield return new object[] { 7, 8};
+            yield return new object[] { 11, 21};
         }
         internal class Program
         {
