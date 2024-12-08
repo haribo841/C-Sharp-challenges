@@ -6,7 +6,7 @@ namespace Challenges
     {
         public static bool IsSafeBridge(string str)
         {
-            for (int i = 0; i < str.Length; i++)
+            for (int i = 0; i < str.Length; i++)//also uses length
             {
                 if (str[i] == ' ') return false;
             }

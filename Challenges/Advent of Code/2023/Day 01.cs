@@ -57,48 +57,46 @@ namespace Challenges
                 int sum = 0;
 
                 // Open the file and create a StreamReader to read it
-                using (StreamReader reader = new StreamReader(filePath))
+                using StreamReader reader = new(filePath);
+                string? line;
+
+                // Read and process each line separately
+                while ((line = reader.ReadLine()) != null)
                 {
-                    string line;
+                    int firstDigit = -1;
+                    int lastDigit = -1;
 
-                    // Read and process each line separately
-                    while ((line = reader.ReadLine()) != null)
+                    foreach (char c in line)
                     {
-                        int firstDigit = -1;
-                        int lastDigit = -1;
-
-                        foreach (char c in line)
+                        if (char.IsDigit(c))
                         {
-                            if (char.IsDigit(c))
+                            if (firstDigit == -1)
                             {
-                                if (firstDigit == -1)
-                                {
-                                    firstDigit = c - '0'; // Convert character to numeric value
-                                    break;
-                                }
+                                firstDigit = c - '0'; // Convert character to numeric value
+                                break;
                             }
-                        }
-
-                        for (int i = line.Length - 1; i >= 0; i--)
-                        {
-                            if ((char.IsDigit(line[i])))
-                            {
-                                if (lastDigit == -1)
-                                {
-                                    lastDigit = line[i] - '0'; // Convert character to numeric value
-                                    break;
-                                }
-                            }
-                        }
-
-                        if (firstDigit != -1 && lastDigit != -1)
-                        {
-                            sum += firstDigit * 10 + lastDigit;
                         }
                     }
 
-                    return sum;
+                    for (int i = line.Length - 1; i >= 0; i--)
+                    {
+                        if (char.IsDigit(line[i]))
+                        {
+                            if (lastDigit == -1)
+                            {
+                                lastDigit = line[i] - '0'; // Convert character to numeric value
+                                break;
+                            }
+                        }
+                    }
+
+                    if (firstDigit != -1 && lastDigit != -1)
+                    {
+                        sum += firstDigit * 10 + lastDigit;
+                    }
                 }
+
+                return sum;
             }
             catch (FileNotFoundException)
             {
@@ -129,10 +127,10 @@ namespace Challenges
                     return 0; // Return 0 if the word is not found
                 }
                 char firstChar = input[0];
-                char lastChar = input[input.Length - 1];
+                char lastChar = input[^1];
                 int firstDigit = Char.IsDigit(firstChar) ? int.Parse(firstChar.ToString()) : digitValues[FindIndex(firstChar.ToString())];
                 int lastDigit = Char.IsDigit(lastChar) ? int.Parse(lastChar.ToString()) : digitValues[FindIndex(lastChar.ToString())];
-                return (firstDigit * 10) + lastDigit;
+                return firstDigit * 10 + lastDigit;
             }
             try
             {
@@ -145,9 +143,9 @@ namespace Challenges
                 int[] digitValues = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
                 int sum = 0;
                 string pattern = @"\b(" + string.Join("|", Array.ConvertAll(wordToDigit, Regex.Escape)) + @")\b";
-                using (StreamReader reader = new StreamReader(filePath))
+                using (StreamReader reader = new(filePath))
                 {
-                    string line;
+                    string? line;
                     while ((line = reader.ReadLine()) != null)
                     {
                         MatchCollection matches = Regex.Matches(line, pattern);

@@ -7,6 +7,11 @@ namespace Challenges
 {
     public class Program16
     {
-        public static string NameString(string name) => name + "Edabit";
+        public static string NameString(string name)
+        {
+            string b = "Edabit"; // Use '=' instead of '=='
+            string result = name + b; // Use '=' instead of '=='
+            return result;
+        }
     }
 }

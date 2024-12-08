@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program15
     {
-        public static bool IsSameNum(int num1, int num2) => num1 == num2;
+        public static bool IsSameNum(int num1, int num2) => Program10.IsEqual(num1, num2);
     }
 }

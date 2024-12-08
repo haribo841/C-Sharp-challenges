@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program1
     {
-        public static int Sum(int a, int b) => a + b;//Sum(a,b);
+        public static int Sum(int a, int b) => a + b;
     }
 }
