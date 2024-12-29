@@ -6,14 +6,21 @@ namespace Challenges
 {
     public class Program54
     {
-        public static int Diff(int[] arr)//=>arr.Max()-arr.Min();
-        {
-            double[] doubleArray = new double[arr.Length];
+        public static int Diff(int[] arr)
+        { 
+            int max = int.MinValue;
+            int min = int.MaxValue;
+
             for (int i = 0; i < arr.Length; i++)
             {
-                doubleArray[i] = (double)arr[i]; }
+                int num = arr[i];
+                if (num > max)
+                    max = num;
+                if (num < min)
+                    min = num;
+            }
 
-            return Program67.FindLargestNum(arr) - (int)Program66.FindSmallestNum(doubleArray);
+            return max - min;
         }
     }
 }

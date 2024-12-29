@@ -8,6 +8,7 @@ namespace Challenges
 {
     public class Program25
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0046:Convert to conditional expression", Justification = "Intentional")]
         public static string Greeting(string name)
         {
             if (name == "Mubashir")

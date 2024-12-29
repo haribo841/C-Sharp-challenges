@@ -5,6 +5,6 @@ namespace Challenges
 {
     public class Program26
     {
-        public static int NextEdge(int side1, int side2) => --side1 + side2;// - 1;
+        public static int NextEdge(int side1, int side2) => --side1 + side2;
     }
 }

@@ -5,6 +5,9 @@ namespace Challenges
 {
     public class Program29
     {
-        public static int Squared(int a) => a * a;
+        public static int Squaed(int b)
+        {
+            return b * b;
+        }
     }
 }

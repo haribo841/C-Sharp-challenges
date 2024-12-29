@@ -1,10 +1,10 @@
-//Create a function that returns true if a string is empty and false otherwise.
+﻿//Create a function that returns true if a string is empty and false otherwise.
 using System;
 
 namespace Challenges
 {
     public class Program44
     {
-        public static bool IsEmpty(string str) => str == null || str.Length == 0 || str == "";//using length :/
+        public static bool IsEmpty(string str) => string.IsNullOrEmpty(str);
     }
 }

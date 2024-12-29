@@ -15,7 +15,7 @@ namespace Tests
         [TestCase(21, 441)]
         public void FixedTest(int a, int expectedResult)
         {
-            int result = Program29.Squared(a);
+            int result = Program29.Squaed(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
