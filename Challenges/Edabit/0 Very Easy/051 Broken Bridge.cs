@@ -1,4 +1,5 @@
 //Create a function which validates whether a bridge is safe to walk on (i.e. has no gaps in it to fall through).
+using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
@@ -12,5 +13,14 @@ namespace Challenges
             }
             return true;
         }
+    }
+    public class BenchmarkProgram51
+    {
+        [Benchmark]
+        [Arguments("####")]
+        [Arguments("## ####")]
+        [Arguments("#")]
+        [Arguments("# #")]
+        public bool IsSafeBridge(string str) => Program51.IsSafeBridge(str);
     }
 }

@@ -1,6 +1,6 @@
 //Write a function that takes two numbers and returns if they should be added, subtracted, multiplied or divided to get 24.
 //If none of the operations can give 24, return "none".
-using System;
+using BenchmarkDotNet.Attributes;
 
 namespace Challenges
 {
@@ -14,5 +14,15 @@ namespace Challenges
             int n when n == num1 / num2 => "divided",
             _ => "none"
         };
+    }
+    public class BenchmarkProgram63
+    {
+        [Benchmark]
+        [Arguments(12, 12)]
+        [Arguments(100, 76)]
+        [Arguments(6, 4)]
+        [Arguments(528, 22)]
+        [Arguments(10, 12)]
+        public string Operation(int A, int B) => Program63.Operation(A, B);
     }
 }

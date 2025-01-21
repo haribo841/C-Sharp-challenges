@@ -1,4 +1,5 @@
 //Look at the examples below to get an idea of what the function should do.
+using BenchmarkDotNet.Attributes;
 using System;
 using System.Collections.Generic;
 
@@ -18,5 +19,13 @@ namespace Challenges
 
             return array;
         }
+    }
+    public class BenchmarkProgram38
+    {
+        [Benchmark]
+        [Arguments(1)]
+        [Arguments(2)]
+        [Arguments(6)]
+        public List<int> PrintArray(int number) => Loop.PrintArray(number);
     }
 }

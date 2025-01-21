@@ -1,4 +1,5 @@
 //Create a function that takes a number n and returns its length.
+using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
@@ -15,5 +16,13 @@ namespace Challenges
 
             return count;
         }
+    }
+    public class BenchmarkProgram59
+    {
+        [Benchmark]
+        [Arguments(12)]
+        [Arguments(6000)]
+        [Arguments(314)]
+        public int Length(int n) => Program59.Length(n);
     }
 }

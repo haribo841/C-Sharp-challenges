@@ -1,4 +1,5 @@
 //Create a function that takes a string and returns it as an integer.
+using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
@@ -15,5 +16,14 @@ namespace Challenges
             }
             return result;
         }
+    }
+    public class BenchmarkProgram55
+    {
+        [Benchmark]
+        [Arguments("6")]
+        [Arguments("2")]
+        [Arguments("10")]
+        [Arguments("666")]
+        public int StringInt(string txt) => Program55.StringInt(txt);
     }
 }
