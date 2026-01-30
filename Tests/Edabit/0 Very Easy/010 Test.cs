@@ -14,6 +14,11 @@ namespace Tests
         [TestCase(36, 35, false, TestName = "{0} is not equal to {1}")]
         [TestCase(1, 1, true, TestName = "{0} is equal to {1}")]
         [TestCase(5, 6, false, TestName = "{0} is not equal to {1}")]
+        [TestCase(4, 8, false, TestName = "{0} is not equal to {1}")]
+        [TestCase(111, 111, true, TestName = "{0} is equal to {1}")]
+        [TestCase(2, 5, false, TestName = "{0} is not equal to {1}")]
+        [TestCase(0, 6, false, TestName = "{0} is not equal to {1}")]
+        [TestCase(10, 10, true, TestName = "{0} is equal to {1}")]
         public void FixedTest(int num1, int num2, bool expectedResult)
         {
             bool result = Program10.IsEqual(num1, num2);

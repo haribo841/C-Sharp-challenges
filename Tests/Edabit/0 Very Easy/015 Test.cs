@@ -1,6 +1,8 @@
-using System;
+using BenchmarkDotNet.Attributes;
 using Challenges.Edabit;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using NUnit.Framework;
+using System;
 
 namespace Tests
 {
@@ -8,14 +10,16 @@ namespace Tests
     public class Tests15
     {
         [Test]
-        [TestCase(4, 8, false, TestName = "{0} is not equal to {1}")]
-        [TestCase(111, 111, true, TestName = "{0} is equal to {1}")]
-        [TestCase(2, 5, false, TestName = "{0} is not equal to {1}")]
-        [TestCase(0, 6, false, TestName = "{0} is not equal to {1}")]
-        [TestCase(10, 10, true, TestName = "{0} is equal to {1}")]
-        public void FixedTest(int a, int b, bool expectedResult)
+        [TestCase("pokhara", "okhara", TestName = "{0} is not equal to {1}")]
+        [TestCase("biratnagar", "iratnagar", TestName = "{0} is equal to {1}")]
+        [TestCase("nepal", "epal", TestName = "{0} is not equal to {1}")]
+        [TestCase("damak", "amak", TestName = "{0} is not equal to {1}")]
+        [TestCase("itahari", "tahari", TestName = "{0} is equal to {1}")]
+        [TestCase("rasuwa", "asuwa", TestName = "{0} is equal to {1}")]
+        [TestCase("rolpa", "olpa", TestName = "{0} is equal to {1}")]
+        public void FixedTest(string a, string expectedResult)
         {
-            bool result = Program15.IsSameNum(a, b);
+            string result = Program15.NewWord(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

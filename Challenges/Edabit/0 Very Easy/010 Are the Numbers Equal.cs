@@ -16,6 +16,11 @@ namespace Challenges
         [Arguments(36, 35)]
         [Arguments(1, 1)]
         [Arguments(5, 6)]
+        [Arguments(4, 8)]
+        [Arguments(111, 111)]
+        [Arguments(2, 5)]
+        [Arguments(0, 6)]
+        [Arguments(10, 10)]
         public bool IsEqual(int num1, int num2) => Program10.IsEqual(num1, num2);
     }
 }

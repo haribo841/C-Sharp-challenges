@@ -6,7 +6,7 @@ namespace Challenges
 {
     public class Program6
     {
-        public static int TriArea(int b, int h) => b * h >> 1;
+        public static int TriArea(int b, int h) => b * h / 2;
     }
     public class BenchmarkProgram6
     {
