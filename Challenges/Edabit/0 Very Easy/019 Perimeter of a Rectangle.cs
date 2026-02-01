@@ -6,7 +6,7 @@ namespace Challenges
 {
     public class Program19
     {
-        public static int FindPerimeter(int length, int width) => (length + width)<<1;
+        public static int FindPerimeter(int length, int width) => (length + width)*2;
     }
     public class BenchmarkProgram19
     {

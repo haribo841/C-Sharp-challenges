@@ -6,18 +6,14 @@ namespace Challenges
 {
     public class Program15
     {
-        public static string NewWord(string str) => new string(str.Skip(1).ToArray());
+        public static string NewWord(string str) => str[1..];
     }
+    [MemoryDiagnoser]
     public class BenchmarkProgram15
     {
+        [Params("pokhara", "biratnagar", "nepal", "damak", "itahari", "rasuwa", "rolpa")]
+        public string Word = null!;
         [Benchmark]
-        [Arguments("pokhara")]
-        [Arguments("biratnagar")]
-        [Arguments("nepal")]
-        [Arguments("damak")]
-        [Arguments("itahari")]
-        [Arguments("rasuwa")]
-        [Arguments("rolpa")]
-        public string NewWord(string str) => Program15.NewWord(str);
+        public string NewWord_Range() => Program15.NewWord(Word);
     }
 }

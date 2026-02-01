@@ -12,7 +12,7 @@ namespace Challenges
 {
     public class Program21
     {
-        public static int Animals(int chickens, int cows, int pigs) => (chickens << 1) + ((cows + pigs) << 2);
+        public static int Animals(int chickens, int cows, int pigs) => 2 * chickens + 4 * (cows + pigs);
     }
     public class BenchmarkProgram21
     {

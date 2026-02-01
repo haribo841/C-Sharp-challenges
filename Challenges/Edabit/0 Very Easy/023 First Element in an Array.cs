@@ -4,11 +4,11 @@ using System;
 
 namespace Challenges
 {
-    public class Program23
+    public class Program23b
     {
         public static object GetFirstValue(object[] arr) => arr[0];
     }
-    public class BenchmarkProgram23
+    public class BenchmarkProgram23b
     {
         private object[] array1;
         private object[] array2;
