@@ -29,16 +29,16 @@ namespace Challenges
         }
 
         [Benchmark]
-        public object GetLastItemArray1() => Program23.GetFirstValue(array1);
+        public object GetLastItemArray1() => Program23b.GetFirstValue(array1);
         [Benchmark]
-        public object GetLastItemArray2() => Program23.GetFirstValue(array2);
+        public object GetLastItemArray2() => Program23b.GetFirstValue(array2);
         [Benchmark]
-        public object GetLastItemArray3() => Program23.GetFirstValue(array3);
+        public object GetLastItemArray3() => Program23b.GetFirstValue(array3);
         [Benchmark]
-        public object GetLastItemArray4() => Program23.GetFirstValue(array4);
+        public object GetLastItemArray4() => Program23b.GetFirstValue(array4);
         [Benchmark]
-        public object GetLastItemArray5() => Program23.GetFirstValue(array5);
+        public object GetLastItemArray5() => Program23b.GetFirstValue(array5);
         [Benchmark]
-        public object GetLastItemArray6() => Program23.GetFirstValue(array6);
+        public object GetLastItemArray6() => Program23b.GetFirstValue(array6);
     }
 }

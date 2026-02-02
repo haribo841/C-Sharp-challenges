@@ -9,13 +9,15 @@ namespace Tests
     public class Tests24
     {
         [Test]
-        [TestCase(1, 0, 3600, TestName = "{0} hour and {1} minutes makes {2} seconds")]
-        [TestCase(1, 3, 3780, TestName = "{0} hour and {1} minutes makes {2} seconds")]
-        [TestCase(0, 30, 1800, TestName = "{0} hour and {1} minutes makes {2} seconds")]
+        [TestCase(2, 8)]
+        [TestCase(3, 27)]
+        [TestCase(4, 64)]
+        [TestCase(5, 125)]
+        [TestCase(10, 1000)]
 
-        public void FixedTest(int hours, int minutes, int expectedResult)
+        public void FixedTest(int a, int expectedResult)
         {
-            int result = Program24.Convert(hours, minutes);
+            int result = Program24.Cubes(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
