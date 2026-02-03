@@ -6,7 +6,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenges
 {
-    public class Program23
+    public class Program25
     {
         public static string Has_bugs(bool buggy_code)
         {
@@ -24,14 +24,11 @@ namespace Challenges
 #pragma warning restore IDE0046 // Convert to conditional expression
         }
     }
-    public class BenchmarkProgram23
+    public class BenchmarkProgram25
     {
         [Benchmark]
-        [Arguments(1, 2, 3)]
-        [Arguments(5, 5, 5)]
-        [Arguments(1, 0, 0)]
-        [Arguments(0, 7, 0)]
-        [Arguments(0, 0, 15)]
-        public int FootballPoints(int wins, int draws, int losses) => Program22.FootballPoints(wins, draws, losses);
+        [Arguments(true)]
+        [Arguments(false)]
+        public string Has_bugs(bool buggy_code) => Program25.Has_bugs(buggy_code);
     }
 }

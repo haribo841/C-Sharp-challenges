@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace Tests
 {
     [TestFixture]
-    public class Tests24
+    public class Tests24b
     {
         [Test]
         [TestCase(2, 8)]
@@ -17,7 +17,7 @@ namespace Tests
 
         public void FixedTest(int a, int expectedResult)
         {
-            int result = Program24.Cubes(a);
+            int result = Program24b.Cubes(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

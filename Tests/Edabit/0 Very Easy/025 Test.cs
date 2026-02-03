@@ -1,7 +1,5 @@
 using System;
-using System.Xml.Linq;
 using Challenges.Edabit;
-using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 
 namespace Tests
@@ -10,15 +8,11 @@ namespace Tests
     public class Tests25
     {
         [Test]
-        [TestCase("Matt", "Hello, Matt!")]
-        [TestCase("Helen", "Hello, Helen!")]
-        [TestCase("Mubashir", "Hello, my Love!")]
-
-        public void FixedTest(string a, string expectedResult)
+        [TestCase(true, "sad days")]
+        [TestCase(false, "it's a good day")]
+        public void FixedTest(bool buggy_code, string expectedResult)
         {
-            // Arrange
-            string name = a;
-            string result = Program25.Greeting(name);
+            string result = Program25.Has_bugs(buggy_code);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

@@ -7,7 +7,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program25
+    public class Program25b
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0046:Convert to conditional expression", Justification = "Intentional")]
         public static string Greeting(string name)
@@ -19,12 +19,12 @@ namespace Challenges
             return "Hello, " + name + "!";
         }
     }
-    public class BenchmarkProgram25
+    public class BenchmarkProgram25b
     {
         [Benchmark]
         [Arguments("Matt")]
         [Arguments("Helen")]
         [Arguments("Mubashir")]
-        public string Greeting(string name) => Program25.Greeting(name);
+        public string Greeting(string name) => Program25b.Greeting(name);
     }
 }
