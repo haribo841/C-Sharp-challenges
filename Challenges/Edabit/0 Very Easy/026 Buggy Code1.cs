@@ -4,14 +4,14 @@ using System;
 
 namespace Challenges
 {
-    public class Program24b
+    public class Program26
     {
         public static int Cubes(int a)
         {
             return a * a * a;
         }
     }
-    public class BenchmarkProgram24b
+    public class BenchmarkProgram26
     {
         [Benchmark]
         [Arguments(2, 8)]
@@ -19,6 +19,6 @@ namespace Challenges
         [Arguments(4, 64)]
         [Arguments(5, 125)]
         [Arguments(10, 1000)]
-        public int Cubes(int a) => Program24b.Cubes(a);
+        public int Cubes(int a) => Program26.Cubes(a);
     }
 }
