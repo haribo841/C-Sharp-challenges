@@ -17,6 +17,6 @@ namespace Challenges
         [Arguments(324)]
         [Arguments(3012)]
         [Arguments(11)]
-        public bool DivisibleByFive(int n) => Program28.DivisibleByFive(n);
+        public bool DivisibleByFive(int n) => Program28b.DivisibleByFive(n);
     }
 }

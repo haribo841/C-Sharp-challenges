@@ -4,11 +4,11 @@ using System;
 
 namespace Challenges
 {
-    public class Program28
+    public class Program28b
     {
         public static bool DivisibleByFive(int n) => n % 5 == 0;
     }
-    public class BenchmarkProgram28
+    public class BenchmarkProgram28b
     {
         [Benchmark]
         [Arguments(7)]
@@ -18,6 +18,6 @@ namespace Challenges
         [Arguments(-18)]
         [Arguments(999)]
         [Arguments(2)]
-        public bool DivisibleByFive(int n) => Program28.DivisibleByFive(n);
+        public bool DivisibleByFive(int n) => Program28b.DivisibleByFive(n);
     }
 }
