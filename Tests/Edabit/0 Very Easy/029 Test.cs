@@ -8,14 +8,12 @@ namespace Tests
     public class Tests29
     {
         [Test]
-        [TestCase(10, 100)]
-        [TestCase(69, 4761)]
-        [TestCase(666, 443556)]
-        [TestCase(-21, 441)]
-        [TestCase(21, 441)]
-        public void FixedTest(int a, int expectedResult)
+        [TestCase("Matt", "Hello, Matt!")]
+        [TestCase("Helen", "Hello, Helen!")]
+        [TestCase("Mubashir", "Hello, my Love!")]
+        public void FixedTest(string a, string expectedResult)
         {
-            int result = Program29.Squaed(a);
+            string result = Program29.Greeting(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

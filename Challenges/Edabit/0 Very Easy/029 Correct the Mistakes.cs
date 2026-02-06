@@ -1,24 +1,27 @@
 //Look at the examples below to get an idea of what the function should do.
 using BenchmarkDotNet.Attributes;
 using System;
+using System.Xml.Linq;
 
 namespace Challenges
 {
     public class Program29
     {
-        public static int Squaed(int b)
+        public static string Greeting(string name)
         {
-            return b * b;
+            if (name == "Mubashir")
+            {
+                return "Hello, my Love!";
+            }
+            return "Hello, " + name + "!";
         }
     }
     public class BenchmarkProgram29
     {
         [Benchmark]
-        [Arguments(10)]
-        [Arguments(69)]
-        [Arguments(666)]
-        [Arguments(-21)]
-        [Arguments(21)]
-        public int Squaed(int b) => Program29.Squaed(b);
+        [Arguments("Matt")]
+        [Arguments("Helen")]
+        [Arguments("Mubashir")]
+        public string Greeting(string name) => Program29.Greeting(name);
     }
 }
