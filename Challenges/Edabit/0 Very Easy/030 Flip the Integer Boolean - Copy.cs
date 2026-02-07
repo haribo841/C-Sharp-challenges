@@ -5,15 +5,15 @@ using System;
 
 namespace Challenges
 {
-    public class Program30
+    public class Program30b
     {
         public static int FlipIntBool(int ib) => 1^ib;
     }
-    public class BenchmarkProgram30
+    public class BenchmarkProgram30b
     {
         [Benchmark]
         [Arguments(1)]
         [Arguments(0)]
-        public int FlipIntBool(int ib) => Program30.FlipIntBool(ib);
+        public int FlipIntBool(int ib) => Program30b.FlipIntBool(ib);
     }
 }
