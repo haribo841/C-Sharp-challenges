@@ -4,11 +4,11 @@ using System;
 
 namespace Challenges
 {
-    public class Program31
+    public class Program31b
     {
         public static bool DividesEvenly(int a, int b) => a % b == 0;
     }
-    public class BenchmarkProgram31
+    public class BenchmarkProgram31b
     {
         [Benchmark]
         [Arguments(98, 7)]
@@ -31,6 +31,6 @@ namespace Challenges
         [Arguments(66, 50)]
         [Arguments(95, 1)]
         [Arguments(58, 2)]
-        public bool DividesEvenly(int a, int b) => Program31.DividesEvenly(a, b);
+        public bool DividesEvenly(int a, int b) => Program31b.DividesEvenly(a, b);
     }
 }
