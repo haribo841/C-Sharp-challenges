@@ -8,21 +8,14 @@ namespace Tests
     public class Tests32
     {
         [Test]
-        [TestCase(1, 1, 60)]
-        [TestCase(10, 1, 600)]
-        [TestCase(10, 25, 15000)]
-        [TestCase(500, 60, 1800000)]
-        [TestCase(0, 60, 0)]
-        [TestCase(99, 1, 5940)]
-        [TestCase(419, 70, 1759800)]
-        [TestCase(52, 33, 102960)]
-        public void FixedTest(int a, int b, int expectedResult)
+        [TestCase(100, 200, 200, 100)]
+        [TestCase(44, 33, 33, 44)]
+        [TestCase(21, 12, 12, 21)]
+        [TestCase(10, 20, 20, 10)]
+        public void FixedTest(int a, int b, int expected1, int expected2)
         {
-            // Arrange
-            int minutes = a;
-            int fps = b;
-            int result = Program32.Frames(minutes, fps);
-            Assert.That(result, Is.EqualTo(expectedResult));
+            var result = Program32.Swap(a, b);
+            Assert.That(result, Is.EqualTo((expected1, expected2)));
         }
     }
 }

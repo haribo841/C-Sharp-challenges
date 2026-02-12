@@ -14,11 +14,11 @@ namespace Challenges
     public class BenchmarkProgram26
     {
         [Benchmark]
-        [Arguments(2, 8)]
-        [Arguments(3, 27)]
-        [Arguments(4, 64)]
-        [Arguments(5, 125)]
-        [Arguments(10, 1000)]
+        [Arguments(2)]
+        [Arguments(3)]
+        [Arguments(4)]
+        [Arguments(5)]
+        [Arguments(10)]
         public int Cubes(int a) => Program26.Cubes(a);
     }
 }

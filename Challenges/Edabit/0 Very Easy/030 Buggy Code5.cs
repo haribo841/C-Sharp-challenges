@@ -1,5 +1,4 @@
-//An int boolean is the same as a normal boolean, just 1 = true and 0 = false.
-//Make a function that returns an int boolean opposite of an int boolean given (flip the int boolean).
+//Fix the code in the code tab to pass this challenge (only syntax errors).
 using BenchmarkDotNet.Attributes;
 using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -10,7 +9,9 @@ namespace Challenges
     {
         public static List<int> PrintArray(int number)
         {
+#pragma warning disable IDE0090 // Use 'new(...)'
             List<int> array = new List<int>();
+#pragma warning restore IDE0090 // Use 'new(...)'
 
             for (int counter = 1; counter <= number; counter++)
             {

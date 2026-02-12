@@ -14,6 +14,6 @@ namespace Challenges
         [Arguments(6, 7)]
         [Arguments(20, 10)]
         [Arguments(2, 9)]
-        public int FindPerimeter(int length, int width) => Program18.Points(length, width);
+        public int FindPerimeter(int length, int width) => Program19.FindPerimeter(length, width);
     }
 }

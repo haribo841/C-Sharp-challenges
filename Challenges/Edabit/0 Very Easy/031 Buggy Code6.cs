@@ -1,4 +1,4 @@
-//Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+//Fix the code in the code tab to pass this challenge (only syntax errors).
 using BenchmarkDotNet.Attributes;
 using System;
 using System.Text;
@@ -13,10 +13,12 @@ namespace Challenges
 
             foreach (var i in str)
             {
+#pragma warning disable IDE0078 // Use pattern matching
                 if (i < '0' || i > '9')
                 {
                     result.Append(i);
                 }
+#pragma warning restore IDE0078 // Use pattern matching
             }
 
             return result.ToString();

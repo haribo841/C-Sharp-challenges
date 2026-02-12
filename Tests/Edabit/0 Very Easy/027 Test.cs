@@ -9,16 +9,15 @@ namespace Tests
     public class Tests27
     {
         [Test]
-        [TestCase(12, 1, TestName = "{0} inches are {1} feet")]
-        [TestCase(360, 30, TestName = "{0} inches are {1} feet")]
-        [TestCase(3612, 301, TestName = "{0} inches are {1} feet")]
-        [TestCase(324, 27, TestName = "{0} inches are {1} feet")]
-        [TestCase(3012, 251, TestName = "{0} inches are {1} feet")]
-        [TestCase(11, 0, TestName = "{0} inches are {1} feet")]
+        [TestCase(3, 7, 7)]
+        [TestCase(-1, 0, 0)]
+        [TestCase(1000, 400, 1000)]
+        [TestCase(-3, -9, -3)]
+        [TestCase(88, 90, 90)]
 
-        public void FixedTest(int inches, int expectedResult)
+        public void FixedTest(int n1, int n2, int expectedResult)
         {
-            int result = Program27.InchesToFeet(inches);
+            int result = Program27.Maxnum(n1, n2);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

@@ -7,8 +7,9 @@ namespace Challenges
 {
     public class Program22
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Delete unused parameter", Justification = "No overload of the \"Football Points\" method takes the following number of arguments: 3")]
+#pragma warning disable IDE0060 // Remove unused parameter
         public static int FootballPoints(int wins, int draws, int losses) => wins * 3 + draws;
+#pragma warning restore IDE0060 // Remove unused parameter
     }
     public class BenchmarkProgram22
     {

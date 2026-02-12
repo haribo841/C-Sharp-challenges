@@ -1,4 +1,4 @@
-//Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+//Fix the code in the code tab to pass this challenge (only syntax errors).
 using BenchmarkDotNet.Attributes;
 using Challenges;
 using System;

@@ -10,13 +10,14 @@ namespace Challenges
     }
     public class BenchmarkProgram23
     {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         private object[] array1;
         private object[] array2;
         private object[] array3;
         private object[] array4;
         private object[] array5;
         private object[] array6;
-
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
         [GlobalSetup]
         public void Setup()
         {

@@ -1,30 +1,33 @@
-//Emmy has written a function that returns a greeting to users.
-//However, she's in love with Mubashir, and would like to greet him slightly differently.
-//She added a special case in her function, but she made a mistake.
-//Can you help her?
+//Fix the code in the code tab to pass this challenge (only syntax errors).
 using BenchmarkDotNet.Attributes;
 using System;
 
 namespace Challenges
 {
-    public class Program27b
+    public class Program27
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0046:Convert to conditional expression", Justification = "Intentional")]
-        public static string Greeting(string name)
+        public static int Maxnum(int n1, int n2)
         {
-            if (name == "Mubashir")
+#pragma warning disable IDE0046 // Convert to conditional expression
+            if (n1 > n2)
             {
-                return "Hello, my Love!";
+                return n1;
             }
-            return "Hello, " + name + "!";
+            else
+            {
+                return n2;
+            }
+#pragma warning restore IDE0046 // Convert to conditional expression
         }
     }
     public class BenchmarkProgram27b
     {
         [Benchmark]
-        [Arguments("Matt")]
-        [Arguments("Helen")]
-        [Arguments("Mubashir")]
-        public string Greeting(string name) => Program27b.Greeting(name);
+        [Arguments(3, 7)]
+        [Arguments(-1, 0)]
+        [Arguments(1000, 400)]
+        [Arguments(-3, -9)]
+        [Arguments(88, 90)]
+        public int Maxnum(int n1, int n2) => Program27.Maxnum(n1 ,n2);
     }
 }
