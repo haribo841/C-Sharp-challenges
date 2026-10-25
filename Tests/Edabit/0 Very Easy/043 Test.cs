@@ -1,25 +1,31 @@
 using System;
 using Challenges.Edabit;
 using NUnit.Framework;
+
 namespace Tests
 {
     [TestFixture]
     public class Tests43
     {
         [Test]
-        [TestCase(5, 3, 15)]
-        [TestCase(8, 5, 40)]
-        [TestCase(5, 4, 20)]
-        [TestCase(2, 3, 6)]
-        [TestCase(10000, 10000, 100000000)]
-        [TestCase(-2, -5, -1)]
-        [TestCase(0, 3, -1)]
-        [TestCase(5, -3, -1)]
-        [TestCase(0, 1, -1)]
-        [TestCase(-1, 0, -1)]
-        public void Area(int h, int w, int expectedResult)
+        [TestCase(1, 6)]
+        [TestCase(2, 24)]
+        [TestCase(3, 54)]
+        [TestCase(4, 96)]
+        [TestCase(5, 150)]
+        [TestCase(6, 216)]
+        [TestCase(7, 294)]
+        [TestCase(8, 384)]
+        [TestCase(9, 486)]
+        [TestCase(10, 600)]
+        [TestCase(11, 726)]
+        [TestCase(12, 864)]
+        [TestCase(13, 1014)]
+        [TestCase(14, 1176)]
+        [TestCase(15, 1350)]
+        public void FixedTest(int a, int expectedResult)
         {
-            int result = Program43.Area(h, w);
+            int result = Program43.HowManyStickers(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

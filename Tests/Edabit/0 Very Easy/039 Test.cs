@@ -1,23 +1,24 @@
 using System;
 using Challenges.Edabit;
 using NUnit.Framework;
+
 namespace Tests
 {
     [TestFixture]
     public class Tests39
     {
-        [TestCase(-5, true)]
-        [TestCase(-50, false)]
-        [TestCase(0, false)]
-        [TestCase(25, true)]
-        [TestCase(-19, true)]
-        [TestCase(12, false)]
-        [TestCase(23, true)]
-        [TestCase(-71, true)]
-
-        public void IsOdd(int num, bool expectedResult)
+        [Test]
+        [TestCase(1, 1, 60)]
+        [TestCase(10, 1, 600)]
+        [TestCase(10, 25, 15000)]
+        [TestCase(500, 60, 1800000)]
+        [TestCase(0, 60, 0)]
+        [TestCase(99, 1, 5940)]
+        [TestCase(419, 70, 1759800)]
+        [TestCase(52, 33, 102960)]
+        public void FixedTest(int a, int b, int expectedResult)
         {
-            bool result = Program39.IsOdd(num);
+            int result = Program39.Frames(a, b);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

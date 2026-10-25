@@ -11,9 +11,9 @@ namespace Challenges
 {
     public class Program166
     {
-        public static bool CheckEquality(object a, object b)
+        public static bool CheckEquality(object? a, object? b)
         {
-            return false;
+            return a?.GetType() == b?.GetType() && Equals(a, b);
         }
     }
 }

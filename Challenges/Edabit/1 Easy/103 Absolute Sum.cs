@@ -9,7 +9,7 @@ namespace Challenges
             int y = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                y += Program49.Absolute(arr[i]);
+                y += Math.Abs(arr[i]);
             }
             return y;
         }

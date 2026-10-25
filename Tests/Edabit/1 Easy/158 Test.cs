@@ -13,6 +13,9 @@ namespace Tests
         [TestCase(new double[] { 7, 6, 5, 4, 3, 2, 1, 0, 1 }, new double[] { 0, 1, 2, 3, 4, 5, 6, 7 })]
         [TestCase(new double[] { 3, 6, 5, 4, 3, 27, 1, 100, 1 }, new double[] { 1, 3, 4, 5, 6, 27, 100 })]
         [TestCase(new double[] { -9, -3.1414, -87, 8, -4.323827, -3.1415, -3.1415 }, new double[] { -87, -9, -4.323827, -3.1415, -3.1414, 8 })]
+        [TestCase(new double[] { }, new double[] { })]
+        [TestCase(new double[] { 12, 2, 12, 1 }, new double[] { 1, 2, 12 })]
+        [TestCase(new double[] { 0.5, 0.25, 0.5 }, new double[] { 0.25, 0.5 })]
         public void FixedTest(double[] arr, double[] expectedResult)
         {
             double[] result = Program158.UniqueSort(arr);

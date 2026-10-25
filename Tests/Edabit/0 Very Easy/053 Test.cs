@@ -1,21 +1,20 @@
-using System;
 using Challenges.Edabit;
 using NUnit.Framework;
+
 namespace Tests
 {
     [TestFixture]
     public class Tests53
     {
         [Test]
-        [TestCase("apple", 5)]
-        [TestCase("make", 4)]
-        [TestCase("a", 1)]
-        [TestCase("", 0)]
-        public void FixedTest(string a, int expectedResult)
+        [TestCase(-4, -4)]
+        [TestCase(212, -212)]
+        [TestCase(-125, -125)]
+        [TestCase(932123, -932123)]
+
+        public void ReturnNegative(int n, int expectedResult)
         {
-            // Arrange
-            string word = a;
-            int result = Program53.Length(word);
+            int result = Program53.ReturnNegative(n);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

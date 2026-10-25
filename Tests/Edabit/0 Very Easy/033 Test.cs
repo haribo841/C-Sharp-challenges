@@ -1,5 +1,8 @@
 using System;
+using System.Xml.Linq;
 using Challenges.Edabit;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 
 namespace Tests
@@ -8,16 +11,15 @@ namespace Tests
     public class Tests33
     {
         [Test]
-        [TestCase(0.2, 50, 9, true)]
-        [TestCase(0.9, 1, 2, false)]
-        [TestCase(0.9, 3, 2, true)]
-        [TestCase(0.33, 10, 3.30, true)]
-        [TestCase(0, 1000, 0.01, false)]
-        [TestCase(0.1, 1000, 7, true)]
-        [TestCase(0, 0, 0, false)]
-        public void ProfitableGamble(double prob, int prize, double pay, bool expectedResult)
+        [TestCase(5, 4, 8)]
+        [TestCase(8, 3, 10)]
+        [TestCase(7, 9, 15)]
+        [TestCase(10, 4, 13)]
+        [TestCase(7, 2, 8)]
+
+        public void FixedTest(int side1, int side2, int expectedResult)
         {
-            bool result = Program33.ProfitableGamble(prob, prize, pay);
+            int result = Program33.NextEdge(side1, side2);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

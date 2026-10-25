@@ -1,10 +1,10 @@
 ﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Diagnosers;
-using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Exporters;
 using BenchmarkDotNet.Loggers;
+using BenchmarkDotNet.Running;
 using Challenges;
 namespace Benchmark
 {
@@ -28,7 +28,7 @@ namespace Benchmark
         public static void Main(string[] args)
         {
             // BenchmarkRunner.Run<BenchmarkProgramNumber>(new CustomConfig());
-            BenchmarkRunner.Run<BenchmarkProgram21>(new CustomConfig());
+            BenchmarkRunner.Run<BenchmarkProgram60>(new CustomConfig());
         }
     }
 }

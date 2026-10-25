@@ -1,5 +1,5 @@
-using System;
 using Challenges.Edabit;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
 namespace Tests
 {
@@ -7,18 +7,16 @@ namespace Tests
     public class Tests58
     {
         [Test]
-        [TestCase('E', 69)]
-        [TestCase('d', 100)]
-        [TestCase('a', 97)]
-        [TestCase('b', 98)]
-        [TestCase('i', 105)]
-        [TestCase('t', 116)]
-        [TestCase('.', 46)]
-        [TestCase(' ', 32)]
-        [TestCase('1', 49)]
-        public void FixedTest(char a, int expectedResult)
+        [TestCase("Aiden", true)]
+        [TestCase("Roxy", false)]
+        [TestCase("Bert", false)]
+        [TestCase("Dean", true)]
+        [TestCase("Ian", true)]
+        [TestCase("Brian", true)]
+        [TestCase("Daniel", false)]
+        public void FixedTest(string a, bool expectedResult)
         {
-            int result = Program58.CharToASCII(a);
+            bool result = Program58.IsLastCharacterN(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

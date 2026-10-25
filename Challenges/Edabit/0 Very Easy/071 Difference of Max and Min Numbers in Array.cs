@@ -4,6 +4,6 @@ namespace Challenges
 {
     public class Program71
     {
-        public static int DifferenceMaxMin(int[] arr)=>Program54.Diff(arr);
+        public static int DifferenceMaxMin(int[] arr) => Program60.Diff(arr);
     }
 }

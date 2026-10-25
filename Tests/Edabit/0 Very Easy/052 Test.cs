@@ -1,24 +1,22 @@
 ﻿using Challenges.Edabit;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
+
 namespace Tests
 {
     [TestFixture]
     public class Tests52
     {
         [Test]
-        [TestCase("Aiden", true)]
-        [TestCase("Roxy", false)]
-        [TestCase("Bert", false)]
-        [TestCase("Dean", true)]
-        [TestCase("Ian", true)]
-        [TestCase("Brian", true)]
-        [TestCase("Daniel", false)]
-        public void FixedTest(string a, bool expectedResult)
+        [TestCase("apples", true)]
+        [TestCase("banana", true)]
+        [TestCase("cherry", true)]
+        [TestCase("mango", false)]
+        [TestCase("peach", false)]
+        [TestCase("pears", false)]
+
+        public void FixedTest(string word, bool expectedResult)
         {
-            // Arrange
-            string word = a;
-            bool result = Program52.IsLastCharacterN(word);
+            bool result = Program52.OddOrEven(word);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

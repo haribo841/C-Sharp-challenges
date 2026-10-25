@@ -1,19 +1,24 @@
 using System;
+using System;
 using Challenges.Edabit;
 using NUnit.Framework;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace Tests
 {
     [TestFixture]
     public class Tests35
     {
         [Test]
-        [TestCase(2013, 12, 24, true)]
-        [TestCase(2013, 0, 23, false)]
-        [TestCase(3000, 12, 24, true)]
-        public void FixedTest(int year, int month, int day, bool expectedResult)
+        [TestCase(7, false, TestName = "{0} is not divisible by 5")]
+        [TestCase(5, true, TestName = "{0} is evenly divisible by 5")]
+        [TestCase(15, true, TestName = "{0} is evenly divisible by 5")]
+        [TestCase(33, false, TestName = "{0} is not divisible by 5")]
+        [TestCase(-18, false, TestName = "{0} is not divisible by 5")]
+        [TestCase(999, false, TestName = "{0} is not divisible by 5")]
+        [TestCase(2, false, TestName = "{0} is not divisible by 5")]
+        public void DivisibleByFive(int x, bool expectedResult)
         {
-            bool result = Program35.TimeForMilkAndCookies(year, month, day);
+            bool result = Program35.DivisibleByFive(x);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

@@ -1,22 +1,20 @@
+using System;
 using Challenges.Edabit;
 using NUnit.Framework;
-
 namespace Tests
 {
     [TestFixture]
     public class Tests46
     {
-        [Test]
-        [TestCase("apples", true)]
-        [TestCase("banana", true)]
-        [TestCase("cherry", true)]
-        [TestCase("mango", false)]
-        [TestCase("peach", false)]
-        [TestCase("pears", false)]
+        [TestCase(1, 0)]
+        [TestCase(2, 2)]
+        [TestCase(3, 4)]
+        [TestCase(100, 198)]
+        [TestCase(1298734, 2597466)]
 
-        public void FixedTest(string word, bool expectedResult)
+        public void Points(int n, int expectedResult)
         {
-            bool result = Program46.OddOrEven(word);
+            int result = Program46.NthEven(n);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

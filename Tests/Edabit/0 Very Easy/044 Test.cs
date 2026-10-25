@@ -7,15 +7,16 @@ namespace Tests
     public class Tests44
     {
         [Test]
-        [TestCase("", true)]
-        [TestCase(" ", false)]
-        [TestCase("            ", false)]
-        [TestCase("38215", false)]
-        [TestCase("afjabsdf", false)]
-        [TestCase("!?@&", false)]
-        public void IsEmpty(string s, bool expectedResult)
+        [TestCase(1, 1)]
+        [TestCase(2, 4)]
+        [TestCase(0, 0)]
+        [TestCase(5, 25)]
+        [TestCase(27, 729)]
+        [TestCase(196, 38416)]
+        [TestCase(512, 262144)]
+        public void FixedTest(int a, int expectedResult)
         {
-            bool result = Program44.IsEmpty(s);
+            int result = Program44.StackBoxes(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

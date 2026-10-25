@@ -1,20 +1,41 @@
 using System;
-using NUnit.Framework;
-using System.Collections.Generic;
 using Challenges.Edabit;
+using NUnit.Framework;
 
 namespace Tests
 {
     [TestFixture]
     public class Tests38
     {
-        [TestCase(1, new int[] { 1 })]
-        [TestCase(2, new int[] { 1, 2 })]
-        [TestCase(6, new int[] { 1, 2, 3, 4, 5, 6 })]
-        public static void TestPrintArray(int n, int[] expectedValues)
+        [Test]
+        [TestCase(98, 7, true)]
+        [TestCase(87, 49, false)]
+        [TestCase(34, 14, false)]
+        [TestCase(78, 6, true)]
+        [TestCase(30, 4, false)]
+        [TestCase(87, 73, false)]
+        [TestCase(74, 7, false)]
+        [TestCase(87, 29, true)]
+        [TestCase(48, 24, true)]
+        [TestCase(99, 20, false)]
+        [TestCase(98, 49, true)]
+        [TestCase(100, 6, false)]
+        [TestCase(64, 4, true)]
+        [TestCase(70, 35, true)]
+        [TestCase(38, 38, true)]
+        [TestCase(29, 3, false)]
+        [TestCase(20, 8, false)]
+        [TestCase(66, 50, false)]
+        [TestCase(95, 1, true)]
+        [TestCase(58, 2, true)]
+
+        public void FixedTest(int a, int b, bool expectedResult)
         {
-            List<int> myValues = new(expectedValues);
-            Assert.That(Loop.PrintArray(n), Is.EqualTo(myValues));
+            // Arrange
+            int dividend = a;
+            int divider = b;
+            bool result = Program38.DividesEvenly(dividend, divider);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }

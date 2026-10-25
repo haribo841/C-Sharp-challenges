@@ -9,6 +9,8 @@ namespace Tests
         [Test]
         [TestCase(new int[] { 10, 4, 1, 2, 8, 91 }, 90)]
         [TestCase(new int[] { -70, 43, 34, 54, 22 }, 124)]
+        [TestCase(new int[] { 7 }, 0)]
+        [TestCase(new int[] { -7, -3, -10 }, 7)]
         public void FixedTest(int[] arr, int expectedResult)
         {
             int result = Program71.DifferenceMaxMin(arr);

@@ -1,6 +1,7 @@
+using System;
+using System.Drawing;
 using Challenges.Edabit;
 using NUnit.Framework;
-using System;
 
 namespace Tests
 {
@@ -8,16 +9,16 @@ namespace Tests
     public class Tests34
     {
         [Test]
-        [TestCase(1, false)]
-        [TestCase(100, true)]
-        [TestCase(1000, true)]
-        [TestCase(111000, true)]
-        [TestCase(-1, false)]
-        [TestCase(0, true)]
-        [TestCase(-100, true)]
-        public static void DivisibleTest(int number, bool expectedResult)
+        [TestCase(12, 1, TestName = "{0} inches are {1} feet")]
+        [TestCase(360, 30, TestName = "{0} inches are {1} feet")]
+        [TestCase(3612, 301, TestName = "{0} inches are {1} feet")]
+        [TestCase(324, 27, TestName = "{0} inches are {1} feet")]
+        [TestCase(3012, 251, TestName = "{0} inches are {1} feet")]
+        [TestCase(11, 0, TestName = "{0} inches are {1} feet")]
+
+        public void FixedTest(int inches, int expectedResult)
         {
-            bool result = Program34.Divisible(number);
+            int result = Program34.InchesToFeet(inches);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

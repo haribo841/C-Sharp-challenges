@@ -1,20 +1,20 @@
+using System;
 using Challenges.Edabit;
 using NUnit.Framework;
-
 namespace Tests
 {
     [TestFixture]
     public class Tests47
     {
-        [Test]
-        [TestCase(-4, -4)]
-        [TestCase(212, -212)]
-        [TestCase(-125, -125)]
-        [TestCase(932123, -932123)]
-
-        public void ReturnNegative(int n, int expectedResult)
+        [TestCase(6, 7)]
+        [TestCase(3, 3)]
+        [TestCase(7, 8)]
+        [TestCase(12, 14)]
+        [TestCase(213, 248)]
+        [TestCase(16, 18)]
+        public void FixedTest(int n, int expectedResult)
         {
-            int result = Program47.ReturnNegative(n);
+            int result = Program47.TotalCups(n);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

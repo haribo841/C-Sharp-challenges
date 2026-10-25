@@ -113,25 +113,6 @@ namespace Challenges
 
         public static int Trebuchet2(string filePath)
         {
-            static int GetCalibrationValue(string input, string[] wordToDigit, int[] digitValues)
-            {
-                int FindIndex(string word)
-                {
-                    for (int i = 0; i < wordToDigit.Length; i++)
-                    {
-                        if (wordToDigit[i] == word)
-                        {
-                            return i + 1; // Increment by 1 to match digit index
-                        }
-                    }
-                    return 0; // Return 0 if the word is not found
-                }
-                char firstChar = input[0];
-                char lastChar = input[^1];
-                int firstDigit = Char.IsDigit(firstChar) ? int.Parse(firstChar.ToString()) : digitValues[FindIndex(firstChar.ToString())];
-                int lastDigit = Char.IsDigit(lastChar) ? int.Parse(lastChar.ToString()) : digitValues[FindIndex(lastChar.ToString())];
-                return firstDigit * 10 + lastDigit;
-            }
             try
             {
                 if (!File.Exists(filePath))
@@ -140,19 +121,24 @@ namespace Challenges
                     return 0;
                 }
                 string[] wordToDigit = new string[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-                int[] digitValues = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
                 int sum = 0;
-                string pattern = @"\b(" + string.Join("|", Array.ConvertAll(wordToDigit, Regex.Escape)) + @")\b";
+                // Look ahead without consuming a word, so "twone" retains both digits.
+                string pattern = @"(?=([0-9]|one|two|three|four|five|six|seven|eight|nine))";
+                int Digit(Match match)
+                {
+                    string token = match.Groups[1].Value;
+                    return token.Length == 1 ? token[0] - '0' : Array.IndexOf(wordToDigit, token) + 1;
+                }
+
                 using (StreamReader reader = new(filePath))
                 {
                     string? line;
                     while ((line = reader.ReadLine()) != null)
                     {
                         MatchCollection matches = Regex.Matches(line, pattern);
-                        foreach (Match match in matches)
+                        if (matches.Count > 0)
                         {
-                            int calibrationValue = GetCalibrationValue(match.Value, wordToDigit, digitValues);
-                            sum += calibrationValue;
+                            sum += Digit(matches[0]) * 10 + Digit(matches[matches.Count - 1]);
                         }
                     }
                 }

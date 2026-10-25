@@ -24,4 +24,26 @@ public class TestA2301
         int result = A2301.Trebuchet2(filePath);
         Assert.That(result, Is.EqualTo(expectedResult), "Sum of calibration values should match");
     }
+
+    [TestCase("twone", 21)]
+    [TestCase("oneight", 18)]
+    [TestCase("eightwo", 82)]
+    [TestCase("7pqrstsixteen", 76)]
+    [TestCase("0abc9", 9)]
+    [TestCase("two1nine\neightwothree", 112)]
+    [TestCase("", 0)]
+    [TestCase("no digits", 0)]
+    public void PartTwoHandlesOverlappingWordsAndNumericDigits(string text, int expected)
+    {
+        string path = Path.GetTempFileName();
+        try
+        {
+            File.WriteAllText(path, text);
+            Assert.That(A2301.Trebuchet2(path), Is.EqualTo(expected));
+        }
+        finally
+        {
+            File.Delete(path);
+        }
+    }
 }

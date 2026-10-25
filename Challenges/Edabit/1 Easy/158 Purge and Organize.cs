@@ -10,50 +10,7 @@ namespace Challenges
     {
         public static double[] UniqueSort(double[] arr)
         {
-            string s = "";
-            foreach (var a in arr)
-            {
-                string temp = a.ToString() + "";
-                if (s.IndexOf(temp) == -1)
-                {
-                    s += temp + ",";
-                }
-            }
-            string[] st = s.TrimEnd(',').Split(',');
-            double[] d = new double[st.Length];
-            for (int i = 0; i < d.Length; i++)
-            {
-                d[i] = double.Parse(st[i]);
-            }
-
-            // Sorting the array using bubble sort
-            for (int i = 0; i < d.Length; i++)
-            {
-                for (int j = i + 1; j < d.Length; j++)
-                {
-                    if (d[j] < d[i])
-                    {
-                        double temp = d[j];
-                        d[j] = d[i];
-                        d[i] = temp;
-                    }
-                }
-            }
-
-            // Ensure all unique elements are included
-            List<double> resultList = new List<double>(d);
-            foreach (var num in arr)
-            {
-                if (!resultList.Contains(num))
-                {
-                    resultList.Add(num);
-                }
-            }
-
-            double[] finalArray = resultList.ToArray();
-            Array.Sort(finalArray);
-
-            return finalArray;
+            return arr.Distinct().OrderBy(number => number).ToArray();
         }
     }
 }

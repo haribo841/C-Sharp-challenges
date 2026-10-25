@@ -1,22 +1,23 @@
+using System;
 using Challenges.Edabit;
 using NUnit.Framework;
-using System;
 namespace Tests
 {
     [TestFixture]
     public class Tests45
     {
-        [Test]
-        [TestCase("AB", "CD", true)]
-        [TestCase("ABC", "DE", false)]
-        [TestCase("hello", "edabit", false)]
-        [TestCase("meow", "woof", true)]
-        [TestCase("jrnvjrnnt", "cvjknfjvmfvnfjn", false)]
-        [TestCase("jkvnjrt", "krnf", false)]
-        [TestCase("Facebook", "Snapchat", true)]
-        public void Comp(string str1, string str2, bool expectedResult)
+        [TestCase(-5, true)]
+        [TestCase(-50, false)]
+        [TestCase(0, false)]
+        [TestCase(25, true)]
+        [TestCase(-19, true)]
+        [TestCase(12, false)]
+        [TestCase(23, true)]
+        [TestCase(-71, true)]
+
+        public void IsOdd(int num, bool expectedResult)
         {
-            bool result = Program45.Comp(str1, str2);
+            bool result = Program45.IsOdd(num);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

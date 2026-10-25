@@ -1,24 +1,47 @@
+//Given an array of integers, return the difference between the largest and smallest integers in the array.
+using NUnit.Framework;
 using System;
 using Challenges.Edabit;
-using NUnit.Framework;
+
 namespace Tests
 {
     [TestFixture]
-    public class Test60
+    public class Tests60
     {
         [Test]
-        [TestCase(8, 3, 2, true)]
-        [TestCase(8, 3, 3, false)]
-        [TestCase(24, 12, 2, true)]
-        [TestCase(5, 6, 1, false)]
-        [TestCase(5, 0, 100, true)]
-        [TestCase(15, 2, 7, true)]
-        [TestCase(15, 2, 8, false)]
-        public void EqualSlices(int total, int people, int each, bool expectedResult)
+        [TestCase(new int[] { -9, -8, 6, -9, 15, 6 }, 24)]
+        [TestCase(new int[] { -5, 6, 18, 4, 16, -2 }, 23)]
+        [TestCase(new int[] { -2, 20, -9, -9, -2, -7 }, 29)]
+        [TestCase(new int[] { 4, -2, 11, -9, 15, 2 }, 24)]
+        [TestCase(new int[] { 15, 10, 3, -6, 6, 19 }, 25)]
+        [TestCase(new int[] { 1, 7, 18, -1, -2, 9 }, 20)]
+        [TestCase(new int[] { 5, 1, -9, 7, -8, -10 }, 17)]
+        [TestCase(new int[] { 5, 1, -9, 7, -8, -10 }, 17)]
+        [TestCase(new int[] { 4, 17, 12, 2, 10, 2 }, 15)]
+        [TestCase(new int[] { 7 }, 0)]
+        [TestCase(new int[] { -3, -3, -3 }, 0)]
+        [TestCase(new int[] { -10, 2, 5, 1, -4 }, 15)]
+        public void Diff(int[] arr, int expectedResult)
         {
-            bool result = Program60.EqualSlices(total, people, each);
+            int result = Program60.Diff(arr);
             Assert.That(result, Is.EqualTo(expectedResult));
+            Assert.That(Program60.DiffOptimized(arr), Is.EqualTo(expectedResult));
+            Assert.That(Program60.DiffOptimizedCompact(arr), Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void ImplementationsAgreeForReproducibleRandomArrays()
+        {
+            var random = new Random(0);
+            for (int sample = 0; sample < 1000; sample++)
+            {
+                int[] values = Enumerable.Range(0, random.Next(1, 129))
+                    .Select(_ => random.Next(-10000, 10001)).ToArray();
+                int expected = values.Max() - values.Min();
+                Assert.That(Program60.Diff(values), Is.EqualTo(expected));
+                Assert.That(Program60.DiffOptimized(values), Is.EqualTo(expected));
+                Assert.That(Program60.DiffOptimizedCompact(values), Is.EqualTo(expected));
+            }
         }
     }
 }
-

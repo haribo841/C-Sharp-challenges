@@ -7,12 +7,15 @@ namespace Tests
     public class Tests59
     {
         [Test]
-        [TestCase(12, 2)]
-        [TestCase(6000, 4)]
-        [TestCase(314, 3)]
-        public void FixedTest(int n, int expectedResult)
+        [TestCase("apple", 5)]
+        [TestCase("make", 4)]
+        [TestCase("a", 1)]
+        [TestCase("", 0)]
+        [TestCase("C#", 2)]
+        [TestCase("ąęć", 3)]
+        public void FixedTest(string a, int expectedResult)
         {
-            int result = Program59.Length(n);
+            int result = Program59.Length(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

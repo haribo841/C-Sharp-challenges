@@ -1,3 +1,4 @@
+using System;
 using Challenges.Edabit;
 using NUnit.Framework;
 namespace Tests
@@ -6,27 +7,15 @@ namespace Tests
     public class Tests50
     {
         [Test]
-        [TestCase(3, "odd")]
-        [TestCase(0, "even")]
-        [TestCase(7, "odd")]
-        [TestCase(12, "even")]
-        [TestCase(6474, "even")]
-        [TestCase(563, "odd")]
-        [TestCase(3, "odd")]
-        [TestCase(301, "odd")]
-        [TestCase(-3, "odd")]
-        [TestCase(-0, "even")]
-        [TestCase(-7, "odd")]
-        [TestCase(-12, "even")]
-        [TestCase(-563, "odd")]
-        [TestCase(-6474, "even")]
-        [TestCase(-3, "odd")]
-        [TestCase(-301, "odd")]
-        public void FixedTest(int num, string expectedResult)
+        [TestCase("", true)]
+        [TestCase(" ", false)]
+        [TestCase("            ", false)]
+        [TestCase("38215", false)]
+        [TestCase("afjabsdf", false)]
+        [TestCase("!?@&", false)]
+        public void IsEmpty(string s, bool expectedResult)
         {
-            // Arrange
-            int number = num;
-            string result = Program50.IsEvenOrOdd(number);
+            bool result = Program50.IsEmpty(s);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

@@ -1,4 +1,3 @@
-using System;
 using Challenges.Edabit;
 using NUnit.Framework;
 namespace Tests
@@ -7,13 +6,16 @@ namespace Tests
     public class Tests55
     {
         [Test]
-        [TestCase("6", 6)]
-        [TestCase("2", 2)]
-        [TestCase("10", 10)]
-        [TestCase("666", 666)]
-        public void FixedTest(string num, int expectedResult)
+        [TestCase(-5, 5)]
+        [TestCase(-3, 3)]
+        [TestCase(250, 250)]
+        [TestCase(0, 0)]
+        [TestCase(6, 6)]
+        [TestCase(1103, 1103)]
+
+        public void FixedTest(int a, int expectedResult)
         {
-            int result = Program55.StringInt(num);
+            int result = Program55.Absolute(a);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

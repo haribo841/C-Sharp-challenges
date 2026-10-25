@@ -8,6 +8,8 @@
 | [Tests/Edabit](../Tests/Edabit) | NUnit tests corresponding to challenge solutions. |
 | [Challenges/Program.cs](../Challenges/Program.cs) | BenchmarkDotNet entry point and configuration. |
 | [edabit.sln](../edabit.sln) | Solution containing the challenge and test projects. |
+| [CHALLENGES.md](CHALLENGES.md) | Complete numbered solution/test index and preserved-number mapping. |
+| [WIKI.md](WIKI.md) | Separate wiki checkout and contribution checks. |
 
 ## Test workflow
 
@@ -15,7 +17,7 @@ Restore packages and run the NUnit test project:
 
 ~~~powershell
 dotnet restore edabit.sln
-dotnet test Tests/Tests.csproj
+dotnet test Tests/Tests.csproj --configuration Release
 ~~~
 
 The source set is a practice collection, so add a test alongside a solution and use the tests as the expected-behavior record for that challenge.
@@ -36,3 +38,6 @@ To benchmark a different exercise, review the entry point and the relevant bench
 2. Add or update its NUnit test.
 3. Run the focused test suite.
 4. State the challenge title/number and expected behavior in the change description.
+5. Update the [solution/test catalog](CHALLENGES.md) and the matching wiki page, including wiki navigation.
+
+The main source and GitHub wiki are separate repositories. Preparing wiki pages locally does not publish them; follow the [wiki workflow](WIKI.md) and the user's publication limit before committing or pushing either checkout.

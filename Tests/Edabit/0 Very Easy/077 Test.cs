@@ -12,6 +12,10 @@ namespace Tests
         [TestCase(55551, 5)]
         [TestCase(96456431, 8)]
         [TestCase(0, 1)]
+        [TestCase(-1, 1)]
+        [TestCase(-123, 3)]
+        [TestCase(int.MinValue, 10)]
+        [TestCase(int.MaxValue, 10)]
         public void FixedTest(int num, int expectedResult)
         {
             int result = Program77.FindDigitAmount(num);

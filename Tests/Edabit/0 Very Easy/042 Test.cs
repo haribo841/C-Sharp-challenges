@@ -1,19 +1,19 @@
 using System;
 using Challenges.Edabit;
 using NUnit.Framework;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Tests
 {
     [TestFixture]
     public class Tests42
     {
         [Test]
-        [TestCase("John", "Doe", "Doe, John")]
-        [TestCase("First", "Last", "Last, First")]
-        [TestCase("A", "B", "B, A")]
-        [TestCase(",", ",", ",, ,")]
-        public void FixedTest(string firstName, string lastName, string expectedResult)
+        [TestCase(2013, 12, 24, true)]
+        [TestCase(2013, 0, 23, false)]
+        [TestCase(3000, 12, 24, true)]
+        public void FixedTest(int year, int month, int day, bool expectedResult)
         {
-            string result = Program42.ConcatName(firstName, lastName);
+            bool result = Program42.TimeForMilkAndCookies(year, month, day);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

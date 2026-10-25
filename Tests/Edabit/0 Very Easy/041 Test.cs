@@ -1,20 +1,23 @@
-using System;
 using Challenges.Edabit;
 using NUnit.Framework;
+using System;
+
 namespace Tests
 {
     [TestFixture]
     public class Tests41
     {
-        [TestCase(6,  7)]
-        [TestCase(3,  3)]
-        [TestCase(7,  8)]
-        [TestCase(12, 14)]
-        [TestCase(213, 248)]
-        [TestCase(16, 18)]
-        public void FixedTest(int n, int expectedResult)
+        [Test]
+        [TestCase(1, false)]
+        [TestCase(100, true)]
+        [TestCase(1000, true)]
+        [TestCase(111000, true)]
+        [TestCase(-1, false)]
+        [TestCase(0, true)]
+        [TestCase(-100, true)]
+        public static void DivisibleTest(int number, bool expectedResult)
         {
-            int result = Program41.TotalCups(n);
+            bool result = Program41.Divisible(number);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
     }

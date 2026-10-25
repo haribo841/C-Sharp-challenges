@@ -4,6 +4,17 @@ namespace Challenges
 {
     public class Program77
     {
-        public static int FindDigitAmount(int num) => Program59.Length(num);
+        public static int FindDigitAmount(int num)
+        {
+            int digits = 0;
+            do
+            {
+                digits++;
+                num /= 10;
+            }
+            while (num != 0);
+
+            return digits;
+        }
     }
 }
