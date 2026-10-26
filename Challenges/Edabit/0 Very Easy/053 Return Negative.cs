@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program53
+    public static class Program53
     {
         public static int ReturnNegative(int n) => n < 0 ? n : -n;
     }

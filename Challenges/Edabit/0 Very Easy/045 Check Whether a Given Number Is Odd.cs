@@ -1,4 +1,4 @@
-//Éowyn has written the function IsOdd() to check if a given number is odd or not.
+//Ã‰owyn has written the function IsOdd() to check if a given number is odd or not.
 //Unfortunately, the function does not return the correct result for all the inputs.
 //Help her fix the error.
 using BenchmarkDotNet.Attributes;
@@ -6,7 +6,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program45
+    public static class Program45
     {
         public static bool IsOdd(int num) => (num & 1) != 0;
     }

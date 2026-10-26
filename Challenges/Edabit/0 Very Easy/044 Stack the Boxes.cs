@@ -6,7 +6,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program44
+    public static class Program44
     {
         public static int StackBoxes(int n) => n * n;
     }

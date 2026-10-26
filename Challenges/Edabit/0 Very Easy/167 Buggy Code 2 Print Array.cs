@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Challenges
 {
-    public class Program167
+    public static class Program167
     {
         public static List<int> PrintArray(int number)
         {

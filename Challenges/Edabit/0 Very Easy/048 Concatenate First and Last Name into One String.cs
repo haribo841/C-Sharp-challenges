@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Challenges
 {
-    public class Program48
+    public static class Program48
     {
         public static string ConcatName(string firstName, string lastName) => string.Concat(lastName, ", ", firstName);
     }

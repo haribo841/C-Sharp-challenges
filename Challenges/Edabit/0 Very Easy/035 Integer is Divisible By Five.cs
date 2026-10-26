@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program35
+    public static class Program35
     {
         public static bool DivisibleByFive(int n) => n % 5 == 0;
     }

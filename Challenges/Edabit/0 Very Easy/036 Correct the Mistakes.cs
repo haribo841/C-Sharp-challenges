@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program36
+    public static class Program36
     {
         public static int Squaed(int b)
         {

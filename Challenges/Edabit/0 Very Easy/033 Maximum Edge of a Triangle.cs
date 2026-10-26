@@ -4,9 +4,9 @@ using System;
 
 namespace Challenges
 {
-    public class Program33
+    public static class Program33
     {
-        public static int NextEdge(int side1, int side2) => --side1 + side2;
+        public static int NextEdge(int side1, int side2) => side1 + side2 - 1;
     }
     public class BenchmarkProgram33
     {

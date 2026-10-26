@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program58
+    public static class Program58
     {
         public static bool IsLastCharacterN(string word) => word[^1] == 'n';
     }

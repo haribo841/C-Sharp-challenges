@@ -21,6 +21,10 @@ namespace Tests
         [TestCase(new int[] { 7 }, 0)]
         [TestCase(new int[] { -3, -3, -3 }, 0)]
         [TestCase(new int[] { -10, 2, 5, 1, -4 }, 15)]
+        [TestCase(new int[] { int.MinValue }, 0)]
+        [TestCase(new int[] { int.MaxValue, int.MaxValue }, 0)]
+        [TestCase(new int[] { int.MinValue, -1 }, int.MaxValue)]
+        [TestCase(new int[] { 0, int.MaxValue }, int.MaxValue)]
         public void Diff(int[] arr, int expectedResult)
         {
             int result = Program60.Diff(arr);
@@ -42,6 +46,33 @@ namespace Tests
                 Assert.That(Program60.DiffOptimized(values), Is.EqualTo(expected));
                 Assert.That(Program60.DiffOptimizedCompact(values), Is.EqualTo(expected));
             }
+        }
+
+        [Test]
+        public void EmptyArraysAreRejected()
+        {
+            int[] values = Array.Empty<int>();
+            Assert.Throws<ArgumentException>(() => Program60.Diff(values));
+            Assert.Throws<ArgumentException>(() => Program60.DiffOptimized(values));
+            Assert.Throws<ArgumentException>(() => Program60.DiffOptimizedCompact(values));
+        }
+
+        [Test]
+        public void NullArraysAreRejected()
+        {
+            Assert.Throws<ArgumentNullException>(() => Program60.Diff(null!));
+            Assert.Throws<ArgumentNullException>(() => Program60.DiffOptimized(null!));
+            Assert.Throws<ArgumentNullException>(() => Program60.DiffOptimizedCompact(null!));
+        }
+
+        [TestCase(new int[] { int.MinValue, 0 })]
+        [TestCase(new int[] { int.MinValue, int.MaxValue })]
+        [TestCase(new int[] { int.MaxValue, -1, 0 })]
+        public void UnrepresentableDifferencesAreRejected(int[] values)
+        {
+            Assert.Throws<OverflowException>(() => Program60.Diff(values));
+            Assert.Throws<OverflowException>(() => Program60.DiffOptimized(values));
+            Assert.Throws<OverflowException>(() => Program60.DiffOptimizedCompact(values));
         }
     }
 }

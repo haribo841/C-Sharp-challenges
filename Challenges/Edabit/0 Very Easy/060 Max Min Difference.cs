@@ -5,26 +5,26 @@ using System.Linq;
 
 namespace Challenges
 {
-    public class Program60
+    public static class Program60
     {
         public static int Diff(int[] arr)
         {
-            int max = int.MinValue;
-            int min = int.MaxValue;
+            int min = FirstValue(arr);
+            int max = min;
 
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 1; i < arr.Length; i++)
             {
                 int num = arr[i];
                 if (num > max) max = num;
                 if (num < min) min = num;
             }
-            return max - min;
+            return checked(max - min);
         }
 
         public static int DiffOptimized(int[] arr)
         {
+            int min = FirstValue(arr);
             int len = arr.Length;
-            int min = arr[0];
             int max = min;
             int i = 1;
             // process pairs
@@ -47,14 +47,15 @@ namespace Challenges
                 if (v < min) min = v;
                 else if (v > max) max = v;
             }
-            return max - min;
+            return checked(max - min);
         }
 
         // New compact optimized implementation (pairwise local min/max)
         public static int DiffOptimizedCompact(int[] arr)
         {
+            int min = FirstValue(arr);
             int n = arr.Length;
-            int min = arr[0], max = arr[0];
+            int max = min;
             int i = 1;
             for (; i + 1 < n; i += 2)
             {
@@ -72,7 +73,18 @@ namespace Challenges
                 else if (v > max) max = v;
             }
 
-            return max - min;
+            return checked(max - min);
+        }
+
+        private static int FirstValue(int[] arr)
+        {
+            ArgumentNullException.ThrowIfNull(arr);
+            if (arr.Length == 0)
+            {
+                throw new ArgumentException("The array must contain at least one value.", nameof(arr));
+            }
+
+            return arr[0];
         }
     }
 

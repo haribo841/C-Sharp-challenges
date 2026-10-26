@@ -5,7 +5,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program47
+    public static class Program47
     {
         public static int TotalCups(int n) => n + n / 6;
     }

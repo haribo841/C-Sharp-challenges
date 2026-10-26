@@ -3,7 +3,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program172
+    public static class Program172
     {
         public static int Length(int n) => Program77.FindDigitAmount(n);
     }

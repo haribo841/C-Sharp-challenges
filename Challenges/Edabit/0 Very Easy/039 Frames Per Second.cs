@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program39
+    public static class Program39
     {
         public static int Frames(int minutes, int fps) => fps * minutes * 60;
     }

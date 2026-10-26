@@ -5,7 +5,7 @@ using System;
 using System.Reflection;
 namespace Challenges
 {
-    public class Program59
+    public static class Program59
     {
         public static int Length(string str)
         {

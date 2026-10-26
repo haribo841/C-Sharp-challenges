@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program46
+    public static class Program46
     {
         public static int NthEven(int n) => (n - 1) << 1;
     }

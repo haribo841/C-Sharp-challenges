@@ -16,5 +16,13 @@ namespace Tests
             int result = Program71.DifferenceMaxMin(arr);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+
+        [Test]
+        public void DelegatedScanKeepsInputAndOverflowValidation()
+        {
+            Assert.Throws<ArgumentNullException>(() => Program71.DifferenceMaxMin(null!));
+            Assert.Throws<ArgumentException>(() => Program71.DifferenceMaxMin(Array.Empty<int>()));
+            Assert.Throws<OverflowException>(() => Program71.DifferenceMaxMin(new[] { int.MinValue, int.MaxValue }));
+        }
     }
 }

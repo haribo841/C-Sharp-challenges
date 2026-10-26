@@ -6,7 +6,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program173
+    public static class Program173
     {
         public static bool EqualSlices(int total, int people, int each) => total >= people * each;
     }

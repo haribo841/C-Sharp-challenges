@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program34
+    public static class Program34
     {
         public static int InchesToFeet(int inches) => inches / 12;
     }

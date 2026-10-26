@@ -5,7 +5,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program37
+    public static class Program37
     {
         public static int FlipIntBool(int ib) => 1 ^ ib;
     }

@@ -5,7 +5,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program42
+    public static class Program42
     {
 #pragma warning disable IDE0060 // Remove unused parameter
         public static bool TimeForMilkAndCookies(int year, int month, int day) => month == 12 && day == 24;

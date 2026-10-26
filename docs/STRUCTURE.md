@@ -22,6 +22,17 @@ dotnet test Tests/Tests.csproj --configuration Release
 
 The source set is a practice collection, so add a test alongside a solution and use the tests as the expected-behavior record for that challenge.
 
+### Minimum/maximum exercises
+
+All three implementations of exercise 060 require a non-null, nonempty integer array. Exercise 071 delegates to the same scan and follows the same contract:
+
+- `null` throws `ArgumentNullException`.
+- An empty array throws `ArgumentException`.
+- A mathematical difference larger than `int.MaxValue` throws `OverflowException`, rather than wrapping around.
+- A singleton array or an array of identical values returns zero.
+
+The tests cover these boundaries, both `int` extremes, and agreement between the three scans on 1,000 reproducible random arrays. No benchmark run is needed for the correctness checks.
+
 ## Benchmark workflow
 
 The challenge project references BenchmarkDotNet. Its current program entry point selects BenchmarkProgram60. Benchmark runs are intentionally more expensive than ordinary tests and may generate result artifacts, so run them only when benchmarking is the goal:
