@@ -48,7 +48,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Challenges
 {
-    public class A2301
+    public static class A2301
     {
         public static int Trebuchet(string filePath)
         {
@@ -63,37 +63,7 @@ namespace Challenges
                 // Read and process each line separately
                 while ((line = reader.ReadLine()) != null)
                 {
-                    int firstDigit = -1;
-                    int lastDigit = -1;
-
-                    foreach (char c in line)
-                    {
-                        if (char.IsDigit(c))
-                        {
-                            if (firstDigit == -1)
-                            {
-                                firstDigit = c - '0'; // Convert character to numeric value
-                                break;
-                            }
-                        }
-                    }
-
-                    for (int i = line.Length - 1; i >= 0; i--)
-                    {
-                        if (char.IsDigit(line[i]))
-                        {
-                            if (lastDigit == -1)
-                            {
-                                lastDigit = line[i] - '0'; // Convert character to numeric value
-                                break;
-                            }
-                        }
-                    }
-
-                    if (firstDigit != -1 && lastDigit != -1)
-                    {
-                        sum += firstDigit * 10 + lastDigit;
-                    }
+                    sum += NumericCalibrationValue(line);
                 }
 
                 return sum;
@@ -111,6 +81,20 @@ namespace Challenges
         }
 
 
+        private static int NumericCalibrationValue(string line)
+        {
+            int firstDigit = -1;
+            int lastDigit = -1;
+            foreach (char digit in line.Where(char.IsDigit))
+            {
+                if (firstDigit < 0)
+                    firstDigit = digit - '0';
+                lastDigit = digit - '0';
+            }
+
+            return firstDigit < 0 ? 0 : firstDigit * 10 + lastDigit;
+        }
+
         public static int Trebuchet2(string filePath)
         {
             try
@@ -124,6 +108,7 @@ namespace Challenges
                 int sum = 0;
                 // Look ahead without consuming a word, so "twone" retains both digits.
                 string pattern = @"(?=([0-9]|one|two|three|four|five|six|seven|eight|nine))";
+                var regex = new Regex(pattern, RegexOptions.None, TimeSpan.FromSeconds(1));
                 int Digit(Match match)
                 {
                     string token = match.Groups[1].Value;
@@ -135,7 +120,7 @@ namespace Challenges
                     string? line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        MatchCollection matches = Regex.Matches(line, pattern);
+                        MatchCollection matches = regex.Matches(line);
                         if (matches.Count > 0)
                         {
                             sum += Digit(matches[0]) * 10 + Digit(matches[matches.Count - 1]);

@@ -2,13 +2,16 @@
 
 namespace Challenges
 {
-    public class Fibonacci
+    public static class Fibonacci
     {
-        public static int CalculateFibonacciNumber(int numberIndex) => numberIndex < 0
-                ? throw new ArgumentException("Index cannot be negative.")
-                : numberIndex is 0 or 1
-                ? numberIndex
-                : CalculateFibonacciNumber(numberIndex - 1) + CalculateFibonacciNumber(numberIndex - 2);
+        public static int CalculateFibonacciNumber(int numberIndex)
+        {
+            if (numberIndex < 0)
+                throw new ArgumentException("Index cannot be negative.", nameof(numberIndex));
+            if (numberIndex is 0 or 1)
+                return numberIndex;
+            return CalculateFibonacciNumber(numberIndex - 1) + CalculateFibonacciNumber(numberIndex - 2);
+        }
 
         public static List<int> GetFibonacciSequence(int maxNumberIndexInclusive)
         {

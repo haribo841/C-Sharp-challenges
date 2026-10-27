@@ -3,8 +3,8 @@ using System;
 
 namespace Challenges
 {
-    public class Program134
+    public static class Program134
     {
-        public static string ReverseCapitalize(string str) => Program132.Reverse(str.ToUpper());//Invariant());
+        public static string ReverseCapitalize(string str) => Program132.Reverse(str.ToUpper());
     }
 }

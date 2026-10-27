@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program83
+    public static class Program83
     {
         public static int Flip(int y) => 1 - y;
     }

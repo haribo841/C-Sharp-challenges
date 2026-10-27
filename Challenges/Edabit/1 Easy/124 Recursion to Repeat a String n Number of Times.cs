@@ -4,8 +4,8 @@ using System;
 
 namespace Challenges
 {
-    public class Program124
+    public static class Program124
     {
-        public static string Repetition(string txt, int n) => n == 0 ? "" : txt + Repetition(txt, --n);
+        public static string Repetition(string txt, int n) => n == 0 ? "" : txt + Repetition(txt, n - 1);
     }
 }

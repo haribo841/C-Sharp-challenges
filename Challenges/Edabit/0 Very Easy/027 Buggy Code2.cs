@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program27
+    public static class Program27
     {
         public static int Maxnum(int n1, int n2)
         {

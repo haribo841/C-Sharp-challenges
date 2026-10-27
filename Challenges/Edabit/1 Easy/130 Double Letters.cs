@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program130
+    public static class Program130
     {
         public static bool DoubleLetters(string word)
         {

@@ -5,7 +5,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program65
+    public static class Program65
     {
         public static int Mod(int a, int b) => a - b * (a / b);
     }

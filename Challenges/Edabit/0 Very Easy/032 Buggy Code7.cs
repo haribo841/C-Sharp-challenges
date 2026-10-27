@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program32
+    public static class Program32
     {
         public static (int, int) Swap(int a, int b)
         {

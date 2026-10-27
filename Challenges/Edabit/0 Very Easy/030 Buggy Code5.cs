@@ -5,7 +5,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenges
 {
-    public class Program30
+    public static class Program30
     {
         public static List<int> PrintArray(int number)
         {

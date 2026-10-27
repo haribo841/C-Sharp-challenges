@@ -6,21 +6,20 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenges.Edabit
 {
-    public class Program92
+    public static class Program92
     {
         public static string GetCase(string str)
         {
             bool hasUppercase = false;
             bool hasLowercase = false;
-            foreach (char c in str)
+            foreach (char c in str.Where(char.IsLetter))
             {
-                if (char.IsLetter(c))
-                {
-                    if (char.IsUpper(c)) hasUppercase = true;
-                    else hasLowercase = true;
-                }
+                if (char.IsUpper(c)) hasUppercase = true;
+                else hasLowercase = true;
             }
-            return hasUppercase && hasLowercase ? "mixed" : hasUppercase ? "upper" : "lower";
+            if (hasUppercase && hasLowercase)
+                return "mixed";
+            return hasUppercase ? "upper" : "lower";
         }
     }
 }

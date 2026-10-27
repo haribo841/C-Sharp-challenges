@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Challenges;
-public class Power
+public static class Power
 {
     public static int DoPower(int a, int b)
     {

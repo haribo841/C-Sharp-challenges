@@ -3,15 +3,11 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program57
+    public static class Program57
     {
         public static bool IsSafeBridge(string str)
         {
-            foreach (char c in str)
-            {
-                if (c == ' ') return false;
-            }
-            return true;
+            return !str.Contains(' ');
         }
     }
     public class BenchmarkProgram57

@@ -5,7 +5,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Challenges
 {
-    public class Program171
+    public static class Program171
     {
         public static int CharToASCII(char ch) => ch;
     }

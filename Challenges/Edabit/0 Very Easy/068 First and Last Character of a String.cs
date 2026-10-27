@@ -4,7 +4,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program68
+    public static class Program68
     {
         public static string FirstLast(string str)
         {

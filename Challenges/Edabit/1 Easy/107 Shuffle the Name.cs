@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program107
+    public static class Program107
     {
         public static string NameShuffle(string str)
         {

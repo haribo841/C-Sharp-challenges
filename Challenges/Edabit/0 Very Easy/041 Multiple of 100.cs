@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program41
+    public static class Program41
     {
         public static bool Divisible(int number) => number % 100 == 0;
     }

@@ -10,7 +10,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program21
+    public static class Program21
     {
         public static int Animals(int chickens, int cows, int pigs) => 2 * chickens + 4 * (cows + pigs);
     }

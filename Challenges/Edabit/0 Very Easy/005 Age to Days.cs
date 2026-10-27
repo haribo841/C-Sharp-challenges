@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program5
+    public static class Program5
     {
         public static int CalcAge(int age) => age * 365;
     }

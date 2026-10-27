@@ -35,7 +35,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Challenges
 {
-    public class A2401
+    public static class A2401
     {
         public static int DayOne(string filePath)
         {
@@ -144,7 +144,7 @@ namespace Challenges
                 while (leftList.Count > 0)
                 {
                     leftNumber = leftList[0];
-                    score = leftNumber * rightList.Where(x => x == leftNumber).Count();
+                    score = leftNumber * rightList.Count(x => x == leftNumber);
                     totalSum += score;
                     leftList.RemoveAt(0);
                 }

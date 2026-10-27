@@ -3,7 +3,7 @@
 using System;
 namespace Challenges
 {
-    public class Program99
+    public static class Program99
     {
         public static bool HurdleJump(int[] hurdles, int jumpHeight) => hurdles.All(hurdle => hurdle <= jumpHeight);
     }

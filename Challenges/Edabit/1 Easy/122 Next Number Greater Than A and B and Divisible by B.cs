@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program122
+    public static class Program122
     {
         public static int DivisibleByB(int a, int b)
         {

@@ -5,23 +5,11 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program31
+    public static class Program31
     {
         public static string RemoveNumbers(string str)
         {
-            var result = new StringBuilder();
-
-            foreach (var i in str)
-            {
-#pragma warning disable IDE0078 // Use pattern matching
-                if (i < '0' || i > '9')
-                {
-                    result.Append(i);
-                }
-#pragma warning restore IDE0078 // Use pattern matching
-            }
-
-            return result.ToString();
+            return new string(str.Where(character => character is < '0' or > '9').ToArray());
         }
     }
     public class BenchmarkProgram31

@@ -3,18 +3,11 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program169
+    public static class Program169
     {
         public static bool HasSpaces(string str)
         {
-            foreach (char c in str)
-            {
-                if (c == ' ')
-                {
-                    return true;
-                }
-            }
-            return false;
+            return str.Contains(' ');
         }
     }
     public class BenchmarkProgram169

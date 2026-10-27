@@ -16,7 +16,7 @@ The [repository wiki](https://github.com/haribo841/C-Sharp-challenges/wiki) is s
 git clone https://github.com/haribo841/C-Sharp-challenges.wiki.git
 ~~~
 
-Edit the wiki checkout independently. Before publishing either checkout, inspect its status, run the relevant checks, and obtain authorization for that publication. A one-publication-per-day policy means the code and wiki cannot both be published on the same day without an explicit exception.
+Edit the wiki checkout independently. Before publishing either checkout, inspect its status, run the relevant checks, and obtain authorization for that publication. The user's daily limit applies to ordinary repository publications counted as profile contributions. Wiki publications are separate activity and do not consume that limit; they still require publication authorization.
 
 ## Checks
 
@@ -28,3 +28,5 @@ dotnet test Tests/Tests.csproj --configuration Release
 Check that every current Edabit identifier has exactly one implementation, one test file and one wiki entry, and that the catalog's local links resolve. Advent of Code pages must link their year-specific source and test files as well.
 
 The source repository keeps tests as the expected-behavior record. A copied example or a historical benchmark table is not evidence that the current implementation passes.
+
+Non-numbered shared samples, such as Fibonacci and integer powers, use descriptive wiki page names and link their own source and test files.

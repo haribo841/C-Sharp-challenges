@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program154
+    public static class Program154
     {
         public static int Equal(int a, int b, int c)
         {
@@ -17,10 +17,3 @@ namespace Challenges
         }
     }
 }
-/*
- *         {
-            if (a == b && b == c) return 3;
-            if (a == b || b == c || a == c) return 2;
-            return 0;
-        }
- */

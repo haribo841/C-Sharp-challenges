@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program132
+    public static class Program132
     {
         public static string Reverse(string str)
         {

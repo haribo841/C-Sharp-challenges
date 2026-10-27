@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program8
+    public static class Program8
     {
         public static bool LessThanOrEqualToZero(double a) => a <= 0;
     }

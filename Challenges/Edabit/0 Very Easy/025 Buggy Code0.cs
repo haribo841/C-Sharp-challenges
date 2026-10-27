@@ -6,7 +6,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenges
 {
-    public class Program25
+    public static class Program25
     {
         public static string Has_bugs(bool buggy_code)
         {

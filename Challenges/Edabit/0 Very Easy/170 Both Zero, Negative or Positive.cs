@@ -7,7 +7,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program170
+    public static class Program170
     {
         public static bool Both(int n1, int n2) => n1 < 0 && n2 < 0 || n1 == 0 && n2 == 0 || n1 > 0 && n2 > 0;
     }

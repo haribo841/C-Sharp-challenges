@@ -6,7 +6,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program16
+    public static class Program16
     {
         public static string NameString(string name)
         {

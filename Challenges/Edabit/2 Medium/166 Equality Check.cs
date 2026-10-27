@@ -9,7 +9,7 @@ using System;
 using System.Reflection;
 namespace Challenges
 {
-    public class Program166
+    public static class Program166
     {
         public static bool CheckEquality(object? a, object? b)
         {

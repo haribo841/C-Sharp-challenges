@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program136
+    public static class Program136
     {
         public static string Repeat(string str, int num)
         {

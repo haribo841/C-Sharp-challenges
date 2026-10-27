@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 namespace Challenges
 {
-    public class Program102
+    public static class Program102
     {
         public static double[] FindMinMax(double[] values)
         {

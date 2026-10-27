@@ -52,3 +52,5 @@ To benchmark a different exercise, review the entry point and the relevant bench
 5. Update the [solution/test catalog](CHALLENGES.md) and the matching wiki page, including wiki navigation.
 
 The main source and GitHub wiki are separate repositories. Preparing wiki pages locally does not publish them; follow the [wiki workflow](WIKI.md) and the user's publication limit before committing or pushing either checkout.
+
+Historical commented-out alternatives removed from compiled sources are retained in the [implementation-notes archive](archive/commented-code-2026-10-27.md). They are not current benchmark results or supported implementations.

@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program50
+    public static class Program50
     {
         public static bool IsEmpty(string str) => string.IsNullOrEmpty(str);
     }

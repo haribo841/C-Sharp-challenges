@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 
 namespace Challenges
 {
-    public class Program63
+    public static class Program63
     {
         public static string Operation(int num1, int num2) => 24 switch
         {

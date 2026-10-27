@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program141
+    public static class Program141
     {
         public static string AlphabetSoup(string str)
         {

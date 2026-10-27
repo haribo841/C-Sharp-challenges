@@ -3,7 +3,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program168
+    public static class Program168
     {
         public static int StringInt(string txt)
         {

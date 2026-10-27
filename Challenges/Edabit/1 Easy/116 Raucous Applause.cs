@@ -5,13 +5,11 @@ using System;
 
 namespace Challenges
 {
-    public class Program116
+    public static class Program116
     {
         public static int CountClaps(string txt)
         {
-            int count = 0;
-            foreach (char c in txt) { if (c == 'C') count++; }
-            return count;
+            return txt.Count(character => character == 'C');
         }
     }
 }

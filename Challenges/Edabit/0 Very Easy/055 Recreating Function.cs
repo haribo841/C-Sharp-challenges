@@ -6,7 +6,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program55
+    public static class Program55
     {
         public static int Absolute(int num) => (num ^ (num >> 31)) - (num >> 31);
     }

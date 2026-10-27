@@ -5,7 +5,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenges
 {
-    public class Program97
+    public static class Program97
     {
         public static int Days(int month, int year) => DateTime.DaysInMonth(year, month);
     }

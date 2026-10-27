@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program103
+    public static class Program103
     {
         public static int GetAbsSum(int[] arr)
         {

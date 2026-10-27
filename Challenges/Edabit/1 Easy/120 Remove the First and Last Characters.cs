@@ -4,7 +4,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Challenges
 {
-    public class Program120
+    public static class Program120
     {
         public static string RemoveFirstLast(string str) => str.Length > 2 ? str[1..^1] : str;
     }

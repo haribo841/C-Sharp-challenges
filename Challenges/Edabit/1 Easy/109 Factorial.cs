@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program109
+    public static class Program109
     {
         public static int Factorial(int num)
         {

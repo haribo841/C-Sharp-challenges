@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Challenges
 {
-    public class Program101
+    public static class Program101
     {
         public static string MonthName(int num) => num is >= 1 and <= 12 ? CultureInfo.InvariantCulture.DateTimeFormat.GetMonthName(num) : "none";
     }

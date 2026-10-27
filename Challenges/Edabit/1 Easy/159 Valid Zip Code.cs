@@ -3,20 +3,11 @@ using System;
 
 namespace Challenges
 {
-    public class Program159
+    public static class Program159
     {
-        public static bool IsValid(string zip)// => zip.Length == 5 && int.TryParse(zip, out _);
+        public static bool IsValid(string zip)
         {
-            if (zip.Length != 5)
-                return false;
-
-            foreach (char c in zip)
-            {
-                if (!Char.IsDigit(c))
-                    return false;
-            }
-
-            return true;
+            return zip.Length == 5 && zip.All(char.IsDigit);
         }
     }
 }

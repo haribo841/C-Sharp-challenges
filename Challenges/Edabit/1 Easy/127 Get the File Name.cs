@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program127
+    public static class Program127
     {
         public static string GetFilename(string path)
         {

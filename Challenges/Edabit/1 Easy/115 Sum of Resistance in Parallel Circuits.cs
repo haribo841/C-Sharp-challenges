@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program115
+    public static class Program115
     {
         public static double ParallelResistance(double[] arr)
         {

@@ -9,7 +9,7 @@ using System.Globalization;
 
 namespace Challenges
 {
-    public class Program80
+    public static class Program80
     {
         public static string SeriesResistance(double[] arr)
         {
@@ -18,13 +18,13 @@ namespace Challenges
             {
                 totalResistance += resistance;
             }
-            return Math.Abs(totalResistance - 1.0) < 1e-9
-                ? "1 ohm"
-                : totalResistance < 1.0
-                    ? totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohm"
-                    : totalResistance == Math.Floor(totalResistance)
-                                    ? totalResistance.ToString("F0", CultureInfo.InvariantCulture) + " ohms"
-                                    : totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohms";
+            if (Math.Abs(totalResistance - 1.0) < 1e-9)
+                return "1 ohm";
+            if (totalResistance < 1.0)
+                return totalResistance.ToString("F1", CultureInfo.InvariantCulture) + " ohm";
+
+            string format = double.IsInteger(totalResistance) ? "F0" : "F1";
+            return totalResistance.ToString(format, CultureInfo.InvariantCulture) + " ohms";
         }
     }
 }

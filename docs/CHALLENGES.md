@@ -213,3 +213,12 @@ These exercises were retained rather than discarded when tasks 033 through 060 w
 | 2024, day 01 | [C#](../Challenges/Advent%20of%20Code/2024/Day%2001.cs) | [NUnit](../Tests/Advent%20of%20Code/2024/Test%2001.cs) |
 
 See [the wiki contribution workflow](WIKI.md) before adding or renumbering another exercise.
+
+## Shared mathematics samples
+
+| Sample | Solution | Tests |
+| --- | --- | --- |
+| Fibonacci | [C#](../Challenges/Fibonacci.cs) | [NUnit](../Tests/FibonacciTest.cs) |
+| Integer powers | [C#](../Challenges/Power.cs) | [NUnit](../Tests/PowerTest.cs) |
+
+The [cross-cutting regression tests](../Tests/SonarRegressionTests.cs) also verify behavior retained during the Sonar cleanup.

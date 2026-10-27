@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program24
+    public static class Program24
     {
         public static int Convert(int hours, int minutes) => (hours * 60 + minutes) * 60;
     }

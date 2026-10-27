@@ -4,8 +4,17 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Challenges
 {
-    public class Program121
+    public static class Program121
     {
-        public static string FizzBuzz(int n) => n % 3 == 0 && n % 5 == 0 ? "FizzBuzz" : n % 5 == 0 ? "Buzz" : n % 3 == 0 ? "Fizz" : n.ToString();
+        public static string FizzBuzz(int n)
+        {
+            if (n % 15 == 0)
+                return "FizzBuzz";
+            if (n % 5 == 0)
+                return "Buzz";
+            if (n % 3 == 0)
+                return "Fizz";
+            return n.ToString();
+        }
     }
 }

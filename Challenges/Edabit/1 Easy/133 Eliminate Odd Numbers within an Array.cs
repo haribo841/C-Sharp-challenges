@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program133
+    public static class Program133
     {
         public static int[] NoOdds(int[] arr)
         {

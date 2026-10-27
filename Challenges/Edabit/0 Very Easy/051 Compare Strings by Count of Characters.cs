@@ -5,7 +5,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program51
+    public static class Program51
     {
         public static bool Comp(string str1, string str2) => str1.Length == str2.Length;
     }

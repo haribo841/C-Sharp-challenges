@@ -4,7 +4,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program96
+    public static class Program96
     {
         public static int CountWords(string str) => str.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Length;
     }

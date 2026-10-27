@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program100
+    public static class Program100
     {
         public static int CharCount(char myChar, string str) => str.Count(c => c == myChar);
     }

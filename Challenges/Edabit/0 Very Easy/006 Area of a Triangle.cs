@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program6
+    public static class Program6
     {
         public static int TriArea(int b, int h) => b * h / 2;
     }

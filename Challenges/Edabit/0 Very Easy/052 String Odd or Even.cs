@@ -3,7 +3,7 @@ using BenchmarkDotNet.Attributes;
 
 namespace Challenges
 {
-    public class Program52
+    public static class Program52
     {
         public static bool OddOrEven(string word) => word.Length % 2 == 0;
     }

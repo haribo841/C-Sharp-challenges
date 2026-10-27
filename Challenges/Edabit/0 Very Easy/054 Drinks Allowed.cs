@@ -5,7 +5,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program54
+    public static class Program54
     {
         public static bool ShouldServeDrinks(int age, bool on_break) => !on_break && age >= 18;
     }

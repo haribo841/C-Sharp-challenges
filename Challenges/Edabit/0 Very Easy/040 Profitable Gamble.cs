@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program40
+    public static class Program40
     {
         public static bool ProfitableGamble(double prob, int prize, double pay) => prob * prize > pay;
     }

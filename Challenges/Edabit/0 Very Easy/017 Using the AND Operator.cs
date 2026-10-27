@@ -12,7 +12,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program17
+    public static class Program17
     {
         public static bool And(bool x, bool y) => x && y;
     }

@@ -3,7 +3,7 @@
 using System;
 namespace Challenges
 {
-    public class Program75
+    public static class Program75
     {
         public static int PosCom(int n) => 1 << n;
     }

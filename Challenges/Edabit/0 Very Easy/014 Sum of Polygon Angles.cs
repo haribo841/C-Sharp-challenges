@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program14
+    public static class Program14
     {
         public static int SumPolygon(int num) => (num - 2) * 180;
     }

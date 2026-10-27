@@ -5,13 +5,8 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program88
+    public static class Program88
     {
         public static double SmashFactor(double a, double b) => Math.Round(a / b, 2);
     }
 }
-/* {
-    double result = a / b;
-    double roundedResult = Math.Floor(result * 100 + 0.5) / 100; // Round to two decimal places
-    return roundedResult;
-} */

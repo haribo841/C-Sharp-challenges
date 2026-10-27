@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program15
+    public static class Program15
     {
         public static string NewWord(string str) => str[1..];
     }
@@ -12,7 +12,7 @@ namespace Challenges
     public class BenchmarkProgram15
     {
         [Params("pokhara", "biratnagar", "nepal", "damak", "itahari", "rasuwa", "rolpa")]
-        public string Word = null!;
+        public string Word { get; set; } = null!;
         [Benchmark]
         public string NewWord_Range() => Program15.NewWord(Word);
     }

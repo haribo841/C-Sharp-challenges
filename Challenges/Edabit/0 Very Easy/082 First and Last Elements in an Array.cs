@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program82
+    public static class Program82
     {
         public static object[] FirstLast(object[] values)
         {

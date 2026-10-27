@@ -3,7 +3,7 @@
 using System;
 namespace Challenges
 {
-    public class Program74
+    public static class Program74
     {
         public static string AmazingEdabit(string str) => str.Contains("edabit") ? str : str.Replace("amazing", "not amazing");
     }

@@ -7,7 +7,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program18
+    public static class Program18
     {
         public static int Points(int twoPointers, int threePointers) => twoPointers * 2 + threePointers * 3;
     }

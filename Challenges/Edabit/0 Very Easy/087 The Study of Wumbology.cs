@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program87
+    public static class Program87
     {
         public static string Wumbo(string words) => words.Replace('M', 'W');
     }

@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program94
+    public static class Program94
     {
         public static int FindIndex(string[] arr, string str)
         {
@@ -20,33 +20,3 @@ namespace Challenges
         }
     }
 }
-/*
-{
-    // Create a hash table to store the string-index pairs
-    Dictionary<string, int> hashTable = new Dictionary<string, int>();
-
-    // Populate the hash table with strings from the array
-    for (int i = 0; i < arr.Length; i++)
-    {
-        // Check for duplicate strings
-        if (hashTable.ContainsKey(arr[i]))
-        {
-            // Handle duplicates as needed (e.g., ignore, replace, etc.)
-        }
-        else
-        {
-            hashTable[arr[i]] = i;
-        }
-    }
-
-    // Look up the index of the specified string
-    if (hashTable.ContainsKey(str))
-    {
-        return hashTable[str];
-    }
-    else
-    {
-        return -1; // String not found in the array
-    }
-}
-*/

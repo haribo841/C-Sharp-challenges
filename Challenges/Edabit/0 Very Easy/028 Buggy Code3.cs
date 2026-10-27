@@ -5,7 +5,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program28
+    public static class Program28
     {
         public static string Sumarray(int[] arr)
         {
@@ -34,9 +34,9 @@ namespace Challenges
         }
         [Benchmark]
         public object GetLastItemArray1() => Program28.Sumarray(array1);
-        [Benchmark]                                  
+        [Benchmark]
         public object GetLastItemArray2() => Program28.Sumarray(array2);
-        [Benchmark]                                 
+        [Benchmark]
         public object GetLastItemArray3() => Program28.Sumarray(array3);
     }
 }

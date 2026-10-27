@@ -3,7 +3,7 @@
 using BenchmarkDotNet.Attributes;
 namespace Challenges
 {
-    public class Program62
+    public static class Program62
     {
         public static bool IsPlural(string word) => word[^1] == 's';
     }

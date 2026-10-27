@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace Challenges
 {
-    public class Program29
+    public static class Program29
     {
         public static string Greeting(string name)
         {

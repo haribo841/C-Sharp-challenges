@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program19
+    public static class Program19
     {
         public static int FindPerimeter(int length, int width) => (length + width)*2;
     }

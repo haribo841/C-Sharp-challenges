@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program90
+    public static class Program90
     {
         public static int NumArgs(params object[] p) => p.Length;
     }

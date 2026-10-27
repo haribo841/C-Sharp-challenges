@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program106
+    public static class Program106
     {
         public static int HammingDistance(string str1, string str2)
         {

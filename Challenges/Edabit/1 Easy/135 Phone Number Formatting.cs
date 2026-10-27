@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program135
+    public static class Program135
     {
         public static string FormatPhoneNumber(int[] numbers) =>
            $"({numbers[0]}{numbers[1]}{numbers[2]}) " +

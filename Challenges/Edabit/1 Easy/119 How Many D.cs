@@ -4,13 +4,11 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Challenges
 {
-    public class Program119
+    public static class Program119
     {
         public static int CountDs(string str)
         {
-            int count = 0;
-            foreach (char c in str) { if (c is 'D' or 'd') count++; }
-            return count;
+            return str.Count(character => character is 'D' or 'd');
         }
     }
 }

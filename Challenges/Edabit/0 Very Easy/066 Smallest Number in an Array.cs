@@ -3,7 +3,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program66
+    public static class Program66
     {
         public static double FindSmallestNum(double[] arr)
         {

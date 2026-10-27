@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program81
+    public static class Program81
     {
         public static int[] Reverse(int[] arr)
         {

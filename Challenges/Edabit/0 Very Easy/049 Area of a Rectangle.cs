@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program49
+    public static class Program49
     {
         public static int Area(int h, int w) => h <= 0 || w <= 0 ? -1 : h * w;
     }

@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program144
+    public static class Program144
     {
         public static int[] HashPlusCount(string s)
         {
@@ -17,13 +17,3 @@ namespace Challenges
         }
     }
 }
-/*
- * int a=0;
-   int b=0;
-            foreach (char c in s)
-            {
-                if (c == '#') a++;
-                else if (c == '+') b++;
-            }
-            return new int [] {a,b};
-*/

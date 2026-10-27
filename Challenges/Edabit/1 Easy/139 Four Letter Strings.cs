@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program139
+    public static class Program139
     {
         public static string[] IsFourLetters(string[] arr)
         {

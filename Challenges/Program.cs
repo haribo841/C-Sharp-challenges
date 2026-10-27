@@ -27,7 +27,7 @@ namespace Benchmark
     {
         public static void Main(string[] args)
         {
-            // BenchmarkRunner.Run<BenchmarkProgramNumber>(new CustomConfig());
+
             BenchmarkRunner.Run<BenchmarkProgram60>(new CustomConfig());
         }
     }

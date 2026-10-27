@@ -5,7 +5,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program84
+    public static class Program84
     {
         public static int AddUp(int num) => num * (num + 1) / 2;
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program131
+    public static class Program131
     {
         public static string ModifyLast(string str, int n)
         {

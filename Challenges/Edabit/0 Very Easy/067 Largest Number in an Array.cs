@@ -3,7 +3,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program67
+    public static class Program67
     {
         public static int FindLargestNum(int[] arr)
         {

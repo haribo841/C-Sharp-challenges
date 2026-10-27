@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program85
+    public static class Program85
     {
         public static int CubesSum(int[] nums_arr) => nums_arr.Sum(num => num * num * num);
     }

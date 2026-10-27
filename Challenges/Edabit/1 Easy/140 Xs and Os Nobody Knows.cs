@@ -8,7 +8,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program140
+    public static class Program140
     {
         public static bool XO(string str)
         {

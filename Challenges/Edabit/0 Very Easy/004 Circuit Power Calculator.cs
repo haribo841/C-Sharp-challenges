@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program4
+    public static class Program4
     {
         public static int CircuitPower(int voltage, int current) => voltage * current;
     }

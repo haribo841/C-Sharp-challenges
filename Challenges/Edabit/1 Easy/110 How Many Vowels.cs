@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program110
+    public static class Program110
     {
         public static int CountVowels(string str)
         {

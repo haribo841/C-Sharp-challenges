@@ -3,7 +3,7 @@ using System;
 using System.Text;
 namespace Challenges
 {
-    public class Program93
+    public static class Program93
     {
         public static string Go(int num) => new('-', num);
     }

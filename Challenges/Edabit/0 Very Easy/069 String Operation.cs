@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program69
+    public static class Program69
     {
         public static int Calculate(int num1, int num2, string operation) => operation switch
         {
@@ -11,7 +11,7 @@ namespace Challenges
             string n when n == "*" => num1 * num2,
             string n when n == "%" => num1 % num2,
             string n when n == "/" => num1 / num2,
-            _ => 0     
+            _ => 0
         };
     }
 }

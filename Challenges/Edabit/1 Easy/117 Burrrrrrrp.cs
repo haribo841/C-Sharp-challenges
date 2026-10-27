@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program117
+    public static class Program117
     {
         public static string LongBurp(int b) => "Bu" + new string('r', b) + "p";
     }

@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program105
+    public static class Program105
     {
         public static int[] MultiplyByLength(int[] arr)
         {

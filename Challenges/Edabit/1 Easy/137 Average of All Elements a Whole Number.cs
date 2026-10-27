@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program137
+    public static class Program137
     {
         public static bool IsAvgWhole(int[] arr) => arr.Sum() % arr.Length == 0;
     }

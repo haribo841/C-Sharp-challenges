@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program77
+    public static class Program77
     {
         public static int FindDigitAmount(int num)
         {

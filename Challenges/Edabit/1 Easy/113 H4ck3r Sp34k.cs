@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program113
+    public static class Program113
     {
         public static string HackerSpeak(string str)
         {
@@ -35,31 +35,3 @@ namespace Challenges
         }
     }
 }
-/*
-{
-    Dictionary<char, char> hackerSubstitutions = new Dictionary<char, char>
-    {
-        { 'a', '4' },
-        { 'e', '3' },
-        { 'i', '1' },
-        { 'o', '0' },
-        { 's', '5' }
-    };
-
-    StringBuilder result = new StringBuilder(str.Length);
-
-    foreach (char c in str)
-    {
-        if (hackerSubstitutions.ContainsKey(c))
-        {
-            result.Append(hackerSubstitutions[c]);
-        }
-        else
-        {
-            result.Append(c);
-        }
-    }
-
-    return result.ToString();
-}
-*/

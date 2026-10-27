@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program79
+    public static class Program79
     {
         public static bool Check(int[] arr, int el)
         {

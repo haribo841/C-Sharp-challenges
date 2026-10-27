@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program125
+    public static class Program125
     {
         public static string FormatDate(string date)
         {

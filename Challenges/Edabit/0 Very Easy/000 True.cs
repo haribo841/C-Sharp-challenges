@@ -3,10 +3,10 @@ using System;
 using System.Runtime.CompilerServices;
 namespace Challenges
 {
-    public class Program
+    public static class Program
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool ReturnTrue() => true;
+        public static bool ReturnTrue() => AlwaysTrue;
         public static bool AlwaysTrue => true;
         public static readonly bool trueField = true;
         public const bool TrueConst = true;

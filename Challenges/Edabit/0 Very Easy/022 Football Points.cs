@@ -5,7 +5,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program22
+    public static class Program22
     {
 #pragma warning disable IDE0060 // Remove unused parameter
         public static int FootballPoints(int wins, int draws, int losses) => wins * 3 + draws;

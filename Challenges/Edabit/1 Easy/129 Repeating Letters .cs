@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Program129
+    public static class Program129
     {
         public static string DoubleChar(string str)
         {

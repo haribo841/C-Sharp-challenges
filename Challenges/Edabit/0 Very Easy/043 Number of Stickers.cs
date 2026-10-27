@@ -4,7 +4,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program43
+    public static class Program43
     {
         public static int HowManyStickers(int n) => 6 * n * n;
     }

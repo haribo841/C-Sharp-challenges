@@ -6,13 +6,11 @@ using System;
 using System.Globalization;
 namespace Challenges
 {
-    public class Program111
+    public static class Program111
     {
-        public static int[] SortNumsAscending(int[] arr)
+        public static int[] SortNumsAscending(int[]? arr)
         {
-            int[] a = new int[arr.Length];
-            a = arr.Order().ToArray();
-            return a;
+            return arr?.Order().ToArray() ?? Array.Empty<int>();
         }
     }
 }

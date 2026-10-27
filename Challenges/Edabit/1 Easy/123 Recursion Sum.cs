@@ -3,8 +3,8 @@ using System;
 
 namespace Challenges
 {
-    public class Program123
+    public static class Program123
     {
-        public static int Sum(int n) => n == 0 ? 0 : n + Sum(--n);// => n == 0 ? 0 : n + Sum(n - 1);
+        public static int Sum(int n) => n == 0 ? 0 : n + Sum(n - 1);
     }
 }

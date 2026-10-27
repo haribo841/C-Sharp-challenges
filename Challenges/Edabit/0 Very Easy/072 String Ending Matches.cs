@@ -2,7 +2,7 @@
 using System;
 namespace Challenges
 {
-    public class Program72
+    public static class Program72
     {
         public static bool CheckEnding(string str1, string str2) => str1.EndsWith(str2);
     }

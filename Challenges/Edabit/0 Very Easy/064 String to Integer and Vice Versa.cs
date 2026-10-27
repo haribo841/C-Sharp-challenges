@@ -5,7 +5,7 @@ using BenchmarkDotNet.Attributes;
 using System;
 namespace Challenges
 {
-    public class Program64
+    public static class Program64
     {
         public static int ToInt(string str) => int.Parse(str);
         public static string ToStr(int num) => num.ToString();

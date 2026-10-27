@@ -3,7 +3,7 @@ using System;
 
 namespace Challenges
 {
-    public class Program157
+    public static class Program157
     {
         public static bool LargestSwap(int num)
         {
@@ -21,20 +21,3 @@ namespace Challenges
         }
     }
 }
-/*
- *         {
-            string a= num.ToString();
-            if (a[0] == a[1]) return true;
-            else if (a[0] < a[1]) return false;
-            return true;
-        }
-*
-*        {
-            int firstDigit = num / 10;  // Extracting the tens place digit
-            int secondDigit = num % 10; // Extracting the ones place digit
-
-            int swapped = secondDigit * 10 + firstDigit; // Creating the swapped number
-
-            return num >= swapped; // Checking if the original number is greater than or equal to the swapped number
-        }
- */
